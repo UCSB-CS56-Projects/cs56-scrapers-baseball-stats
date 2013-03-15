@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright 2012 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt-->
+<game>
+   <inning num="1">
+      <top>
+         <atbat num="1" b="2" s="2" o="1" start_tfs="130846" start_tfs_zulu="2012-06-02T17:08:46Z" batter="537953" pitcher="475138" des="Daniel Nava flies out to left fielder Rajai Davis.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="2" b="1" s="1" o="2" start_tfs="131110" start_tfs_zulu="2012-06-02T17:11:10Z" batter="449107" pitcher="475138" des="Mike Aviles grounds out, shortstop Yunel Escobar to first baseman Edwin Encarnacion.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="3" b="3" s="2" o="3" start_tfs="131218" start_tfs_zulu="2012-06-02T17:12:18Z" batter="408236" pitcher="475138" des="Adrian Gonzalez flies out to left fielder Rajai Davis.  " event="Flyout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="4" b="3" s="3" o="1" start_tfs="131657" start_tfs_zulu="2012-06-02T17:16:57Z" batter="430637" pitcher="467094" des="Kelly Johnson strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="5" b="3" s="1" o="2" start_tfs="131844" start_tfs_zulu="2012-06-02T17:18:44Z" batter="488862" pitcher="467094" des="Yunel Escobar grounds out, pitcher Felix Doubront to first baseman Kevin Youkilis.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="6" b="3" s="2" o="3" start_tfs="132055" start_tfs_zulu="2012-06-02T17:20:55Z" batter="430832" pitcher="467094" des="Jose Bautista grounds out, third baseman Will Middlebrooks to first baseman Kevin Youkilis.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="2">
+      <top>
+         <atbat num="7" b="2" s="3" o="1" start_tfs="132453" start_tfs_zulu="2012-06-02T17:24:53Z" batter="120074" pitcher="475138" des="David Ortiz strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="8" b="4" s="2" o="1" start_tfs="132721" start_tfs_zulu="2012-06-02T17:27:21Z" batter="457454" pitcher="475138" des="Jarrod Saltalamacchia walks.  " event="Walk" b1="457454" b2="" b3=""/>
+         <atbat num="9" b="1" s="3" o="2" start_tfs="132943" start_tfs_zulu="2012-06-02T17:29:43Z" batter="425903" pitcher="475138" des="Kevin Youkilis strikes out on foul tip.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="10" b="3" s="1" o="2" start_tfs="133117" start_tfs_zulu="2012-06-02T17:31:17Z" batter="435220" pitcher="475138" des="Ryan Sweeney singles on a ground ball to right fielder Jose Bautista.    Jarrod Saltalamacchia to 3rd.  " event="Single" b1="435220" b2="" b3="457454"/>
+         <atbat num="11" b="1" s="2" o="2" start_tfs="133323" start_tfs_zulu="2012-06-02T17:33:23Z" batter="519025" pitcher="475138" des="Will Middlebrooks singles on a sharp line drive to right fielder Jose Bautista.    Jarrod Saltalamacchia scores.    Ryan Sweeney to 3rd.  " event="Single" score="T" home_team_runs="0" away_team_runs="1" b1="519025" b2="" b3="435220" rbi="1"/>
+         <atbat num="12" b="1" s="1" o="2" start_tfs="133533" start_tfs_zulu="2012-06-02T17:35:33Z" batter="346857" pitcher="475138" des="Nick Punto doubles (2) on a sharp line drive to right fielder Jose Bautista.    Ryan Sweeney scores.    Will Middlebrooks to 3rd.  " event="Double" score="T" home_team_runs="0" away_team_runs="2" b1="" b2="346857" b3="519025" rbi="1"/>
+         <action b="1" s="1" o="2" des="Coaching visit to mound.  " event="Game Advisory" tfs="133701" tfs_zulu="2012-06-02T17:37:01Z" player="537953" pitch="3"/>
+         <atbat num="13" b="2" s="1" o="2" start_tfs="133726" start_tfs_zulu="2012-06-02T17:37:26Z" batter="537953" pitcher="475138" des="Daniel Nava reaches on fielding error by center fielder Colby Rasmus.    Will Middlebrooks scores.    Nick Punto scores.  " event="Field Error" event2="Error" score="T" home_team_runs="0" away_team_runs="4" b1="537953" b2="" b3=""/>
+         <atbat num="14" b="1" s="3" o="3" start_tfs="134008" start_tfs_zulu="2012-06-02T17:40:08Z" batter="449107" pitcher="475138" des="Mike Aviles strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="15" b="4" s="2" o="0" start_tfs="134339" start_tfs_zulu="2012-06-02T17:43:39Z" batter="429665" pitcher="467094" des="Edwin Encarnacion walks.  " event="Walk" b1="429665" b2="" b3=""/>
+         <atbat num="16" b="0" s="3" o="1" start_tfs="134601" start_tfs_zulu="2012-06-02T17:46:01Z" batter="458675" pitcher="467094" des="Colby Rasmus strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="17" b="1" s="2" o="2" start_tfs="134753" start_tfs_zulu="2012-06-02T17:47:53Z" batter="543434" pitcher="467094" des="Brett Lawrie flies out to right fielder Adrian Gonzalez.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="18" b="1" s="0" o="3" start_tfs="135112" start_tfs_zulu="2012-06-02T17:51:12Z" batter="434658" pitcher="467094" des="Rajai Davis flies out to right fielder Adrian Gonzalez.  " event="Flyout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="3">
+      <top>
+         <atbat num="19" b="3" s="1" o="1" start_tfs="135343" start_tfs_zulu="2012-06-02T17:53:43Z" batter="408236" pitcher="475138" des="Adrian Gonzalez grounds out, first baseman Edwin Encarnacion to pitcher Kyle Drabek.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="20" b="2" s="1" o="2" start_tfs="135542" start_tfs_zulu="2012-06-02T17:55:42Z" batter="120074" pitcher="475138" des="David Ortiz grounds out, second baseman Kelly Johnson to first baseman Edwin Encarnacion.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="21" b="2" s="3" o="3" start_tfs="135715" start_tfs_zulu="2012-06-02T17:57:15Z" batter="457454" pitcher="475138" des="Jarrod Saltalamacchia strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="22" b="0" s="3" o="1" start_tfs="140054" start_tfs_zulu="2012-06-02T18:00:54Z" batter="476036" pitcher="467094" des="David Cooper strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="23" b="3" s="2" o="1" start_tfs="140203" start_tfs_zulu="2012-06-02T18:02:03Z" batter="425772" pitcher="467094" des="Jeff Mathis homers (3) on a fly ball to right center field.  " event="Home Run" score="T" home_team_runs="1" away_team_runs="4" b1="" b2="" b3="" rbi="1"/>
+         <atbat num="24" b="1" s="1" o="1" start_tfs="140438" start_tfs_zulu="2012-06-02T18:04:38Z" batter="430637" pitcher="467094" des="Kelly Johnson singles on a line drive to right fielder Adrian Gonzalez.  " event="Single" b1="430637" b2="" b3=""/>
+         <atbat num="25" b="0" s="2" o="1" start_tfs="140559" start_tfs_zulu="2012-06-02T18:05:59Z" batter="488862" pitcher="467094" des="Yunel Escobar singles on a line drive to center fielder Ryan Sweeney.    Kelly Johnson to 2nd.  " event="Single" b1="488862" b2="430637" b3=""/>
+         <atbat num="26" b="0" s="0" o="2" start_tfs="140814" start_tfs_zulu="2012-06-02T18:08:14Z" batter="430832" pitcher="467094" des="Jose Bautista flies out to center fielder Ryan Sweeney.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="27" b="1" s="0" o="2" start_tfs="140903" start_tfs_zulu="2012-06-02T18:09:03Z" batter="429665" pitcher="467094" des="Edwin Encarnacion singles on a ground ball to shortstop Mike Aviles.    Kelly Johnson to 3rd.    Yunel Escobar to 2nd.  " event="Single" b1="429665" b2="488862" b3="430637"/>
+         <action b="1" s="0" o="2" des="Injury Delay.  " event="Game Advisory" tfs="141108" tfs_zulu="2012-06-02T18:11:08Z" player="458675" pitch="2"/>
+         <atbat num="28" b="0" s="1" o="3" start_tfs="141129" start_tfs_zulu="2012-06-02T18:11:29Z" batter="458675" pitcher="467094" des="Colby Rasmus pops out to third baseman Will Middlebrooks.  " event="Pop Out" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="4">
+      <top>
+         <atbat num="29" b="1" s="1" o="0" start_tfs="141449" start_tfs_zulu="2012-06-02T18:14:49Z" batter="425903" pitcher="475138" des="Kevin Youkilis doubles (4) on a line drive to right fielder Jose Bautista.  Kevin Youkilis advances to 3rd, on throwing error by right fielder Jose Bautista.  " event="Double" event2="Error" b1="" b2="" b3="425903"/>
+         <atbat num="30" b="4" s="1" o="0" start_tfs="141643" start_tfs_zulu="2012-06-02T18:16:43Z" batter="435220" pitcher="475138" des="Ryan Sweeney walks.  " event="Walk" b1="435220" b2="" b3=""/>
+         <atbat num="31" b="1" s="0" o="2" start_tfs="141802" start_tfs_zulu="2012-06-02T18:18:02Z" batter="519025" pitcher="475138" des="Will Middlebrooks grounds into double play, shortstop Yunel Escobar to second baseman Kelly Johnson to first baseman Edwin Encarnacion.    Kevin Youkilis scores.    Ryan Sweeney out at 2nd.  " event="Grounded Into DP" score="T" home_team_runs="1" away_team_runs="5" b1="" b2="" b3=""/>
+         <atbat num="32" b="0" s="1" o="3" start_tfs="141905" start_tfs_zulu="2012-06-02T18:19:05Z" batter="346857" pitcher="475138" des="Nick Punto grounds out, second baseman Kelly Johnson to first baseman Edwin Encarnacion.  " event="Groundout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="33" b="2" s="2" o="1" start_tfs="142137" start_tfs_zulu="2012-06-02T18:21:37Z" batter="543434" pitcher="467094" des="Brett Lawrie grounds out, shortstop Mike Aviles to first baseman Kevin Youkilis.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="34" b="0" s="3" o="2" start_tfs="142351" start_tfs_zulu="2012-06-02T18:23:51Z" batter="434658" pitcher="467094" des="Rajai Davis strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="35" b="1" s="2" o="2" start_tfs="142505" start_tfs_zulu="2012-06-02T18:25:05Z" batter="476036" pitcher="467094" des="David Cooper reaches on fielding error by pitcher Felix Doubront.  " event="Field Error" event2="Error" b1="476036" b2="" b3=""/>
+         <atbat num="36" b="0" s="0" o="2" start_tfs="142702" start_tfs_zulu="2012-06-02T18:27:02Z" batter="425772" pitcher="467094" des="Jeff Mathis singles on a bunt ground ball to third baseman Will Middlebrooks.    David Cooper to 2nd.  " event="Single" b1="425772" b2="476036" b3=""/>
+         <atbat num="37" b="2" s="2" o="2" start_tfs="142800" start_tfs_zulu="2012-06-02T18:28:00Z" batter="430637" pitcher="467094" des="Kelly Johnson singles on a soft fly ball to left fielder Daniel Nava.    David Cooper scores.    Jeff Mathis to 2nd.  " event="Single" score="T" home_team_runs="2" away_team_runs="5" b1="430637" b2="425772" b3="" rbi="1"/>
+         <atbat num="38" b="0" s="0" o="3" start_tfs="143027" start_tfs_zulu="2012-06-02T18:30:27Z" batter="488862" pitcher="467094" des="Yunel Escobar grounds into a force out, shortstop Mike Aviles to second baseman Nick Punto.    Kelly Johnson out at 2nd.  " event="Forceout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="5">
+      <top>
+         <atbat num="39" b="1" s="1" o="1" start_tfs="143234" start_tfs_zulu="2012-06-02T18:32:34Z" batter="537953" pitcher="475138" des="Daniel Nava flies out to center fielder Colby Rasmus.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="40" b="0" s="1" o="2" start_tfs="143432" start_tfs_zulu="2012-06-02T18:34:32Z" batter="449107" pitcher="475138" des="Mike Aviles lines out to center fielder Colby Rasmus.  " event="Lineout" b1="" b2="" b3=""/>
+         <atbat num="41" b="0" s="0" o="3" start_tfs="143519" start_tfs_zulu="2012-06-02T18:35:19Z" batter="408236" pitcher="475138" des="Adrian Gonzalez flies out to left fielder Rajai Davis.  " event="Flyout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="42" b="3" s="1" o="0" start_tfs="143557" start_tfs_zulu="2012-06-02T18:35:57Z" batter="430832" pitcher="467094" des="Jose Bautista homers (13) on a line drive to center field.  " event="Home Run" score="T" home_team_runs="3" away_team_runs="5" b1="" b2="" b3="" rbi="1"/>
+         <atbat num="43" b="1" s="3" o="1" start_tfs="143937" start_tfs_zulu="2012-06-02T18:39:37Z" batter="429665" pitcher="467094" des="Edwin Encarnacion strikes out on foul tip.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="44" b="0" s="2" o="2" start_tfs="144147" start_tfs_zulu="2012-06-02T18:41:47Z" batter="458675" pitcher="467094" des="Colby Rasmus flies out to center fielder Ryan Sweeney.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="45" b="0" s="0" o="3" start_tfs="144334" start_tfs_zulu="2012-06-02T18:43:34Z" batter="543434" pitcher="467094" des="Brett Lawrie grounds out, shortstop Mike Aviles to first baseman Kevin Youkilis.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="6">
+      <top>
+         <atbat num="46" b="0" s="0" o="1" start_tfs="144411" start_tfs_zulu="2012-06-02T18:44:11Z" batter="120074" pitcher="475138" des="David Ortiz flies out to center fielder Colby Rasmus.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="47" b="1" s="0" o="2" start_tfs="144637" start_tfs_zulu="2012-06-02T18:46:37Z" batter="457454" pitcher="475138" des="Jarrod Saltalamacchia grounds out, second baseman Kelly Johnson to first baseman Edwin Encarnacion.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="48" b="3" s="1" o="3" start_tfs="144719" start_tfs_zulu="2012-06-02T18:47:19Z" batter="425903" pitcher="475138" des="Kevin Youkilis lines out to shortstop Yunel Escobar.  " event="Lineout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="49" b="0" s="0" o="1" start_tfs="145032" start_tfs_zulu="2012-06-02T18:50:32Z" batter="434658" pitcher="467094" des="Rajai Davis flies out to left fielder Daniel Nava.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="50" b="1" s="0" o="2" start_tfs="145106" start_tfs_zulu="2012-06-02T18:51:06Z" batter="476036" pitcher="467094" des="David Cooper flies out to left fielder Daniel Nava.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="51" b="2" s="3" o="3" start_tfs="145205" start_tfs_zulu="2012-06-02T18:52:05Z" batter="425772" pitcher="467094" des="Jeff Mathis strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="7">
+      <top>
+         <atbat num="52" b="4" s="2" o="0" start_tfs="145545" start_tfs_zulu="2012-06-02T18:55:45Z" batter="435220" pitcher="475138" des="Ryan Sweeney walks.  " event="Walk" b1="435220" b2="" b3=""/>
+         <atbat num="53" b="1" s="1" o="2" start_tfs="145804" start_tfs_zulu="2012-06-02T18:58:04Z" batter="519025" pitcher="475138" des="Will Middlebrooks grounds into double play, second baseman Kelly Johnson to first baseman Edwin Encarnacion.    Ryan Sweeney out at 2nd.  " event="Grounded Into DP" b1="" b2="" b3=""/>
+         <atbat num="54" b="2" s="1" o="2" start_tfs="145901" start_tfs_zulu="2012-06-02T18:59:01Z" batter="346857" pitcher="475138" des="Nick Punto singles on a line drive to right fielder Jose Bautista.  " event="Single" b1="346857" b2="" b3=""/>
+         <action b="2" s="0" o="2" des="With Daniel Nava batting, throwing error by Kyle Drabek on the pickoff attempt, Nick Punto to 2nd.  " event="Pickoff Error 1B" tfs="150245" tfs_zulu="2012-06-02T19:02:45Z" player="346857" pitch="2"/>
+         <atbat num="55" b="4" s="1" o="2" start_tfs="150033" start_tfs_zulu="2012-06-02T19:00:33Z" batter="537953" pitcher="475138" des="Daniel Nava walks.  " event="Walk" b1="537953" b2="346857" b3=""/>
+         <action b="0" s="0" o="2" des="Pitcher Change: Jason Frasor replaces Kyle Drabek.  " event="Pitching Substitution" tfs="150427" tfs_zulu="2012-06-02T19:04:27Z" player="430630" pitch="5"/>
+         <action b="0" s="0" o="2" des="Coaching visit to mound.  " event="Game Advisory" tfs="150409" tfs_zulu="2012-06-02T19:04:09Z" player="449107" pitch="5"/>
+         <atbat num="56" b="2" s="3" o="3" start_tfs="150557" start_tfs_zulu="2012-06-02T19:05:57Z" batter="449107" pitcher="430630" des="Mike Aviles strikes out on foul tip.  " event="Strikeout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Defensive switch from right field to first base for Adrian Gonzalez.  " event="Defensive Switch" tfs="151158" tfs_zulu="2012-06-02T19:11:58Z" player="408236" pitch="7"/>
+         <action b="0" s="0" o="0" des="Defensive switch from first base to third base for Kevin Youkilis.  " event="Defensive Switch" tfs="151158" tfs_zulu="2012-06-02T19:11:58Z" player="425903" pitch="7"/>
+         <action b="0" s="0" o="0" des="Defensive switch from center field to right field for Ryan Sweeney.  " event="Defensive Switch" tfs="151158" tfs_zulu="2012-06-02T19:11:58Z" player="435220" pitch="7"/>
+         <action b="0" s="0" o="0" des="Defensive Substitution:  Marlon Byrd replaces third baseman Will Middlebrooks, batting 8th, playing center field.  " event="Defensive Sub" tfs="151158" tfs_zulu="2012-06-02T19:11:58Z" player="407781" pitch="7"/>
+         <atbat num="57" b="1" s="3" o="1" start_tfs="151206" start_tfs_zulu="2012-06-02T19:12:06Z" batter="430637" pitcher="467094" des="Kelly Johnson strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <action b="0" s="0" o="1" des="Pitcher Change: Matt Albers replaces Felix Doubront.  " event="Pitching Substitution" tfs="151413" tfs_zulu="2012-06-02T19:14:13Z" player="458006" pitch="4"/>
+         <action b="0" s="0" o="1" des="Coaching visit to mound.  " event="Game Advisory" tfs="151320" tfs_zulu="2012-06-02T19:13:20Z" player="488862" pitch="4"/>
+         <atbat num="58" b="1" s="2" o="2" start_tfs="151550" start_tfs_zulu="2012-06-02T19:15:50Z" batter="488862" pitcher="458006" des="Yunel Escobar grounds out, first baseman Adrian Gonzalez to pitcher Matt Albers.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="59" b="0" s="2" o="3" start_tfs="151759" start_tfs_zulu="2012-06-02T19:17:59Z" batter="430832" pitcher="458006" des="Jose Bautista flies out to left fielder Daniel Nava.  " event="Flyout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="8">
+      <top>
+         <action b="0" s="0" o="0" des="Pitcher Change: Darren Oliver replaces Jason Frasor.  " event="Pitching Substitution" tfs="151959" tfs_zulu="2012-06-02T19:19:59Z" player="119984" pitch="3"/>
+         <atbat num="60" b="2" s="2" o="1" start_tfs="152203" start_tfs_zulu="2012-06-02T19:22:03Z" batter="408236" pitcher="119984" des="Adrian Gonzalez flies out to center fielder Colby Rasmus.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="61" b="2" s="0" o="1" start_tfs="152402" start_tfs_zulu="2012-06-02T19:24:02Z" batter="120074" pitcher="119984" des="David Ortiz singles on a ground ball to right fielder Jose Bautista.  " event="Single" b1="120074" b2="" b3=""/>
+         <atbat num="62" b="4" s="1" o="1" start_tfs="152518" start_tfs_zulu="2012-06-02T19:25:18Z" batter="457454" pitcher="119984" des="Jarrod Saltalamacchia walks.    David Ortiz to 2nd.  " event="Walk" b1="457454" b2="120074" b3=""/>
+         <action b="0" s="0" o="1" des="Pitcher Change: Francisco Cordero replaces Darren Oliver.  " event="Pitching Substitution" tfs="152723" tfs_zulu="2012-06-02T19:27:23Z" player="150188" pitch="5"/>
+         <action b="0" s="0" o="1" des="Coaching visit to mound.  " event="Game Advisory" tfs="152705" tfs_zulu="2012-06-02T19:27:05Z" player="425903" pitch="5"/>
+         <atbat num="63" b="4" s="2" o="1" start_tfs="152925" start_tfs_zulu="2012-06-02T19:29:25Z" batter="425903" pitcher="150188" des="Kevin Youkilis walks.    David Ortiz to 3rd.    Jarrod Saltalamacchia to 2nd.  " event="Walk" b1="425903" b2="457454" b3="120074"/>
+         <atbat num="64" b="1" s="2" o="2" start_tfs="153125" start_tfs_zulu="2012-06-02T19:31:25Z" batter="435220" pitcher="150188" des="Ryan Sweeney grounds out to first baseman Edwin Encarnacion.    David Ortiz scores.    Jarrod Saltalamacchia to 3rd.    Kevin Youkilis to 2nd.  " event="Groundout" score="T" home_team_runs="3" away_team_runs="6" b1="" b2="425903" b3="457454" rbi="1"/>
+         <atbat num="65" b="1" s="2" o="3" start_tfs="153321" start_tfs_zulu="2012-06-02T19:33:21Z" batter="407781" pitcher="150188" des="Marlon Byrd lines out to left fielder Rajai Davis.  " event="Lineout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="66" b="3" s="2" o="0" start_tfs="153712" start_tfs_zulu="2012-06-02T19:37:12Z" batter="429665" pitcher="458006" des="Edwin Encarnacion singles on a ground ball to left fielder Daniel Nava.  " event="Single" b1="429665" b2="" b3=""/>
+         <action b="0" s="0" o="0" des="Pitcher Change: Andrew Miller replaces Matt Albers.  " event="Pitching Substitution" tfs="154117" tfs_zulu="2012-06-02T19:41:17Z" player="0" pitch="8"/>
+         <action b="0" s="0" o="0" des="Coaching visit to mound.  " event="Game Advisory" tfs="154036" tfs_zulu="2012-06-02T19:40:36Z" player="458675" pitch="8"/>
+         <atbat num="67" b="0" s="0" o="1" start_tfs="154255" start_tfs_zulu="2012-06-02T19:42:55Z" batter="458675" pitcher="453192" des="Colby Rasmus flies out to center fielder Marlon Byrd.  " event="Flyout" b1="" b2="" b3=""/>
+         <action b="0" s="0" o="1" des="Pitcher Change: Vicente Padilla replaces Andrew Miller.  " event="Pitching Substitution" tfs="154509" tfs_zulu="2012-06-02T19:45:09Z" player="218894" pitch="1"/>
+         <action b="0" s="0" o="1" des="Coaching visit to mound.  " event="Game Advisory" tfs="154407" tfs_zulu="2012-06-02T19:44:07Z" player="543434" pitch="1"/>
+         <atbat num="68" b="1" s="1" o="1" start_tfs="154609" start_tfs_zulu="2012-06-02T19:46:09Z" batter="543434" pitcher="218894" des="Brett Lawrie singles on a ground ball to right fielder Ryan Sweeney.    Edwin Encarnacion scores.    Brett Lawrie to 2nd.  Throwing error by right fielder Ryan Sweeney.  " event="Single" event2="Error" score="T" home_team_runs="4" away_team_runs="6" b1="" b2="543434" b3=""/>
+         <atbat num="69" b="0" s="1" o="2" start_tfs="154833" start_tfs_zulu="2012-06-02T19:48:33Z" batter="434658" pitcher="218894" des="Rajai Davis flies out to center fielder Marlon Byrd.  " event="Flyout" b1="" b2="" b3=""/>
+         <action b="1" s="2" o="3" des="With David Cooper batting, Brett Lawrie caught stealing 3rd base, catcher Jarrod Saltalamacchia to third baseman Kevin Youkilis.  " event="Caught Stealing 3B" tfs="155104" tfs_zulu="2012-06-02T19:51:04Z" player="543434" pitch="3"/>
+         <atbat num="70" b="1" s="2" o="3" start_tfs="154930" start_tfs_zulu="2012-06-02T19:49:30Z" batter="476036" pitcher="218894" des="With David Cooper batting, Brett Lawrie caught stealing 3rd base, catcher Jarrod Saltalamacchia to third baseman Kevin Youkilis.  " event="Runner Out" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="9">
+      <top>
+         <action b="0" s="0" o="0" des="Pitcher Change: Carlos Villanueva replaces Francisco Cordero.  " event="Pitching Substitution" tfs="155137" tfs_zulu="2012-06-02T19:51:37Z" player="453646" pitch="3"/>
+         <atbat num="71" b="2" s="0" o="0" start_tfs="155331" start_tfs_zulu="2012-06-02T19:53:31Z" batter="346857" pitcher="453646" des="Nick Punto homers (1) on a fly ball to right field.  " event="Home Run" score="T" home_team_runs="4" away_team_runs="7" b1="" b2="" b3="" rbi="1"/>
+         <atbat num="72" b="1" s="2" o="0" start_tfs="155455" start_tfs_zulu="2012-06-02T19:54:55Z" batter="537953" pitcher="453646" des="Daniel Nava hit by pitch.  " event="Hit By Pitch" b1="537953" b2="" b3=""/>
+         <atbat num="73" b="1" s="2" o="1" start_tfs="155622" start_tfs_zulu="2012-06-02T19:56:22Z" batter="449107" pitcher="453646" des="Mike Aviles flies out to center fielder Colby Rasmus.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="74" b="3" s="3" o="2" start_tfs="155940" start_tfs_zulu="2012-06-02T19:59:40Z" batter="408236" pitcher="453646" des="Adrian Gonzalez strikes out swinging.  Daniel Nava steals (2) 2nd base.  " event="Strikeout" event2="Stolen Base 2B" b1="" b2="537953" b3=""/>
+         <atbat num="75" b="4" s="0" o="2" start_tfs="160405" start_tfs_zulu="2012-06-02T20:04:05Z" batter="120074" pitcher="453646" des="Carlos Villanueva intentionally walks David Ortiz.  " event="Intent Walk" b1="120074" b2="" b3=""/>
+         <atbat num="76" b="0" s="1" o="3" start_tfs="160502" start_tfs_zulu="2012-06-02T20:05:02Z" batter="457454" pitcher="453646" des="Jarrod Saltalamacchia flies out to left fielder Rajai Davis.  " event="Flyout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Pitcher Change: Alfredo Aceves replaces Vicente Padilla.  " event="Pitching Substitution" tfs="160722" tfs_zulu="2012-06-02T20:07:22Z" player="469686" pitch="2"/>
+         <atbat num="77" b="2" s="2" o="1" start_tfs="160902" start_tfs_zulu="2012-06-02T20:09:02Z" batter="476036" pitcher="469686" des="David Cooper grounds out, second baseman Nick Punto to first baseman Adrian Gonzalez.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="78" b="1" s="3" o="2" start_tfs="161202" start_tfs_zulu="2012-06-02T20:12:02Z" batter="425772" pitcher="469686" des="Jeff Mathis strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="79" b="1" s="0" o="3" start_tfs="161434" start_tfs_zulu="2012-06-02T20:14:34Z" batter="430637" pitcher="469686" des="Kelly Johnson grounds out, second baseman Nick Punto to first baseman Adrian Gonzalez.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <atBat pid="430637"/>
+   <deck pid="488862"/>
+   <hole pid="430832"/>
+</game>

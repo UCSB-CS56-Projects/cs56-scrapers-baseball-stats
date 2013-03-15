@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright 2012 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt-->
+<game>
+   <inning num="1">
+      <top>
+         <atbat num="1" b="0" s="1" o="1" start_tfs="191650" start_tfs_zulu="2012-06-02T23:16:50Z" batter="116539" pitcher="519144" des="Derek Jeter grounds out, shortstop Jhonny Peralta to first baseman Prince Fielder.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="2" b="2" s="2" o="2" start_tfs="191727" start_tfs_zulu="2012-06-02T23:17:27Z" batter="434158" pitcher="519144" des="Curtis Granderson grounds out, second baseman Danny Worth to first baseman Prince Fielder.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="3" b="0" s="2" o="2" start_tfs="191902" start_tfs_zulu="2012-06-02T23:19:02Z" batter="121347" pitcher="519144" des="Alex Rodriguez singles on a ground ball to center fielder Quintin Berry.  " event="Single" b1="121347" b2="" b3=""/>
+         <atbat num="4" b="1" s="1" o="2" start_tfs="192032" start_tfs_zulu="2012-06-02T23:20:32Z" batter="429664" pitcher="519144" des="Robinson Cano singles on a sharp line drive to right fielder Brennan Boesch.    Alex Rodriguez to 3rd.  " event="Single" b1="429664" b2="" b3="121347"/>
+         <atbat num="5" b="3" s="2" o="3" start_tfs="192219" start_tfs_zulu="2012-06-02T23:22:19Z" batter="407893" pitcher="519144" des="Mark Teixeira grounds out, shortstop Jhonny Peralta to first baseman Prince Fielder.  " event="Groundout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="6" b="4" s="2" o="0" start_tfs="192700" start_tfs_zulu="2012-06-02T23:27:00Z" batter="450641" pitcher="493133" des="Quintin Berry walks.  " event="Walk" b1="450641" b2="" b3=""/>
+         <action b="1" s="0" o="0" des="With Danny Worth batting, Quintin Berry steals (6) 2nd base.  " event="Stolen Base 2B" tfs="192916" tfs_zulu="2012-06-02T23:29:16Z" player="450641" pitch="1"/>
+         <atbat num="7" b="1" s="0" o="1" start_tfs="192849" start_tfs_zulu="2012-06-02T23:28:49Z" batter="519445" pitcher="493133" des="Danny Worth out on a sacrifice bunt, pitcher Hiroki Kuroda to second baseman Robinson Cano.    Quintin Berry to 3rd.  " event="Sac Bunt" b1="" b2="450641" b3="450641"/>
+         <atbat num="8" b="0" s="0" o="2" start_tfs="200837" start_tfs_zulu="2012-06-03T00:08:37Z" batter="408234" pitcher="493133" des="Miguel Cabrera pops out to first baseman Mark Teixeira in foul territory.  " event="Pop Out" b1="" b2="" b3=""/>
+         <atbat num="9" b="1" s="2" o="3" start_tfs="200918" start_tfs_zulu="2012-06-03T00:09:18Z" batter="425902" pitcher="493133" des="Prince Fielder lines out sharply to first baseman Mark Teixeira.  " event="Lineout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="2">
+      <top>
+         <atbat num="10" b="1" s="2" o="1" start_tfs="201359" start_tfs_zulu="2012-06-03T00:13:59Z" batter="116380" pitcher="519144" des="Raul Ibanez grounds out, second baseman Danny Worth to first baseman Prince Fielder.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="11" b="2" s="3" o="2" start_tfs="201548" start_tfs_zulu="2012-06-03T00:15:48Z" batter="430897" pitcher="519144" des="Nick Swisher strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="12" b="0" s="0" o="2" start_tfs="201726" start_tfs_zulu="2012-06-03T00:17:26Z" batter="136767" pitcher="519144" des="Eric Chavez doubles (5) on a line drive to right fielder Brennan Boesch.  " event="Double" b1="" b2="136767" b3=""/>
+         <atbat num="13" b="3" s="2" o="3" start_tfs="201821" start_tfs_zulu="2012-06-03T00:18:21Z" batter="431145" pitcher="519144" des="Russell Martin grounds out, second baseman Danny Worth to first baseman Prince Fielder.  " event="Groundout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="14" b="1" s="1" o="1" start_tfs="202237" start_tfs_zulu="2012-06-03T00:22:37Z" batter="430321" pitcher="493133" des="Delmon Young flies out to left fielder Raul Ibanez.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="15" b="1" s="1" o="2" start_tfs="202332" start_tfs_zulu="2012-06-03T00:23:32Z" batter="453269" pitcher="493133" des="Brennan Boesch flies out to left fielder Raul Ibanez.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="16" b="0" s="0" o="3" start_tfs="202441" start_tfs_zulu="2012-06-03T00:24:41Z" batter="425509" pitcher="493133" des="Jhonny Peralta grounds out, second baseman Robinson Cano to first baseman Mark Teixeira.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="3">
+      <top>
+         <atbat num="17" b="1" s="1" o="1" start_tfs="202741" start_tfs_zulu="2012-06-03T00:27:41Z" batter="116539" pitcher="519144" des="Derek Jeter grounds out softly, shortstop Jhonny Peralta to first baseman Prince Fielder.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="18" b="2" s="1" o="1" start_tfs="202851" start_tfs_zulu="2012-06-03T00:28:51Z" batter="434158" pitcher="519144" des="Curtis Granderson singles on a bunt ground ball to pitcher Rick Porcello.  " event="Single" b1="434158" b2="" b3=""/>
+         <atbat num="19" b="0" s="3" o="2" start_tfs="203037" start_tfs_zulu="2012-06-03T00:30:37Z" batter="121347" pitcher="519144" des="Alex Rodriguez strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <action b="3" s="2" o="2" des="With Robinson Cano batting, Curtis Granderson steals (3) 2nd base.  " event="Stolen Base 2B" tfs="203614" tfs_zulu="2012-06-03T00:36:14Z" player="434158" pitch="5"/>
+         <atbat num="20" b="3" s="2" o="3" start_tfs="203340" start_tfs_zulu="2012-06-03T00:33:40Z" batter="429664" pitcher="519144" des="Robinson Cano grounds out, first baseman Prince Fielder to pitcher Rick Porcello.  " event="Groundout" b1="" b2="434158" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="21" b="2" s="0" o="1" start_tfs="204001" start_tfs_zulu="2012-06-03T00:40:01Z" batter="430603" pitcher="493133" des="Don Kelly grounds out, second baseman Robinson Cano to first baseman Mark Teixeira.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="22" b="1" s="0" o="1" start_tfs="204105" start_tfs_zulu="2012-06-03T00:41:05Z" batter="435408" pitcher="493133" des="Omir Santos singles on a ground ball to center fielder Curtis Granderson.  " event="Single" b1="435408" b2="" b3=""/>
+         <action b="2" s="2" o="1" des="With Quintin Berry batting, wild pitch by Hiroki Kuroda, Omir Santos to 2nd.  " event="Wild Pitch" tfs="204414" tfs_zulu="2012-06-03T00:44:14Z" player="435408" pitch="4"/>
+         <atbat num="23" b="2" s="3" o="2" start_tfs="204201" start_tfs_zulu="2012-06-03T00:42:01Z" batter="450641" pitcher="493133" des="Quintin Berry strikes out swinging.  " event="Strikeout" b1="" b2="435408" b3=""/>
+         <atbat num="24" b="3" s="2" o="3" start_tfs="204541" start_tfs_zulu="2012-06-03T00:45:41Z" batter="519445" pitcher="493133" des="Danny Worth pops out to second baseman Robinson Cano.  " event="Pop Out" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="4">
+      <top>
+         <atbat num="25" b="2" s="0" o="1" start_tfs="205057" start_tfs_zulu="2012-06-03T00:50:57Z" batter="407893" pitcher="519144" des="Mark Teixeira flies out to left fielder Don Kelly.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="26" b="0" s="2" o="2" start_tfs="205216" start_tfs_zulu="2012-06-03T00:52:16Z" batter="116380" pitcher="519144" des="Raul Ibanez grounds out, first baseman Prince Fielder to pitcher Rick Porcello.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="27" b="2" s="1" o="3" start_tfs="205325" start_tfs_zulu="2012-06-03T00:53:25Z" batter="430897" pitcher="519144" des="Nick Swisher flies out to center fielder Quintin Berry.  " event="Flyout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="28" b="1" s="0" o="0" start_tfs="205712" start_tfs_zulu="2012-06-03T00:57:12Z" batter="408234" pitcher="493133" des="Miguel Cabrera homers (10) on a fly ball to center field.  " event="Home Run" score="T" home_team_runs="1" away_team_runs="0" b1="" b2="" b3="" rbi="1"/>
+         <atbat num="29" b="3" s="1" o="0" start_tfs="205822" start_tfs_zulu="2012-06-03T00:58:22Z" batter="425902" pitcher="493133" des="Prince Fielder doubles (12) on a line drive to left fielder Raul Ibanez.  " event="Double" b1="" b2="425902" b3=""/>
+         <atbat num="30" b="0" s="0" o="1" start_tfs="210016" start_tfs_zulu="2012-06-03T01:00:16Z" batter="430321" pitcher="493133" des="Delmon Young grounds out, shortstop Derek Jeter to first baseman Mark Teixeira.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="31" b="0" s="1" o="2" start_tfs="210055" start_tfs_zulu="2012-06-03T01:00:55Z" batter="453269" pitcher="493133" des="Brennan Boesch grounds out softly, pitcher Hiroki Kuroda to first baseman Mark Teixeira.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="32" b="1" s="3" o="3" start_tfs="210158" start_tfs_zulu="2012-06-03T01:01:58Z" batter="425509" pitcher="493133" des="Jhonny Peralta strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="5">
+      <top>
+         <atbat num="33" b="0" s="2" o="0" start_tfs="210624" start_tfs_zulu="2012-06-03T01:06:24Z" batter="136767" pitcher="519144" des="Eric Chavez singles on a sharp ground ball to center fielder Quintin Berry.  " event="Single" b1="136767" b2="" b3=""/>
+         <atbat num="34" b="1" s="0" o="1" start_tfs="210733" start_tfs_zulu="2012-06-03T01:07:33Z" batter="431145" pitcher="519144" des="Russell Martin grounds into a force out, shortstop Jhonny Peralta to second baseman Danny Worth.    Eric Chavez out at 2nd.    Russell Martin to 1st.  " event="Forceout" b1="431145" b2="" b3=""/>
+         <atbat num="35" b="2" s="2" o="2" start_tfs="210836" start_tfs_zulu="2012-06-03T01:08:36Z" batter="116539" pitcher="519144" des="Derek Jeter grounds into a force out, second baseman Danny Worth to shortstop Jhonny Peralta.    Russell Martin out at 2nd.    Derek Jeter to 1st.  " event="Forceout" b1="116539" b2="" b3=""/>
+         <atbat num="36" b="1" s="1" o="3" start_tfs="211129" start_tfs_zulu="2012-06-03T01:11:29Z" batter="434158" pitcher="519144" des="Curtis Granderson flies out to left fielder Don Kelly.  " event="Flyout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="37" b="2" s="2" o="0" start_tfs="211451" start_tfs_zulu="2012-06-03T01:14:51Z" batter="430603" pitcher="493133" des="Don Kelly singles on a soft line drive to left fielder Raul Ibanez.  " event="Single" b1="430603" b2="" b3=""/>
+         <atbat num="38" b="1" s="1" o="1" start_tfs="211630" start_tfs_zulu="2012-06-03T01:16:30Z" batter="435408" pitcher="493133" des="Omir Santos out on a sacrifice bunt, pitcher Hiroki Kuroda to second baseman Robinson Cano.    Don Kelly to 2nd.  " event="Sac Bunt" b1="" b2="430603" b3=""/>
+         <atbat num="39" b="1" s="0" o="1" start_tfs="211916" start_tfs_zulu="2012-06-03T01:19:16Z" batter="450641" pitcher="493133" des="Quintin Berry singles on a sharp ground ball to right fielder Nick Swisher.    Don Kelly scores.  " event="Single" score="T" home_team_runs="2" away_team_runs="0" b1="450641" b2="" b3="" rbi="1"/>
+         <action b="1" s="2" o="2" des="With Danny Worth batting, Hiroki Kuroda picks off Quintin Berry at 1st on throw to Mark Teixeira.  " event="Pickoff 1B" tfs="212346" tfs_zulu="2012-06-03T01:23:46Z" player="450641" pitch="3"/>
+         <atbat num="40" b="2" s="3" o="3" start_tfs="212033" start_tfs_zulu="2012-06-03T01:20:33Z" batter="519445" pitcher="493133" des="Danny Worth strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="6">
+      <top>
+         <atbat num="41" b="0" s="2" o="1" start_tfs="212707" start_tfs_zulu="2012-06-03T01:27:07Z" batter="121347" pitcher="519144" des="Alex Rodriguez flies out to center fielder Quintin Berry.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="42" b="4" s="2" o="1" start_tfs="212858" start_tfs_zulu="2012-06-03T01:28:58Z" batter="429664" pitcher="519144" des="Robinson Cano walks.  " event="Walk" b1="429664" b2="" b3=""/>
+         <atbat num="43" b="0" s="0" o="1" start_tfs="213201" start_tfs_zulu="2012-06-03T01:32:01Z" batter="407893" pitcher="519144" des="Mark Teixeira singles on a ground ball to center fielder Quintin Berry.    Robinson Cano to 3rd.    Mark Teixeira to 2nd on the throw.  " event="Single" b1="" b2="407893" b3="429664"/>
+         <action b="0" s="0" o="1" des="Coaching visit to mound.  " event="Game Advisory" tfs="213245" tfs_zulu="2012-06-03T01:32:45Z" player="116380" pitch="1"/>
+         <atbat num="44" b="0" s="0" o="2" start_tfs="213335" start_tfs_zulu="2012-06-03T01:33:35Z" batter="116380" pitcher="519144" des="Raul Ibanez grounds out, shortstop Jhonny Peralta to first baseman Prince Fielder.    Robinson Cano scores.  " event="Groundout" score="T" home_team_runs="2" away_team_runs="1" b1="" b2="" b3="" rbi="1"/>
+         <atbat num="45" b="2" s="3" o="3" start_tfs="213415" start_tfs_zulu="2012-06-03T01:34:15Z" batter="430897" pitcher="519144" des="Nick Swisher strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="46" b="1" s="2" o="0" start_tfs="213820" start_tfs_zulu="2012-06-03T01:38:20Z" batter="408234" pitcher="493133" des="Miguel Cabrera doubles (15) on a line drive to center fielder Curtis Granderson.  " event="Double" b1="" b2="408234" b3=""/>
+         <action b="1" s="1" o="1" des="Miguel Cabrera out at 3rd, catcher Russell Martin to third baseman Alex Rodriguez.  " event="Runner Out" tfs="214208" tfs_zulu="2012-06-03T01:42:08Z" player="408234" pitch="2"/>
+         <atbat num="47" b="2" s="3" o="2" start_tfs="214011" start_tfs_zulu="2012-06-03T01:40:11Z" batter="425902" pitcher="493133" des="Prince Fielder strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="48" b="0" s="1" o="2" start_tfs="214341" start_tfs_zulu="2012-06-03T01:43:41Z" batter="430321" pitcher="493133" des="Delmon Young singles on a ground ball to third baseman Alex Rodriguez.  " event="Single" b1="430321" b2="" b3=""/>
+         <atbat num="49" b="1" s="0" o="3" start_tfs="214428" start_tfs_zulu="2012-06-03T01:44:28Z" batter="453269" pitcher="493133" des="Brennan Boesch lines out to right fielder Nick Swisher.  " event="Lineout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="7">
+      <top>
+         <action b="0" s="0" o="0" des="Pitcher Change: Phil Coke replaces Rick Porcello.  " event="Pitching Substitution" tfs="214651" tfs_zulu="2012-06-03T01:46:51Z" player="457435" pitch="2"/>
+         <action b="0" s="0" o="0" des="Offensive Substitution: Pinch hitter Andruw Jones replaces Eric Chavez.  " event="Offensive sub" tfs="214838" tfs_zulu="2012-06-03T01:48:38Z" player="116662" pitch="2"/>
+         <atbat num="50" b="0" s="1" o="0" start_tfs="214852" start_tfs_zulu="2012-06-03T01:48:52Z" batter="116662" pitcher="457435" des="Andruw Jones singles on a line drive to left fielder Don Kelly.  " event="Single" b1="116662" b2="" b3=""/>
+         <atbat num="51" b="0" s="1" o="0" start_tfs="214936" start_tfs_zulu="2012-06-03T01:49:36Z" batter="431145" pitcher="457435" des="Russell Martin singles on a soft line drive to left fielder Don Kelly.    Andruw Jones to 2nd.  " event="Single" b1="431145" b2="116662" b3=""/>
+         <action b="0" s="0" o="0" des="Pitcher Change: Joaquin Benoit replaces Phil Coke.  " event="Pitching Substitution" tfs="215203" tfs_zulu="2012-06-03T01:52:03Z" player="0" pitch="2"/>
+         <action b="0" s="0" o="0" des="Coaching visit to mound.  " event="Game Advisory" tfs="215030" tfs_zulu="2012-06-03T01:50:30Z" player="116539" pitch="2"/>
+         <atbat num="52" b="2" s="0" o="1" start_tfs="215337" start_tfs_zulu="2012-06-03T01:53:37Z" batter="116539" pitcher="276542" des="Derek Jeter out on a sacrifice bunt, pitcher Joaquin Benoit to second baseman Danny Worth.    Andruw Jones to 3rd.    Russell Martin to 2nd.  " event="Sac Bunt" b1="" b2="431145" b3="116662"/>
+         <action b="2" s="0" o="1" des="Coaching visit to mound.  " event="Game Advisory" tfs="215613" tfs_zulu="2012-06-03T01:56:13Z" player="434158" pitch="3"/>
+         <action b="0" s="0" o="1" des="On-field Delay.  " event="Game Advisory" tfs="215805" tfs_zulu="2012-06-03T01:58:05Z" player="434158" pitch="0"/>
+         <action b="0" s="2" o="1" des="New York Yankees Batting Coach Kevin Long ejected by HP umpire Bob Davidson.  " event="Ejection" tfs="220004" tfs_zulu="2012-06-03T02:00:04Z" player="438989" pitch="2"/>
+         <action b="0" s="2" o="1" des="New York Yankees Manager Joe Girardi ejected by HP umpire Bob Davidson.  " event="Ejection" tfs="220029" tfs_zulu="2012-06-03T02:00:29Z" player="114833" pitch="2"/>
+         <atbat num="53" b="0" s="3" o="2" start_tfs="215643" start_tfs_zulu="2012-06-03T01:56:43Z" batter="434158" pitcher="276542" des="Curtis Granderson strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="54" b="3" s="2" o="3" start_tfs="220042" start_tfs_zulu="2012-06-03T02:00:42Z" batter="121347" pitcher="276542" des="Alex Rodriguez pops out to second baseman Danny Worth.  " event="Pop Out" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Andruw Jones remains in the game as the designated hitter.  " event="Defensive Switch" tfs="221052" tfs_zulu="2012-06-03T02:10:52Z" player="116662" pitch="7"/>
+         <atbat num="55" b="0" s="0" o="1" start_tfs="221025" start_tfs_zulu="2012-06-03T02:10:25Z" batter="425509" pitcher="493133" des="Jhonny Peralta lines out to third baseman Alex Rodriguez.  " event="Lineout" b1="" b2="" b3=""/>
+         <atbat num="56" b="2" s="2" o="2" start_tfs="221124" start_tfs_zulu="2012-06-03T02:11:24Z" batter="430603" pitcher="493133" des="Don Kelly pops out to third baseman Alex Rodriguez in foul territory.  " event="Pop Out" b1="" b2="" b3=""/>
+         <atbat num="57" b="0" s="0" o="3" start_tfs="221314" start_tfs_zulu="2012-06-03T02:13:14Z" batter="435408" pitcher="493133" des="Omir Santos grounds out, third baseman Alex Rodriguez to first baseman Mark Teixeira.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="8">
+      <top>
+         <action b="0" s="0" o="0" des="Pitcher Change: Octavio Dotel replaces Joaquin Benoit.  " event="Pitching Substitution" tfs="221520" tfs_zulu="2012-06-03T02:15:20Z" player="136734" pitch="1"/>
+         <atbat num="58" b="3" s="2" o="1" start_tfs="221752" start_tfs_zulu="2012-06-03T02:17:52Z" batter="429664" pitcher="136734" des="Robinson Cano grounds out, shortstop Jhonny Peralta to first baseman Prince Fielder.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="59" b="4" s="2" o="1" start_tfs="222046" start_tfs_zulu="2012-06-03T02:20:46Z" batter="407893" pitcher="136734" des="Mark Teixeira walks.  " event="Walk" b1="407893" b2="" b3=""/>
+         <atbat num="60" b="2" s="2" o="2" start_tfs="222408" start_tfs_zulu="2012-06-03T02:24:08Z" batter="116380" pitcher="136734" des="Raul Ibanez grounds out, pitcher Octavio Dotel to first baseman Prince Fielder.    Mark Teixeira to 2nd.  " event="Groundout" b1="" b2="407893" b3=""/>
+         <action b="2" s="2" o="2" des="Coaching visit to mound.  " event="Game Advisory" tfs="222648" tfs_zulu="2012-06-03T02:26:48Z" player="430897" pitch="5"/>
+         <atbat num="61" b="1" s="2" o="2" start_tfs="222743" start_tfs_zulu="2012-06-03T02:27:43Z" batter="430897" pitcher="136734" des="Nick Swisher singles on a line drive to right fielder Brennan Boesch.    Mark Teixeira scores.  " event="Single" score="T" home_team_runs="2" away_team_runs="2" b1="430897" b2="" b3="" rbi="1"/>
+         <action b="2" s="2" o="2" des="With Andruw Jones batting, Nick Swisher steals (1) 2nd base,  .  Nick Swisher advances to 3rd, on throwing error by catcher Omir Santos.  " event="Stolen Base 2B" event2="Error" tfs="223250" tfs_zulu="2012-06-03T02:32:50Z" player="430897" pitch="4"/>
+         <atbat num="62" b="2" s="3" o="3" start_tfs="223114" start_tfs_zulu="2012-06-03T02:31:14Z" batter="116662" pitcher="136734" des="Andruw Jones strikes out swinging.  " event="Strikeout" b1="" b2="" b3="430897"/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Pitcher Change: Cory Wade replaces Hiroki Kuroda.  " event="Pitching Substitution" tfs="223419" tfs_zulu="2012-06-03T02:34:19Z" player="460677" pitch="5"/>
+         <atbat num="63" b="1" s="1" o="1" start_tfs="223551" start_tfs_zulu="2012-06-03T02:35:51Z" batter="450641" pitcher="460677" des="Quintin Berry grounds out, second baseman Robinson Cano to first baseman Mark Teixeira.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="64" b="0" s="1" o="2" start_tfs="223718" start_tfs_zulu="2012-06-03T02:37:18Z" batter="519445" pitcher="460677" des="Danny Worth pops out to second baseman Robinson Cano.  " event="Pop Out" b1="" b2="" b3=""/>
+         <atbat num="65" b="2" s="1" o="2" start_tfs="223804" start_tfs_zulu="2012-06-03T02:38:04Z" batter="408234" pitcher="460677" des="Miguel Cabrera homers (11) on a fly ball to center field.  " event="Home Run" score="T" home_team_runs="3" away_team_runs="2" b1="" b2="" b3="" rbi="1"/>
+         <atbat num="66" b="1" s="2" o="3" start_tfs="223958" start_tfs_zulu="2012-06-03T02:39:58Z" batter="425902" pitcher="460677" des="Prince Fielder grounds out to first baseman Mark Teixeira.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="9">
+      <top>
+         <action b="0" s="0" o="0" des="Pitcher Change: Jose Valverde replaces Octavio Dotel.  " event="Pitching Substitution" tfs="224213" tfs_zulu="2012-06-03T02:42:13Z" player="407878" pitch="4"/>
+         <atbat num="67" b="0" s="0" o="0" start_tfs="224402" start_tfs_zulu="2012-06-03T02:44:02Z" batter="431145" pitcher="407878" des="Russell Martin hit by pitch.  " event="Hit By Pitch" b1="431145" b2="" b3=""/>
+         <action b="0" s="0" o="0" des="Offensive Substitution: Pinch runner Dewayne Wise replaces Russell Martin.  " event="Offensive sub" tfs="224503" tfs_zulu="2012-06-03T02:45:03Z" player="276547" pitch="1"/>
+         <action b="2" s="0" o="0" des="With Derek Jeter batting, Dewayne Wise steals (2) 2nd base.  " event="Stolen Base 2B" tfs="224647" tfs_zulu="2012-06-03T02:46:47Z" player="276547" pitch="2"/>
+         <action b="2" s="0" o="0" des="Coaching visit to mound.  " event="Game Advisory" tfs="224713" tfs_zulu="2012-06-03T02:47:13Z" player="116539" pitch="2"/>
+         <atbat num="68" b="4" s="1" o="0" start_tfs="224528" start_tfs_zulu="2012-06-03T02:45:28Z" batter="116539" pitcher="407878" des="Derek Jeter walks.  " event="Walk" b1="116539" b2="276547" b3=""/>
+         <atbat num="69" b="1" s="0" o="1" start_tfs="225016" start_tfs_zulu="2012-06-03T02:50:16Z" batter="434158" pitcher="407878" des="Curtis Granderson flies out to center fielder Quintin Berry.  " event="Flyout" b1="" b2="" b3=""/>
+         <action b="0" s="1" o="1" des="With Alex Rodriguez batting, Dewayne Wise steals (3) 3rd base.  Derek Jeter steals (5) 2nd base.  " event="Stolen Base 2B" tfs="225255" tfs_zulu="2012-06-03T02:52:55Z" player="116539" pitch="1"/>
+         <atbat num="70" b="2" s="2" o="1" start_tfs="225201" start_tfs_zulu="2012-06-03T02:52:01Z" batter="121347" pitcher="407878" des="Alex Rodriguez hit by pitch.  " event="Hit By Pitch" b1="121347" b2="116539" b3="276547"/>
+         <action b="2" s="2" o="1" des="Injury Delay.  " event="Game Advisory" tfs="225522" tfs_zulu="2012-06-03T02:55:22Z" player="429664" pitch="5"/>
+         <atbat num="71" b="1" s="0" o="2" start_tfs="225636" start_tfs_zulu="2012-06-03T02:56:36Z" batter="429664" pitcher="407878" des="Robinson Cano pops out to shortstop Jhonny Peralta on the infield fly rule.  " event="Pop Out" b1="" b2="" b3=""/>
+         <atbat num="72" b="4" s="2" o="2" start_tfs="225836" start_tfs_zulu="2012-06-03T02:58:36Z" batter="407893" pitcher="407878" des="Mark Teixeira walks.    Dewayne Wise scores.    Derek Jeter to 3rd.    Alex Rodriguez to 2nd.  " event="Walk" score="T" home_team_runs="3" away_team_runs="3" b1="407893" b2="121347" b3="116539" rbi="1"/>
+         <action b="2" s="2" o="2" des="Dropped foul pop error by catcher Omir Santos.  " event="N/A" event2="Error" tfs="230619" tfs_zulu="2012-06-03T03:06:19Z" player="435408" pitch="4"/>
+         <atbat num="73" b="2" s="2" o="3" start_tfs="230327" start_tfs_zulu="2012-06-03T03:03:27Z" batter="116380" pitcher="407878" des="Raul Ibanez grounds out to first baseman Prince Fielder.  " event="Groundout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Defensive Substitution:  Chris Stewart replaces left fielder Raul Ibanez, batting 6th, playing catcher.  " event="Defensive Sub" tfs="230951" tfs_zulu="2012-06-03T03:09:51Z" player="455755" pitch="7"/>
+         <action b="0" s="0" o="0" des="Dewayne Wise remains in the game as the left fielder.  " event="Defensive Switch" tfs="230951" tfs_zulu="2012-06-03T03:09:51Z" player="276547" pitch="7"/>
+         <action b="0" s="0" o="0" des="Pitcher Change: David Phelps replaces Cory Wade.  " event="Pitching Substitution" tfs="230951" tfs_zulu="2012-06-03T03:09:51Z" player="475479" pitch="7"/>
+         <atbat num="74" b="1" s="0" o="1" start_tfs="231034" start_tfs_zulu="2012-06-03T03:10:34Z" batter="430321" pitcher="475479" des="Delmon Young flies out to right fielder Nick Swisher.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="75" b="0" s="2" o="1" start_tfs="231131" start_tfs_zulu="2012-06-03T03:11:31Z" batter="453269" pitcher="475479" des="Brennan Boesch singles on a ground ball to right fielder Nick Swisher.  " event="Single" b1="453269" b2="" b3=""/>
+         <atbat num="76" b="2" s="1" o="1" start_tfs="231246" start_tfs_zulu="2012-06-03T03:12:46Z" batter="425509" pitcher="475479" des="Jhonny Peralta singles on a line drive to right fielder Nick Swisher.    Brennan Boesch to 3rd.  " event="Single" b1="425509" b2="" b3="453269"/>
+         <action b="0" s="0" o="1" des="Pitcher Change: Boone Logan replaces David Phelps.  " event="Pitching Substitution" tfs="231641" tfs_zulu="2012-06-03T03:16:41Z" player="457429" pitch="4"/>
+         <action b="0" s="0" o="1" des="Offensive Substitution: Pinch hitter Ramon Santiago replaces Don Kelly.  " event="Offensive sub" tfs="231936" tfs_zulu="2012-06-03T03:19:36Z" player="421124" pitch="4"/>
+         <action b="0" s="0" o="1" des="Coaching visit to mound.  " event="Game Advisory" tfs="231603" tfs_zulu="2012-06-03T03:16:03Z" player="421124" pitch="4"/>
+         <atbat num="77" b="4" s="0" o="1" start_tfs="231945" start_tfs_zulu="2012-06-03T03:19:45Z" batter="421124" pitcher="457429" des="Boone Logan intentionally walks Ramon Santiago.    Jhonny Peralta to 2nd.  " event="Intent Walk" b1="421124" b2="425509" b3=""/>
+         <atbat num="78" b="0" s="1" o="2" start_tfs="232137" start_tfs_zulu="2012-06-03T03:21:37Z" batter="435408" pitcher="457429" des="Omir Santos out on a sacrifice fly to right fielder Nick Swisher.    Brennan Boesch scores.  " event="Sac Fly" score="T" home_team_runs="4" away_team_runs="3" b1="" b2="" b3="" rbi="1"/>
+      </bottom>
+   </inning>
+   <atBat pid="435408"/>
+   <deck pid="450641"/>
+   <hole pid="519445"/>
+</game>

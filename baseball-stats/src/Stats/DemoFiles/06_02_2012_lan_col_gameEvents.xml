@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright 2012 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt-->
+<game>
+   <inning num="1">
+      <top>
+         <atbat num="1" b="1" s="2" o="0" start_tfs="161203" start_tfs_zulu="2012-06-02T20:12:03Z" batter="448242" pitcher="504379" des="Tony Gwynn reaches on fielding error by second baseman DJ LeMahieu.  " event="Field Error" b1="448242" b2="" b3=""/>
+         <atbat num="2" b="2" s="1" o="1" start_tfs="161339" start_tfs_zulu="2012-06-02T20:13:39Z" batter="467070" pitcher="504379" des="Elian Herrera grounds out, second baseman DJ LeMahieu to first baseman Michael Cuddyer.    Tony Gwynn to 2nd.  " event="Groundout" b1="" b2="448242" b3=""/>
+         <atbat num="3" b="4" s="1" o="1" start_tfs="161700" start_tfs_zulu="2012-06-02T20:17:00Z" batter="110029" pitcher="504379" des="Bobby Abreu walks.  " event="Walk" b1="110029" b2="" b3=""/>
+         <atbat num="4" b="0" s="0" o="1" start_tfs="162117" start_tfs_zulu="2012-06-02T20:21:17Z" batter="444843" pitcher="504379" des="Andre Ethier singles on a ground ball to right fielder Tyler Colvin.    Tony Gwynn scores.    Bobby Abreu to 2nd.  " event="Single" score="T" home_team_runs="0" away_team_runs="1" b1="444843" b2="110029" b3="" rbi="1"/>
+         <atbat num="5" b="1" s="2" o="2" start_tfs="162233" start_tfs_zulu="2012-06-02T20:22:33Z" batter="150456" pitcher="504379" des="Adam Kennedy grounds out to first baseman Michael Cuddyer.    Bobby Abreu to 3rd.    Andre Ethier to 2nd.  " event="Groundout" b1="" b2="444843" b3="110029"/>
+         <atbat num="6" b="2" s="3" o="3" start_tfs="162438" start_tfs_zulu="2012-06-02T20:24:38Z" batter="425766" pitcher="504379" des="James Loney strikes out swinging, catcher Wil Nieves to first baseman Michael Cuddyer.  " event="Strikeout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="7" b="1" s="1" o="0" start_tfs="162721" start_tfs_zulu="2012-06-02T20:27:21Z" batter="451594" pitcher="421685" des="Dexter Fowler triples (5) on a fly ball to right fielder Andre Ethier.  " event="Triple" b1="" b2="" b3="451594"/>
+         <atbat num="8" b="1" s="2" o="1" start_tfs="163033" start_tfs_zulu="2012-06-02T20:30:33Z" batter="340192" pitcher="421685" des="Marco Scutaro lines out to first baseman James Loney.  " event="Lineout" b1="" b2="" b3=""/>
+         <action b="0" s="0" o="1" des="Injury Delay.  " event="Game Advisory" tfs="163346" tfs_zulu="2012-06-02T20:33:46Z" player="471865" pitch="0"/>
+         <atbat num="9" b="1" s="1" o="2" start_tfs="163239" start_tfs_zulu="2012-06-02T20:32:39Z" batter="471865" pitcher="421685" des="Carlos Gonzalez pops out to third baseman Elian Herrera.  " event="Pop Out" b1="" b2="" b3=""/>
+         <atbat num="10" b="3" s="1" o="2" start_tfs="163745" start_tfs_zulu="2012-06-02T20:37:45Z" batter="150212" pitcher="421685" des="Michael Cuddyer doubles (18) on a fly ball to left fielder Bobby Abreu.    Dexter Fowler scores.  " event="Double" score="T" home_team_runs="1" away_team_runs="1" b1="" b2="150212" b3="" rbi="1"/>
+         <atbat num="11" b="0" s="3" o="3" start_tfs="163959" start_tfs_zulu="2012-06-02T20:39:59Z" batter="502125" pitcher="421685" des="Tyler Colvin strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="2">
+      <top>
+         <atbat num="12" b="3" s="2" o="0" start_tfs="164345" start_tfs_zulu="2012-06-02T20:43:45Z" batter="454560" pitcher="504379" des="A.  J.   Ellis singles on a soft line drive to center fielder Dexter Fowler.  " event="Single" b1="454560" b2="" b3=""/>
+         <atbat num="13" b="1" s="2" o="0" start_tfs="164546" start_tfs_zulu="2012-06-02T20:45:46Z" batter="543829" pitcher="504379" des="Dee Gordon singles on a soft line drive to left fielder Carlos Gonzalez.    A.  J.   Ellis to 2nd.  " event="Single" b1="543829" b2="454560" b3=""/>
+         <atbat num="14" b="0" s="0" o="1" start_tfs="164723" start_tfs_zulu="2012-06-02T20:47:23Z" batter="421685" pitcher="504379" des="Aaron Harang out on a sacrifice bunt, third baseman Chris Nelson to second baseman DJ LeMahieu.    A.   Ellis to 3rd.    Dee Gordon to 2nd.  " event="Sac Bunt" b1="" b2="543829" b3="454560"/>
+         <atbat num="15" b="3" s="1" o="2" start_tfs="164839" start_tfs_zulu="2012-06-02T20:48:39Z" batter="448242" pitcher="504379" des="Tony Gwynn reaches on a fielder's choice out, first baseman Michael Cuddyer to catcher Wil Nieves.    A.  J.   Ellis out at home.    Dee Gordon to 3rd.  " event="Fielders Choice Out" b1="448242" b2="" b3="543829"/>
+         <action b="3" s="1" o="2" des="With Elian Herrera batting, Tony Gwynn steals (8) 2nd base.  " event="Stolen Base 2B" tfs="165750" tfs_zulu="2012-06-02T20:57:50Z" player="448242" pitch="4"/>
+         <atbat num="16" b="3" s="2" o="2" start_tfs="165154" start_tfs_zulu="2012-06-02T20:51:54Z" batter="467070" pitcher="504379" des="Elian Herrera singles on a ground ball to center fielder Dexter Fowler.    Dee Gordon scores.    Tony Gwynn scores.  " event="Single" score="T" home_team_runs="1" away_team_runs="3" b1="467070" b2="448242" b3="" rbi="2"/>
+         <action b="0" s="0" o="2" des="Pitcher Change: Josh Roenicke replaces Juan Nicasio, batting 9th.  " event="Pitching Substitution" tfs="170040" tfs_zulu="2012-06-02T21:00:40Z" player="502158" pitch="6"/>
+         <action b="0" s="0" o="2" des="Injury Delay.  " event="Game Advisory" tfs="165911" tfs_zulu="2012-06-02T20:59:11Z" player="110029" pitch="0"/>
+         <atbat num="17" b="0" s="1" o="3" start_tfs="165854" start_tfs_zulu="2012-06-02T20:58:54Z" batter="110029" pitcher="502158" des="Bobby Abreu grounds out, second baseman DJ LeMahieu to first baseman Michael Cuddyer.  " event="Groundout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="18" b="4" s="1" o="0" start_tfs="170548" start_tfs_zulu="2012-06-02T21:05:48Z" batter="455126" pitcher="421685" des="Chris Nelson walks.  " event="Walk" b1="455126" b2="" b3=""/>
+         <atbat num="19" b="1" s="3" o="1" start_tfs="170708" start_tfs_zulu="2012-06-02T21:07:08Z" batter="408242" pitcher="421685" des="Wil Nieves strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="20" b="1" s="3" o="2" start_tfs="170923" start_tfs_zulu="2012-06-02T21:09:23Z" batter="518934" pitcher="421685" des="DJ LeMahieu strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="21" b="1" s="1" o="3" start_tfs="171248" start_tfs_zulu="2012-06-02T21:12:48Z" batter="502158" pitcher="421685" des="Josh Roenicke grounds out, pitcher Aaron Harang to first baseman James Loney.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="3">
+      <top>
+         <atbat num="22" b="0" s="3" o="1" start_tfs="171636" start_tfs_zulu="2012-06-02T21:16:36Z" batter="444843" pitcher="502158" des="Andre Ethier strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="23" b="0" s="0" o="2" start_tfs="171828" start_tfs_zulu="2012-06-02T21:18:28Z" batter="150456" pitcher="502158" des="Adam Kennedy flies out to left fielder Carlos Gonzalez.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="24" b="0" s="1" o="2" start_tfs="171927" start_tfs_zulu="2012-06-02T21:19:27Z" batter="425766" pitcher="502158" des="James Loney singles on a line drive to right fielder Tyler Colvin, deflected by pitcher Josh Roenicke.  " event="Single" b1="425766" b2="" b3=""/>
+         <atbat num="25" b="0" s="2" o="3" start_tfs="172038" start_tfs_zulu="2012-06-02T21:20:38Z" batter="454560" pitcher="502158" des="A.  J.   Ellis grounds into a force out, third baseman Chris Nelson to second baseman DJ LeMahieu.    James Loney out at 2nd.  " event="Forceout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="26" b="0" s="0" o="1" start_tfs="172443" start_tfs_zulu="2012-06-02T21:24:43Z" batter="451594" pitcher="421685" des="Dexter Fowler bunt grounds out, catcher A.  J.   Ellis to first baseman James Loney.  " event="Bunt Groundout" b1="" b2="" b3=""/>
+         <atbat num="27" b="1" s="3" o="2" start_tfs="172534" start_tfs_zulu="2012-06-02T21:25:34Z" batter="340192" pitcher="421685" des="Marco Scutaro called out on strikes.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="28" b="2" s="2" o="2" start_tfs="172713" start_tfs_zulu="2012-06-02T21:27:13Z" batter="471865" pitcher="421685" des="Carlos Gonzalez singles on a ground ball to center fielder Tony Gwynn.  " event="Single" b1="471865" b2="" b3=""/>
+         <atbat num="29" b="2" s="1" o="3" start_tfs="173031" start_tfs_zulu="2012-06-02T21:30:31Z" batter="150212" pitcher="421685" des="Michael Cuddyer flies out to right fielder Andre Ethier.  " event="Flyout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="4">
+      <top>
+         <atbat num="30" b="0" s="0" o="1" start_tfs="173440" start_tfs_zulu="2012-06-02T21:34:40Z" batter="543829" pitcher="502158" des="Dee Gordon grounds out, second baseman DJ LeMahieu to first baseman Michael Cuddyer.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="31" b="1" s="3" o="2" start_tfs="173536" start_tfs_zulu="2012-06-02T21:35:36Z" batter="421685" pitcher="502158" des="Aaron Harang strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="32" b="4" s="0" o="2" start_tfs="173720" start_tfs_zulu="2012-06-02T21:37:20Z" batter="448242" pitcher="502158" des="Tony Gwynn walks.  " event="Walk" b1="448242" b2="" b3=""/>
+         <atbat num="33" b="1" s="1" o="2" start_tfs="173911" start_tfs_zulu="2012-06-02T21:39:11Z" batter="467070" pitcher="502158" des="Elian Herrera doubles (4) on a soft line drive to left fielder Carlos Gonzalez.    Tony Gwynn to 3rd.  " event="Double" b1="" b2="467070" b3="448242"/>
+         <action b="1" s="1" o="2" des="Coaching visit to mound.  " event="Game Advisory" tfs="174122" tfs_zulu="2012-06-02T21:41:22Z" player="110029" pitch="3"/>
+         <atbat num="34" b="4" s="2" o="2" start_tfs="174158" start_tfs_zulu="2012-06-02T21:41:58Z" batter="110029" pitcher="502158" des="Bobby Abreu walks.  " event="Walk" b1="110029" b2="" b3=""/>
+         <atbat num="35" b="4" s="2" o="2" start_tfs="174505" start_tfs_zulu="2012-06-02T21:45:05Z" batter="444843" pitcher="502158" des="Andre Ethier walks.    Tony Gwynn scores.    Elian Herrera to 3rd.    Bobby Abreu to 2nd.  " event="Walk" score="T" home_team_runs="1" away_team_runs="4" b1="444843" b2="110029" b3="467070" rbi="1"/>
+         <atbat num="36" b="0" s="1" o="3" start_tfs="174817" start_tfs_zulu="2012-06-02T21:48:17Z" batter="150456" pitcher="502158" des="Adam Kennedy flies out to right fielder Tyler Colvin.  " event="Flyout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="37" b="2" s="3" o="1" start_tfs="175112" start_tfs_zulu="2012-06-02T21:51:12Z" batter="502125" pitcher="421685" des="Tyler Colvin strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="38" b="1" s="2" o="2" start_tfs="175308" start_tfs_zulu="2012-06-02T21:53:08Z" batter="455126" pitcher="421685" des="Chris Nelson lines out softly to second baseman Adam Kennedy.  " event="Lineout" b1="" b2="" b3=""/>
+         <atbat num="39" b="0" s="1" o="3" start_tfs="175426" start_tfs_zulu="2012-06-02T21:54:26Z" batter="408242" pitcher="421685" des="Wil Nieves grounds out, third baseman Elian Herrera to first baseman James Loney.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="5">
+      <top>
+         <action b="0" s="0" o="0" des="Pitcher Change: Matt Reynolds replaces Josh Roenicke, batting 9th.  " event="Pitching Substitution" tfs="175650" tfs_zulu="2012-06-02T21:56:50Z" player="519186" pitch="2"/>
+         <atbat num="40" b="2" s="2" o="0" start_tfs="175754" start_tfs_zulu="2012-06-02T21:57:54Z" batter="425766" pitcher="519186" des="James Loney doubles (12) on a line drive to right fielder Tyler Colvin.  " event="Double" b1="" b2="425766" b3=""/>
+         <atbat num="41" b="2" s="3" o="1" start_tfs="180028" start_tfs_zulu="2012-06-02T22:00:28Z" batter="454560" pitcher="519186" des="A.  J.   Ellis strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="42" b="1" s="3" o="2" start_tfs="180300" start_tfs_zulu="2012-06-02T22:03:00Z" batter="543829" pitcher="519186" des="Dee Gordon strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="43" b="0" s="0" o="3" start_tfs="180447" start_tfs_zulu="2012-06-02T22:04:47Z" batter="421685" pitcher="519186" des="Aaron Harang grounds out, shortstop Marco Scutaro to first baseman Michael Cuddyer.  " event="Groundout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="44" b="0" s="0" o="0" start_tfs="180808" start_tfs_zulu="2012-06-02T22:08:08Z" batter="518934" pitcher="421685" des="DJ LeMahieu singles on a line drive to right fielder Andre Ethier.  " event="Single" b1="518934" b2="" b3=""/>
+         <atbat num="45" b="0" s="0" o="1" start_tfs="180836" start_tfs_zulu="2012-06-02T22:08:36Z" batter="519186" pitcher="421685" des="Matt Reynolds out on a sacrifice bunt, catcher A.  J.   Ellis to second baseman Adam Kennedy.    DJ LeMahieu to 2nd.  " event="Sac Bunt" b1="" b2="518934" b3=""/>
+         <atbat num="46" b="4" s="2" o="1" start_tfs="181004" start_tfs_zulu="2012-06-02T22:10:04Z" batter="451594" pitcher="421685" des="Dexter Fowler walks.  " event="Walk" b1="451594" b2="" b3=""/>
+         <atbat num="47" b="4" s="1" o="1" start_tfs="181324" start_tfs_zulu="2012-06-02T22:13:24Z" batter="340192" pitcher="421685" des="Marco Scutaro walks.    DJ LeMahieu to 3rd.    Dexter Fowler to 2nd.  " event="Walk" b1="340192" b2="451594" b3="518934"/>
+         <action b="4" s="1" o="1" des="Coaching visit to mound.  " event="Game Advisory" tfs="181652" tfs_zulu="2012-06-02T22:16:52Z" player="471865" pitch="5"/>
+         <atbat num="48" b="0" s="1" o="2" start_tfs="181745" start_tfs_zulu="2012-06-02T22:17:45Z" batter="471865" pitcher="421685" des="Carlos Gonzalez pops out to third baseman Elian Herrera in foul territory.  " event="Pop Out" b1="" b2="" b3=""/>
+         <atbat num="49" b="1" s="2" o="3" start_tfs="181946" start_tfs_zulu="2012-06-02T22:19:46Z" batter="150212" pitcher="421685" des="Michael Cuddyer grounds into a force out, fielded by second baseman Adam Kennedy.    Marco Scutaro out at 2nd.  " event="Forceout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="6">
+      <top>
+         <atbat num="50" b="1" s="2" o="1" start_tfs="182401" start_tfs_zulu="2012-06-02T22:24:01Z" batter="448242" pitcher="519186" des="Tony Gwynn grounds out, first baseman Michael Cuddyer to pitcher Matt Reynolds.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="51" b="0" s="0" o="2" start_tfs="182618" start_tfs_zulu="2012-06-02T22:26:18Z" batter="467070" pitcher="519186" des="Elian Herrera grounds out, third baseman Chris Nelson to first baseman Michael Cuddyer.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="52" b="3" s="1" o="2" start_tfs="182654" start_tfs_zulu="2012-06-02T22:26:54Z" batter="110029" pitcher="519186" des="Bobby Abreu homers (1) on a line drive to right field.  " event="Home Run" score="T" home_team_runs="1" away_team_runs="5" b1="" b2="" b3="" rbi="1"/>
+         <atbat num="53" b="2" s="2" o="2" start_tfs="182917" start_tfs_zulu="2012-06-02T22:29:17Z" batter="444843" pitcher="519186" des="Andre Ethier doubles (18) on a line drive to right fielder Tyler Colvin.  " event="Double" b1="" b2="444843" b3=""/>
+         <atbat num="54" b="0" s="2" o="2" start_tfs="183128" start_tfs_zulu="2012-06-02T22:31:28Z" batter="150456" pitcher="519186" des="Adam Kennedy singles on a soft line drive to right fielder Tyler Colvin.    Andre Ethier scores.    Adam Kennedy to 2nd on the throw.  " event="Single" score="T" home_team_runs="1" away_team_runs="6" b1="" b2="150456" b3="" rbi="1"/>
+         <atbat num="55" b="0" s="0" o="3" start_tfs="183456" start_tfs_zulu="2012-06-02T22:34:56Z" batter="425766" pitcher="519186" des="James Loney lines out to left fielder Carlos Gonzalez.  " event="Lineout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="56" b="1" s="0" o="1" start_tfs="183718" start_tfs_zulu="2012-06-02T22:37:18Z" batter="502125" pitcher="421685" des="Tyler Colvin flies out to center fielder Tony Gwynn.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="57" b="0" s="0" o="2" start_tfs="183808" start_tfs_zulu="2012-06-02T22:38:08Z" batter="455126" pitcher="421685" des="Chris Nelson flies out to center fielder Tony Gwynn.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="58" b="2" s="3" o="3" start_tfs="183850" start_tfs_zulu="2012-06-02T22:38:50Z" batter="408242" pitcher="421685" des="Wil Nieves strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="7">
+      <top>
+         <action b="0" s="0" o="0" des="Pitcher Change: Rex Brothers replaces Matt Reynolds, batting 7th, replacing catcher Wil Nieves.  " event="Pitching Substitution" tfs="184224" tfs_zulu="2012-06-02T22:42:24Z" player="571521" pitch="5"/>
+         <action b="0" s="0" o="0" des="Defensive Substitution:  Wilin Rosario replaces pitcher Matt Reynolds, batting 9th, playing catcher.  " event="Defensive Sub" tfs="184224" tfs_zulu="2012-06-02T22:42:24Z" player="501647" pitch="5"/>
+         <atbat num="59" b="4" s="1" o="0" start_tfs="184333" start_tfs_zulu="2012-06-02T22:43:33Z" batter="454560" pitcher="571521" des="A.  J.   Ellis walks.  " event="Walk" b1="454560" b2="" b3=""/>
+         <atbat num="60" b="0" s="2" o="1" start_tfs="184514" start_tfs_zulu="2012-06-02T22:45:14Z" batter="543829" pitcher="571521" des="Dee Gordon grounds into a force out, shortstop Marco Scutaro to second baseman DJ LeMahieu.    A.   Ellis out at 2nd.    Dee Gordon to 1st.  " event="Forceout" b1="543829" b2="" b3=""/>
+         <action b="0" s="0" o="1" des="Offensive Substitution: Pinch hitter Alex Castellanos replaces Aaron Harang.  " event="Offensive sub" tfs="184716" tfs_zulu="2012-06-02T22:47:16Z" player="543008" pitch="3"/>
+         <atbat num="61" b="1" s="3" o="2" start_tfs="184722" start_tfs_zulu="2012-06-02T22:47:22Z" batter="543008" pitcher="571521" des="Alex Castellanos called out on strikes.  " event="Strikeout" b1="" b2="" b3=""/>
+         <action b="0" s="1" o="2" des="With Tony Gwynn batting, Dee Gordon advances to 2nd on a balk.  " event="Balk" tfs="185052" tfs_zulu="2012-06-02T22:50:52Z" player="543829" pitch="1"/>
+         <atbat num="62" b="0" s="2" o="3" start_tfs="184845" start_tfs_zulu="2012-06-02T22:48:45Z" batter="448242" pitcher="571521" des="Tony Gwynn grounds out to first baseman Michael Cuddyer.  " event="Groundout" b1="" b2="543829" b3=""/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Defensive Substitution:  Scott Van Slyke replaces left fielder Bobby Abreu, batting 3rd, playing left field.  " event="Defensive Sub" tfs="185424" tfs_zulu="2012-06-02T22:54:24Z" player="475100" pitch="3"/>
+         <action b="0" s="0" o="0" des="Pitcher Change: Javy Guerra replaces Aaron Harang, batting 9th.  " event="Pitching Substitution" tfs="185424" tfs_zulu="2012-06-02T22:54:24Z" player="457915" pitch="3"/>
+         <atbat num="63" b="1" s="2" o="0" start_tfs="185437" start_tfs_zulu="2012-06-02T22:54:37Z" batter="518934" pitcher="457915" des="DJ LeMahieu singles on a ground ball to center fielder Tony Gwynn.  " event="Single" b1="518934" b2="" b3=""/>
+         <atbat num="64" b="1" s="1" o="0" start_tfs="185628" start_tfs_zulu="2012-06-02T22:56:28Z" batter="501647" pitcher="457915" des="Wilin Rosario doubles (7) on a line drive to center fielder Tony Gwynn.    DJ LeMahieu scores.  " event="Double" score="T" home_team_runs="2" away_team_runs="6" b1="" b2="501647" b3="" rbi="1"/>
+         <atbat num="65" b="4" s="0" o="0" start_tfs="185757" start_tfs_zulu="2012-06-02T22:57:57Z" batter="451594" pitcher="457915" des="Dexter Fowler walks.  " event="Walk" b1="451594" b2="" b3=""/>
+         <action b="4" s="0" o="0" des="Coaching visit to mound.  " event="Game Advisory" tfs="185947" tfs_zulu="2012-06-02T22:59:47Z" player="340192" pitch="4"/>
+         <atbat num="66" b="1" s="2" o="1" start_tfs="190020" start_tfs_zulu="2012-06-02T23:00:20Z" batter="340192" pitcher="457915" des="Marco Scutaro grounds into a force out, third baseman Elian Herrera to second baseman Adam Kennedy.    Wilin Rosario to 3rd.    Dexter Fowler out at 2nd.    Marco Scutaro to 1st.  " event="Forceout" b1="340192" b2="" b3="501647"/>
+         <action b="0" s="0" o="1" des="Pitcher Change: Scott Elbert replaces Javy Guerra, batting 9th.  " event="Pitching Substitution" tfs="190318" tfs_zulu="2012-06-02T23:03:18Z" player="455092" pitch="4"/>
+         <action b="0" s="0" o="1" des="Coaching visit to mound.  " event="Game Advisory" tfs="190230" tfs_zulu="2012-06-02T23:02:30Z" player="471865" pitch="4"/>
+         <atbat num="67" b="0" s="0" o="3" start_tfs="190428" start_tfs_zulu="2012-06-02T23:04:28Z" batter="471865" pitcher="455092" des="Carlos Gonzalez grounds into double play, first baseman James Loney to shortstop Dee Gordon to first baseman James Loney.    Marco Scutaro out at 2nd.  " event="Grounded Into DP" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="8">
+      <top>
+         <atbat num="68" b="2" s="2" o="1" start_tfs="190726" start_tfs_zulu="2012-06-02T23:07:26Z" batter="467070" pitcher="571521" des="Elian Herrera grounds out, shortstop Marco Scutaro to first baseman Michael Cuddyer.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="69" b="2" s="2" o="2" start_tfs="190946" start_tfs_zulu="2012-06-02T23:09:46Z" batter="475100" pitcher="571521" des="Scott Van Slyke lines out to right fielder Tyler Colvin.  " event="Lineout" b1="" b2="" b3=""/>
+         <atbat num="70" b="3" s="3" o="3" start_tfs="191251" start_tfs_zulu="2012-06-02T23:12:51Z" batter="444843" pitcher="571521" des="Andre Ethier strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Pitcher Change: Ronald Belisario replaces Scott Elbert, batting 9th.  " event="Pitching Substitution" tfs="191701" tfs_zulu="2012-06-02T23:17:01Z" player="430613" pitch="7"/>
+         <atbat num="71" b="1" s="2" o="1" start_tfs="191757" start_tfs_zulu="2012-06-02T23:17:57Z" batter="150212" pitcher="430613" des="Michael Cuddyer flies out to center fielder Tony Gwynn.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="72" b="1" s="0" o="2" start_tfs="191931" start_tfs_zulu="2012-06-02T23:19:31Z" batter="502125" pitcher="430613" des="Tyler Colvin flies out to left fielder Scott Van Slyke.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="73" b="1" s="2" o="3" start_tfs="192029" start_tfs_zulu="2012-06-02T23:20:29Z" batter="455126" pitcher="430613" des="Chris Nelson grounds out, second baseman Adam Kennedy to first baseman James Loney.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="9">
+      <top>
+         <action b="0" s="0" o="0" des="Pitcher Change: Esmil Rogers replaces Rex Brothers, batting 7th.  " event="Pitching Substitution" tfs="192351" tfs_zulu="2012-06-02T23:23:51Z" player="469134" pitch="4"/>
+         <atbat num="74" b="1" s="2" o="1" start_tfs="192443" start_tfs_zulu="2012-06-02T23:24:43Z" batter="150456" pitcher="469134" des="Adam Kennedy flies out softly to right fielder Tyler Colvin.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="75" b="3" s="2" o="2" start_tfs="192705" start_tfs_zulu="2012-06-02T23:27:05Z" batter="425766" pitcher="469134" des="James Loney flies out to left fielder Carlos Gonzalez.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="76" b="2" s="3" o="3" start_tfs="192941" start_tfs_zulu="2012-06-02T23:29:41Z" batter="454560" pitcher="469134" des="A.  J.   Ellis called out on strikes.  " event="Strikeout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Pitcher Change: Kenley Jansen replaces Ronald Belisario, batting 9th.  " event="Pitching Substitution" tfs="193235" tfs_zulu="2012-06-02T23:32:35Z" player="445276" pitch="5"/>
+         <action b="0" s="0" o="0" des="Offensive Substitution: Pinch hitter Eric Young replaces Esmil Rogers.  " event="Offensive sub" tfs="193337" tfs_zulu="2012-06-02T23:33:37Z" player="458913" pitch="5"/>
+         <atbat num="77" b="3" s="3" o="1" start_tfs="193413" start_tfs_zulu="2012-06-02T23:34:13Z" batter="458913" pitcher="445276" des="Eric Young called out on strikes.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="78" b="1" s="1" o="2" start_tfs="193643" start_tfs_zulu="2012-06-02T23:36:43Z" batter="518934" pitcher="445276" des="DJ LeMahieu grounds out, third baseman Elian Herrera to first baseman James Loney.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="79" b="2" s="2" o="3" start_tfs="193805" start_tfs_zulu="2012-06-02T23:38:05Z" batter="501647" pitcher="445276" des="Wilin Rosario flies out to right fielder Andre Ethier.  " event="Flyout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <atBat pid="501647"/>
+   <deck pid="451594"/>
+   <hole pid="340192"/>
+</game>

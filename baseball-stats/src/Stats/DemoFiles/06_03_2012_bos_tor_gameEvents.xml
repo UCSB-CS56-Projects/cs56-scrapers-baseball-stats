@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright 2012 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt-->
+<game>
+   <inning num="1">
+      <top>
+         <atbat num="1" b="1" s="0" o="1" start_tfs="130752" start_tfs_zulu="2012-06-03T17:07:52Z" batter="325392" pitcher="571800" des="Scott Podsednik grounds out, shortstop Yunel Escobar to first baseman David Cooper.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="2" b="3" s="2" o="2" start_tfs="130857" start_tfs_zulu="2012-06-03T17:08:57Z" batter="537953" pitcher="571800" des="Daniel Nava flies out to left fielder Rajai Davis.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="3" b="1" s="2" o="2" start_tfs="131123" start_tfs_zulu="2012-06-03T17:11:23Z" batter="408236" pitcher="571800" des="Adrian Gonzalez doubles (20) on a line drive to right fielder Jose Bautista.  " event="Double" b1="" b2="408236" b3=""/>
+         <atbat num="4" b="1" s="1" o="3" start_tfs="131316" start_tfs_zulu="2012-06-03T17:13:16Z" batter="120074" pitcher="571800" des="David Ortiz flies out to center fielder Colby Rasmus.  " event="Flyout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="5" b="4" s="1" o="0" start_tfs="131650" start_tfs_zulu="2012-06-03T17:16:50Z" batter="430637" pitcher="453268" des="Kelly Johnson walks.  " event="Walk" b1="430637" b2="" b3=""/>
+         <action b="3" s="1" o="0" des="With Yunel Escobar batting, Kelly Johnson steals (6) 2nd base.  " event="Stolen Base 2B" tfs="132022" tfs_zulu="2012-06-03T17:20:22Z" player="430637" pitch="4"/>
+         <atbat num="6" b="4" s="1" o="0" start_tfs="131819" start_tfs_zulu="2012-06-03T17:18:19Z" batter="488862" pitcher="453268" des="Yunel Escobar walks.  " event="Walk" b1="488862" b2="430637" b3=""/>
+         <atbat num="7" b="3" s="2" o="0" start_tfs="132117" start_tfs_zulu="2012-06-03T17:21:17Z" batter="430832" pitcher="453268" des="Jose Bautista homers (14) on a fly ball to left field.   Kelly Johnson scores.    Yunel Escobar scores.  " event="Home Run" score="T" home_team_runs="3" away_team_runs="0" b1="" b2="" b3="" rbi="3"/>
+         <atbat num="8" b="4" s="0" o="0" start_tfs="132617" start_tfs_zulu="2012-06-03T17:26:17Z" batter="429665" pitcher="453268" des="Edwin Encarnacion walks.  " event="Walk" b1="429665" b2="" b3=""/>
+         <action b="4" s="0" o="0" des="Coaching visit to mound.  " event="Game Advisory" tfs="132717" tfs_zulu="2012-06-03T17:27:17Z" player="476036" pitch="4"/>
+         <atbat num="9" b="0" s="2" o="2" start_tfs="132819" start_tfs_zulu="2012-06-03T17:28:19Z" batter="476036" pitcher="453268" des="David Cooper grounds into double play, pitcher Daniel Bard to shortstop Mike Aviles to first baseman Adrian Gonzalez.    Edwin Encarnacion out at 2nd.  " event="Grounded Into DP" b1="" b2="" b3=""/>
+         <atbat num="10" b="1" s="1" o="3" start_tfs="132946" start_tfs_zulu="2012-06-03T17:29:46Z" batter="543434" pitcher="453268" des="Brett Lawrie flies out to center fielder Scott Podsednik.  " event="Flyout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="2">
+      <top>
+         <atbat num="11" b="1" s="3" o="1" start_tfs="133256" start_tfs_zulu="2012-06-03T17:32:56Z" batter="425903" pitcher="571800" des="Kevin Youkilis strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="12" b="2" s="1" o="2" start_tfs="133431" start_tfs_zulu="2012-06-03T17:34:31Z" batter="435220" pitcher="571800" des="Ryan Sweeney flies out to left fielder Rajai Davis.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="13" b="2" s="0" o="2" start_tfs="133555" start_tfs_zulu="2012-06-03T17:35:55Z" batter="449107" pitcher="571800" des="Mike Aviles singles on a line drive to center fielder Colby Rasmus.  " event="Single" b1="449107" b2="" b3=""/>
+         <atbat num="14" b="1" s="0" o="3" start_tfs="133715" start_tfs_zulu="2012-06-03T17:37:15Z" batter="346857" pitcher="571800" des="Nick Punto grounds out, second baseman Kelly Johnson to first baseman David Cooper.  " event="Groundout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="15" b="4" s="0" o="0" start_tfs="134005" start_tfs_zulu="2012-06-03T17:40:05Z" batter="458675" pitcher="453268" des="Colby Rasmus walks.  " event="Walk" b1="458675" b2="" b3=""/>
+         <atbat num="16" b="4" s="2" o="0" start_tfs="134159" start_tfs_zulu="2012-06-03T17:41:59Z" batter="450317" pitcher="453268" des="J.  P.   Arencibia walks.    Colby Rasmus to 2nd.  " event="Walk" b1="450317" b2="458675" b3=""/>
+         <atbat num="17" b="0" s="3" o="1" start_tfs="134435" start_tfs_zulu="2012-06-03T17:44:35Z" batter="434658" pitcher="453268" des="Rajai Davis strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="18" b="0" s="3" o="2" start_tfs="134625" start_tfs_zulu="2012-06-03T17:46:25Z" batter="430637" pitcher="453268" des="Kelly Johnson called out on strikes.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="19" b="0" s="1" o="2" start_tfs="134802" start_tfs_zulu="2012-06-03T17:48:02Z" batter="488862" pitcher="453268" des="Yunel Escobar hit by pitch.    Colby Rasmus to 3rd.    J.  P.   Arencibia to 2nd.  " event="Hit By Pitch" b1="488862" b2="450317" b3="458675"/>
+         <action b="0" s="1" o="2" des="Injury Delay.  " event="Game Advisory" tfs="134927" tfs_zulu="2012-06-03T17:49:27Z" player="430832" pitch="2"/>
+         <atbat num="20" b="4" s="2" o="2" start_tfs="135118" start_tfs_zulu="2012-06-03T17:51:18Z" batter="430832" pitcher="453268" des="Jose Bautista walks.    Colby Rasmus scores.    J.  P.   Arencibia to 3rd.    Yunel Escobar to 2nd.  " event="Walk" score="T" home_team_runs="4" away_team_runs="0" b1="430832" b2="488862" b3="450317" rbi="1"/>
+         <action b="4" s="2" o="2" des="Coaching visit to mound.  " event="Game Advisory" tfs="135345" tfs_zulu="2012-06-03T17:53:45Z" player="429665" pitch="6"/>
+         <atbat num="21" b="1" s="1" o="2" start_tfs="135431" start_tfs_zulu="2012-06-03T17:54:31Z" batter="429665" pitcher="453268" des="Edwin Encarnacion hit by pitch.    J.  P.   Arencibia scores.    Yunel Escobar to 3rd.    Jose Bautista to 2nd.  " event="Hit By Pitch" score="T" home_team_runs="5" away_team_runs="0" b1="429665" b2="430832" b3="488862" rbi="1"/>
+         <action b="0" s="0" o="2" des="Pitcher Change: Franklin Morales replaces Daniel Bard.  " event="Pitching Substitution" tfs="135755" tfs_zulu="2012-06-03T17:57:55Z" player="462985" pitch="3"/>
+         <action b="0" s="0" o="2" des="Injury Delay.  " event="Game Advisory" tfs="135734" tfs_zulu="2012-06-03T17:57:34Z" player="476036" pitch="3"/>
+         <action b="0" s="0" o="2" des="Coaching visit to mound.  " event="Game Advisory" tfs="135740" tfs_zulu="2012-06-03T17:57:40Z" player="476036" pitch="3"/>
+         <atbat num="22" b="0" s="2" o="3" start_tfs="140037" start_tfs_zulu="2012-06-03T18:00:37Z" batter="476036" pitcher="462985" des="David Cooper pops out to third baseman Kevin Youkilis in foul territory.  " event="Pop Out" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="3">
+      <top>
+         <atbat num="23" b="2" s="2" o="0" start_tfs="140414" start_tfs_zulu="2012-06-03T18:04:14Z" batter="431159" pitcher="571800" des="Kelly Shoppach hit by pitch.  " event="Hit By Pitch" b1="431159" b2="" b3=""/>
+         <atbat num="24" b="2" s="0" o="1" start_tfs="140651" start_tfs_zulu="2012-06-03T18:06:51Z" batter="325392" pitcher="571800" des="Scott Podsednik flies out to left fielder Rajai Davis.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="25" b="0" s="1" o="2" start_tfs="140830" start_tfs_zulu="2012-06-03T18:08:30Z" batter="537953" pitcher="571800" des="Daniel Nava grounds into a force out, catcher J.  P.   Arencibia to shortstop Yunel Escobar.    Kelly Shoppach out at 2nd.    Daniel Nava to 1st.  " event="Forceout" b1="537953" b2="" b3=""/>
+         <atbat num="26" b="1" s="2" o="3" start_tfs="141001" start_tfs_zulu="2012-06-03T18:10:01Z" batter="408236" pitcher="571800" des="Adrian Gonzalez grounds out, shortstop Yunel Escobar to first baseman David Cooper.  " event="Groundout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="27" b="0" s="0" o="1" start_tfs="141521" start_tfs_zulu="2012-06-03T18:15:21Z" batter="543434" pitcher="462985" des="Brett Lawrie flies out to left fielder Daniel Nava.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="28" b="1" s="0" o="1" start_tfs="141555" start_tfs_zulu="2012-06-03T18:15:55Z" batter="458675" pitcher="462985" des="Colby Rasmus reaches on throwing error by second baseman Nick Punto.    Colby Rasmus to 2nd.  " event="Field Error" event2="Error" b1="" b2="458675" b3=""/>
+         <atbat num="29" b="1" s="3" o="2" start_tfs="141713" start_tfs_zulu="2012-06-03T18:17:13Z" batter="450317" pitcher="462985" des="J.  P.   Arencibia strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="30" b="1" s="3" o="3" start_tfs="141902" start_tfs_zulu="2012-06-03T18:19:02Z" batter="434658" pitcher="462985" des="Rajai Davis called out on strikes.  " event="Strikeout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="4">
+      <top>
+         <atbat num="31" b="3" s="3" o="1" start_tfs="142240" start_tfs_zulu="2012-06-03T18:22:40Z" batter="120074" pitcher="571800" des="David Ortiz strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="32" b="1" s="3" o="2" start_tfs="142520" start_tfs_zulu="2012-06-03T18:25:20Z" batter="425903" pitcher="571800" des="Kevin Youkilis strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="33" b="3" s="2" o="3" start_tfs="142701" start_tfs_zulu="2012-06-03T18:27:01Z" batter="435220" pitcher="571800" des="Ryan Sweeney flies out to left fielder Rajai Davis.  " event="Flyout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="34" b="1" s="3" o="1" start_tfs="143138" start_tfs_zulu="2012-06-03T18:31:38Z" batter="430637" pitcher="462985" des="Kelly Johnson strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="35" b="0" s="2" o="2" start_tfs="143416" start_tfs_zulu="2012-06-03T18:34:16Z" batter="488862" pitcher="462985" des="Yunel Escobar flies out to right fielder Ryan Sweeney.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="36" b="1" s="1" o="3" start_tfs="143551" start_tfs_zulu="2012-06-03T18:35:51Z" batter="430832" pitcher="462985" des="Jose Bautista grounds out, second baseman Nick Punto to first baseman Adrian Gonzalez.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="5">
+      <top>
+         <atbat num="37" b="2" s="0" o="1" start_tfs="143900" start_tfs_zulu="2012-06-03T18:39:00Z" batter="449107" pitcher="571800" des="Mike Aviles lines out to left fielder Rajai Davis.  " event="Lineout" b1="" b2="" b3=""/>
+         <atbat num="38" b="1" s="1" o="2" start_tfs="144002" start_tfs_zulu="2012-06-03T18:40:02Z" batter="346857" pitcher="571800" des="Nick Punto grounds out to first baseman David Cooper.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="39" b="1" s="1" o="2" start_tfs="144107" start_tfs_zulu="2012-06-03T18:41:07Z" batter="431159" pitcher="571800" des="Kelly Shoppach homers (3) on a fly ball to right center field.  " event="Home Run" score="T" home_team_runs="5" away_team_runs="1" b1="" b2="" b3="" rbi="1"/>
+         <atbat num="40" b="1" s="0" o="2" start_tfs="144244" start_tfs_zulu="2012-06-03T18:42:44Z" batter="325392" pitcher="571800" des="Scott Podsednik singles on a pop up to shortstop Yunel Escobar.  " event="Single" b1="325392" b2="" b3=""/>
+         <action b="2" s="2" o="2" des="With Daniel Nava batting, Scott Podsednik steals (3) 2nd base.  " event="Stolen Base 2B" tfs="144715" tfs_zulu="2012-06-03T18:47:15Z" player="325392" pitch="5"/>
+         <atbat num="41" b="4" s="2" o="2" start_tfs="144347" start_tfs_zulu="2012-06-03T18:43:47Z" batter="537953" pitcher="571800" des="Daniel Nava walks.  " event="Walk" b1="537953" b2="325392" b3=""/>
+         <atbat num="42" b="0" s="2" o="3" start_tfs="144920" start_tfs_zulu="2012-06-03T18:49:20Z" batter="408236" pitcher="571800" des="Adrian Gonzalez pops out to second baseman Kelly Johnson.  " event="Pop Out" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Offensive Substitution: Pinch hitter Jeff Mathis replaces Edwin Encarnacion.  " event="Offensive sub" tfs="145241" tfs_zulu="2012-06-03T18:52:41Z" player="425772" pitch="3"/>
+         <atbat num="43" b="1" s="3" o="1" start_tfs="145305" start_tfs_zulu="2012-06-03T18:53:05Z" batter="425772" pitcher="462985" des="Jeff Mathis strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="44" b="1" s="0" o="2" start_tfs="145422" start_tfs_zulu="2012-06-03T18:54:22Z" batter="476036" pitcher="462985" des="David Cooper doubles (3) on a fly ball to left fielder Daniel Nava.  David Cooper out at 3rd, left fielder Daniel Nava to third baseman Kevin Youkilis.  " event="Double" event2="Runner Out" b1="" b2="" b3=""/>
+         <atbat num="45" b="3" s="2" o="2" start_tfs="145552" start_tfs_zulu="2012-06-03T18:55:52Z" batter="543434" pitcher="462985" des="Brett Lawrie singles on a line drive to right fielder Ryan Sweeney.  " event="Single" b1="543434" b2="" b3=""/>
+         <atbat num="46" b="3" s="1" o="3" start_tfs="145841" start_tfs_zulu="2012-06-03T18:58:41Z" batter="458675" pitcher="462985" des="Colby Rasmus pops out to first baseman Adrian Gonzalez.  " event="Pop Out" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="6">
+      <top>
+         <action b="0" s="0" o="0" des="Jeff Mathis remains in the game as the designated hitter.  " event="Defensive Switch" tfs="150410" tfs_zulu="2012-06-03T19:04:10Z" player="425772" pitch="0"/>
+         <atbat num="47" b="0" s="0" o="1" start_tfs="150353" start_tfs_zulu="2012-06-03T19:03:53Z" batter="120074" pitcher="571800" des="David Ortiz pops out to shortstop Yunel Escobar.  " event="Pop Out" b1="" b2="" b3=""/>
+         <atbat num="48" b="1" s="2" o="1" start_tfs="150428" start_tfs_zulu="2012-06-03T19:04:28Z" batter="425903" pitcher="571800" des="Kevin Youkilis hit by pitch.  " event="Hit By Pitch" b1="425903" b2="" b3=""/>
+         <atbat num="49" b="1" s="3" o="2" start_tfs="150642" start_tfs_zulu="2012-06-03T19:06:42Z" batter="435220" pitcher="571800" des="Ryan Sweeney strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="50" b="0" s="2" o="2" start_tfs="150825" start_tfs_zulu="2012-06-03T19:08:25Z" batter="449107" pitcher="571800" des="Mike Aviles singles on a ground ball to right fielder Jose Bautista.    Kevin Youkilis to 2nd.  " event="Single" b1="449107" b2="425903" b3=""/>
+         <atbat num="51" b="1" s="0" o="3" start_tfs="151005" start_tfs_zulu="2012-06-03T19:10:05Z" batter="346857" pitcher="571800" des="Nick Punto flies out to left fielder Rajai Davis.  " event="Flyout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <atbat num="52" b="1" s="0" o="1" start_tfs="151314" start_tfs_zulu="2012-06-03T19:13:14Z" batter="450317" pitcher="462985" des="J.  P.   Arencibia grounds out, shortstop Mike Aviles to first baseman Adrian Gonzalez.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="53" b="1" s="1" o="2" start_tfs="151414" start_tfs_zulu="2012-06-03T19:14:14Z" batter="434658" pitcher="462985" des="Rajai Davis flies out to left fielder Daniel Nava.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="54" b="1" s="0" o="3" start_tfs="151521" start_tfs_zulu="2012-06-03T19:15:21Z" batter="430637" pitcher="462985" des="Kelly Johnson grounds out, second baseman Nick Punto to first baseman Adrian Gonzalez.  " event="Groundout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="7">
+      <top>
+         <atbat num="55" b="1" s="3" o="1" start_tfs="151815" start_tfs_zulu="2012-06-03T19:18:15Z" batter="431159" pitcher="571800" des="Kelly Shoppach strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+         <atbat num="56" b="1" s="0" o="2" start_tfs="152045" start_tfs_zulu="2012-06-03T19:20:45Z" batter="325392" pitcher="571800" des="Scott Podsednik grounds out, shortstop Yunel Escobar to first baseman David Cooper.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="57" b="0" s="2" o="3" start_tfs="152128" start_tfs_zulu="2012-06-03T19:21:28Z" batter="537953" pitcher="571800" des="Daniel Nava grounds out, pitcher Drew Hutchison to first baseman David Cooper.  " event="Groundout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Pitcher Change: Scott Atchison replaces Franklin Morales.  " event="Pitching Substitution" tfs="152403" tfs_zulu="2012-06-03T19:24:03Z" player="425786" pitch="4"/>
+         <atbat num="58" b="0" s="1" o="0" start_tfs="152507" start_tfs_zulu="2012-06-03T19:25:07Z" batter="488862" pitcher="425786" des="Yunel Escobar singles on a ground ball to right fielder Ryan Sweeney.  " event="Single" b1="488862" b2="" b3=""/>
+         <atbat num="59" b="0" s="0" o="2" start_tfs="152613" start_tfs_zulu="2012-06-03T19:26:13Z" batter="430832" pitcher="425786" des="Jose Bautista grounds into double play, second baseman Nick Punto to shortstop Mike Aviles to first baseman Adrian Gonzalez.    Yunel Escobar out at 2nd.  " event="Grounded Into DP" b1="" b2="" b3=""/>
+         <atbat num="60" b="2" s="3" o="3" start_tfs="152652" start_tfs_zulu="2012-06-03T19:26:52Z" batter="425772" pitcher="425786" des="Jeff Mathis strikes out swinging.  " event="Strikeout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="8">
+      <top>
+         <action b="0" s="0" o="0" des="Pitcher Change: Darren Oliver replaces Drew Hutchison.  " event="Pitching Substitution" tfs="152859" tfs_zulu="2012-06-03T19:28:59Z" player="119984" pitch="5"/>
+         <atbat num="61" b="1" s="2" o="1" start_tfs="153038" start_tfs_zulu="2012-06-03T19:30:38Z" batter="408236" pitcher="119984" des="Adrian Gonzalez grounds out, third baseman Brett Lawrie to first baseman David Cooper.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="62" b="2" s="3" o="2" start_tfs="153220" start_tfs_zulu="2012-06-03T19:32:20Z" batter="120074" pitcher="119984" des="David Ortiz called out on strikes.  " event="Strikeout" b1="" b2="" b3=""/>
+         <action b="2" s="3" o="2" des="Coaching visit to mound.  " event="Game Advisory" tfs="153410" tfs_zulu="2012-06-03T19:34:10Z" player="425903" pitch="5"/>
+         <action b="0" s="0" o="2" des="Pitcher Change: Francisco Cordero replaces Darren Oliver.  " event="Pitching Substitution" tfs="153426" tfs_zulu="2012-06-03T19:34:26Z" player="150188" pitch="5"/>
+         <atbat num="63" b="1" s="0" o="3" start_tfs="153614" start_tfs_zulu="2012-06-03T19:36:14Z" batter="425903" pitcher="150188" des="Kevin Youkilis grounds out softly, pitcher Francisco Cordero to first baseman David Cooper.  " event="Groundout" b1="" b2="" b3=""/>
+      </top>
+      <bottom>
+         <action b="0" s="0" o="0" des="Pitcher Change: Rich Hill replaces Scott Atchison.  " event="Pitching Substitution" tfs="153806" tfs_zulu="2012-06-03T19:38:06Z" player="448179" pitch="2"/>
+         <atbat num="64" b="0" s="1" o="0" start_tfs="153939" start_tfs_zulu="2012-06-03T19:39:39Z" batter="476036" pitcher="448179" des="David Cooper singles on a line drive to center fielder Scott Podsednik.  " event="Single" b1="476036" b2="" b3=""/>
+         <action b="0" s="2" o="1" des="With Brett Lawrie batting, David Cooper picked off and caught stealing 2nd base, pitcher Rich Hill to first baseman Adrian Gonzalez to shortstop Mike Aviles.  " event="Picked off stealing 2B" tfs="154253" tfs_zulu="2012-06-03T19:42:53Z" player="476036" pitch="4"/>
+         <atbat num="65" b="0" s="2" o="1" start_tfs="154029" start_tfs_zulu="2012-06-03T19:40:29Z" batter="543434" pitcher="448179" des="Brett Lawrie singles on a ground ball to left fielder Daniel Nava.  " event="Single" b1="543434" b2="" b3=""/>
+         <action b="2" s="1" o="1" des="With Colby Rasmus batting, Brett Lawrie steals (8) 2nd base.  " event="Stolen Base 2B" tfs="154601" tfs_zulu="2012-06-03T19:46:01Z" player="543434" pitch="3"/>
+         <atbat num="66" b="3" s="1" o="2" start_tfs="154338" start_tfs_zulu="2012-06-03T19:43:38Z" batter="458675" pitcher="448179" des="Colby Rasmus flies out to right fielder Ryan Sweeney.    Brett Lawrie to 3rd.  " event="Flyout" b1="" b2="543434" b3="543434"/>
+         <atbat num="67" b="2" s="3" o="3" start_tfs="154729" start_tfs_zulu="2012-06-03T19:47:29Z" batter="450317" pitcher="448179" des="J.  P.   Arencibia called out on strikes.  " event="Strikeout" b1="" b2="" b3=""/>
+      </bottom>
+   </inning>
+   <inning num="9">
+      <top>
+         <action b="0" s="0" o="0" des="Pitcher Change: Casey Janssen replaces Francisco Cordero.  " event="Pitching Substitution" tfs="154950" tfs_zulu="2012-06-03T19:49:50Z" player="445163" pitch="6"/>
+         <atbat num="68" b="1" s="2" o="1" start_tfs="155127" start_tfs_zulu="2012-06-03T19:51:27Z" batter="435220" pitcher="445163" des="Ryan Sweeney grounds out, first baseman David Cooper to pitcher Casey Janssen.  " event="Groundout" b1="" b2="" b3=""/>
+         <atbat num="69" b="1" s="2" o="2" start_tfs="155326" start_tfs_zulu="2012-06-03T19:53:26Z" batter="449107" pitcher="445163" des="Mike Aviles flies out to right fielder Jose Bautista.  " event="Flyout" b1="" b2="" b3=""/>
+         <atbat num="70" b="3" s="2" o="2" start_tfs="155515" start_tfs_zulu="2012-06-03T19:55:15Z" batter="346857" pitcher="445163" des="Nick Punto singles on a line drive to center fielder Colby Rasmus.  " event="Single" b1="346857" b2="" b3=""/>
+         <action b="0" s="0" o="2" des="Offensive Substitution: Pinch hitter Jarrod Saltalamacchia replaces Kelly Shoppach.  " event="Offensive sub" tfs="155856" tfs_zulu="2012-06-03T19:58:56Z" player="457454" pitch="8"/>
+         <action b="0" s="1" o="2" des="With Jarrod Saltalamacchia batting, Nick Punto steals (1) 2nd base.  " event="Stolen Base 2B" tfs="155923" tfs_zulu="2012-06-03T19:59:23Z" player="346857" pitch="1"/>
+         <action b="1" s="2" o="2" des="With Jarrod Saltalamacchia batting, Nick Punto steals (2) 3rd base.  " event="Stolen Base 3B" tfs="160038" tfs_zulu="2012-06-03T20:00:38Z" player="346857" pitch="3"/>
+         <atbat num="71" b="2" s="2" o="3" start_tfs="155914" start_tfs_zulu="2012-06-03T19:59:14Z" batter="457454" pitcher="445163" des="Jarrod Saltalamacchia pops out softly to shortstop Yunel Escobar.  " event="Pop Out" b1="" b2="346857" b3="346857"/>
+      </top>
+      <bottom/>
+   </inning>
+   <atBat pid="457454"/>
+   <deck pid="325392"/>
+   <hole pid="537953"/>
+</game>
