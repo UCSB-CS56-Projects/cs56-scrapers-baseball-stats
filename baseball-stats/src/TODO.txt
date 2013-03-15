@@ -1,8 +1,0 @@
-List of things to do for baseball project:
-
-- Write a class to write the player data to new .xml files
-	a.) This class's methods will be called by StatManager whenever a game ends.
-	
-- Write a class to load the player stats into the GUI when asked for.
-	
-- Create GUI for project
