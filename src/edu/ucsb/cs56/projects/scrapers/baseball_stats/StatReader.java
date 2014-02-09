@@ -164,7 +164,7 @@ public class StatReader
 		}
 	}
 	
-	/** reads in the hard-coded files for cp3 
+	/** reads in the hard-coded files 
 	*/	
 	public void readDemoStats()
 	{
