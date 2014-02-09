@@ -8,7 +8,7 @@ The files were downloaded from [gd2.mlb.com/components/game/mlb/](http://gd2.mlb
 
 ## Usage
 
-To run the GUI, simple type `ant run` after cloning the code. You will see a window like this
+To run the GUI, simply type `ant run` after cloning the code. You will see a window like this
 
 ![](http://i.imgur.com/vJl9b1e.png)
 
