@@ -27,7 +27,7 @@
          <pathelement location="/cs/faculty/pconrad/public_html/cs56/lib/junit-4.8.2.jar"/>
   </path>
 
-  <target name="compile" >
+  <target name="compile" description="compile the code">
     <mkdir dir="build" />
     
     <javac srcdir="src" destdir="build" debug="true" debuglevel="lines,vars,source" includeantruntime="false">
@@ -35,16 +35,16 @@
     </javac>
   
     <copy todir="build/images">
-	<fileset dir="src/edu/ucsb/cs56/S12/sbaldwin/baseball/images"/>
+	    <fileset dir="images"/>
     </copy>
     
     <copy todir="build/Stats">
-	<fileset dir="src/edu/ucsb/cs56/S12/sbaldwin/baseball/Stats"/>
+	    <fileset dir="stats"/>
     </copy>
     
   </target>
 
-  <target name="run" depends="compile">
+  <target name="run" depends="compile" description="run the program">
     <java classname="${mainClass}" classpath="build" fork="true" />  
   </target>
 
@@ -56,7 +56,7 @@
     <delete dir="temp" quiet="true" />
   </target>
 
-  <target name="test" depends="compile">
+  <target name="test" depends="compile" description="run the junit tests">
 
    <junit haltonerror="no" haltonfailure="no">
        <classpath refid="project.class.path" />
@@ -73,14 +73,8 @@
    </junit>
   </target>
   
-  <target name="linenumbers" description="Creates a file containing all source files with line numbers">
-   <exec executable="bash">
-     <arg value="-c"/>
-     <arg value='tree -ifQ src | grep \.java\"$ | xargs pr -n > numberedsource.txt'/>
-   </exec>
-  </target>
   
- <target name="javadoc" depends="compile"> 
+ <target name="javadoc" depends="compile" description="create javadocs at your CSIL public_html"> 
  
    <delete dir="javadoc" quiet="true" /> 
    <javadoc  destdir="javadoc" author="true" version="true" use="true" >  
@@ -107,95 +101,6 @@
    <chmod dir="${javadocDest}" perm="755"  type="file" includes="**/*" /> 
    <echo>Javadoc deployed to ${javadocURL}</echo> 
 
- </target>
-
- <target name="jar" depends="compile">
-   <mkdir dir="dist" />
-   <jar destfile="dist/${projectName}.jar" basedir="build" >
-       <manifest>
-         <attribute name="Main-Class" value="${mainClass}"/>
-       </manifest>
-   </jar>
- </target>
-
- <target name="download" > 
- 
-  <delete quiet="true"> 
-     <fileset dir="temp" includes="**/*" />  
-     <fileset dir="download" includes="**/*" />  
-  </delete> 
- 
-  <mkdir dir="download" /> 
-  <mkdir dir="temp" />  
-  <mkdir dir="temp/${projectName}" /> 
- 
-  <copy todir="temp/${projectName}"> 
-    <fileset dir="." 
-     excludes="build/**, javadoc/**, **/*~, temp/**, dist/**, download/**"/> 
-  </copy> 
- 
-  <tar destfile="temp/${projectName}.tar"
-       basedir="temp"
-       includes="${projectName}/**" 
-   /> 
- 
-  <gzip zipfile="download/${projectName}.tgz" 
-        src="temp/${projectName}.tar" /> 
- 
-  <zip destfile="download/${projectName}.zip"
-       basedir="temp"
-       includes="${projectName}/**"
-  /> 
- 
-  <delete quiet="true"> 
-     <fileset dir="temp" includes="**/*"/>  
-  </delete> 
-  
-</target> 
- 
- <target name="jws" depends="compile,jar">
-
-   <delete dir="${webRoot}/${projectPath}/jws" />
-   <mkdir dir="${webRoot}/${projectPath}/jws" />
-
-   <copy todir="${jwsDest}" file="dist/${projectName}.jar" />
-   <copy todir="${jwsDest}" >
-       <fileset dir="jws" includes="*.html"/>
-       <fileset dir="jws" includes="*.jnlp"/>
-       <fileset dir="jws" includes="*.png"/>
-       <fileset dir="jws" includes=".htaccess"/>
-   </copy>
-   <echo>Java web start at ${jwsURL}</echo>
- </target>
- 
- <target name="publish" depends="jar,javadoc,download,jws,linenumbers">
-   <mkdir dir="${webRoot}/${projectPath}" />
-  
-   <delete dir="${webRoot}/${projectPath}/browse" />
-   <mkdir dir="${webRoot}/${projectPath}/browse" />
-
-   <delete dir="${webRoot}/${projectPath}/download" />
-   <mkdir dir="${webRoot}/${projectPath}/download" />
-
-   <copy file="html/index.html" todir="${webRoot}/${projectPath}"/>
-
-   <copy todir="${webRoot}/${projectPath}/download" > 
-     <fileset dir="download"/> 
-     <fileset dir="dist" />
-   </copy> 
-
-   <copy file="build.xml" todir="${webRoot}/${projectPath}/browse"/>
-
-   <copy todir="${webRoot}/${projectPath}/browse/src" > 
-     <fileset dir="src"/> 
-   </copy>
-   
-   <copy file="numberedsource.txt" todir="${webRoot}/${projectPath}/browse"/> 
-
-   <chmod dir="${webRoot}/${projectPath}" 
-	  perm="755" type="both" includes="**/*"/>
-
-   <echo>Project published to ${webBaseUrl}/${projectPath}</echo> 
  </target>
 
 </project>
