@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.S12.sbaldwin.baseball;
+package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
 /** StatCalculator hold static utility methods for calculating various stats
  @author Sam Baldwin

@@ -1,4 +1,4 @@
-package edu.ucsb.cs56.S12.sbaldwin.baseball;
+package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
 import java.util.ArrayList;
 

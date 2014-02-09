@@ -5,28 +5,23 @@
        name: Sam Baldwin for CS56, S12 -->
 
   <property environment="env"/> <!-- load the environment variables --> 
-   <property name="webRoot" value="${env.HOME}/public_html/" />
-   <property name="webBaseUrl" value="http://www.cs.ucsb.edu/~${env.USER}" />
-
+  <property name="webRoot" value="${env.HOME}/public_html/" />
+  <property name="webBaseUrl" value="http://www.cs.ucsb.edu/~${env.USER}" />
   <property name="course" value="cs56" />
-  <property name="quarter" value="S12" />
-  <property name="issueNum" value="0000785" />
-  <property name="mainClass" value="edu.ucsb.cs56.S12.sbaldwin.baseball.Main" />
-
-
-  <property name="projectName" value="${course}_${quarter}_${issueNum}" />
-  <property name="projectPath" value="${course}/${quarter}/issues/${issueNum}" />
+  <property name="categoryName" value="scrapers" />
+  <property name="repoName" value="baseball_stats" />
+  <property name="mainClass" value="edu.ucsb.cs56.projects.${categoryName}.${repoName}.Main" />
+  <property name="projectName" value="${course}_projects__${categoryName}_${repoName}" />
+  <property name="projectPath" value="${course}/projects/${categoryName}/${repoName}" />
   <property name="javadocDest" value="${webRoot}/${projectPath}/javadoc" /> 
   <property name="javadocURL" value="${webBaseUrl}/${projectPath}/javadoc" /> 
-  <property name="jwsDest" value="${webRoot}/${projectPath}/jws" /> 
-  <property name="jwsURL" value="${webBaseUrl}/${projectPath}/jws" /> 
-
 
   <path id="project.class.path">
          <pathelement location="build"/>
          <pathelement location="/cs/faculty/pconrad/public_html/cs56/lib/junit-4.8.2.jar"/>
   </path>
 
+  <!-- ************************** COMPILE ************************* -->
   <target name="compile" description="compile the code">
     <mkdir dir="build" />
     
@@ -44,18 +39,18 @@
     
   </target>
 
+  <!-- ************************** RUN ************************* -->
   <target name="run" depends="compile" description="run the program">
     <java classname="${mainClass}" classpath="build" fork="true" />  
   </target>
 
+  <!-- ************************** CLEAN ************************* -->
   <target name="clean" >
     <delete dir="build" quiet="true" />
     <delete dir="javadoc" quiet="true" />
-    <delete dir="dist" quiet="true" />
-    <delete dir="download" quiet="true" />
-    <delete dir="temp" quiet="true" />
   </target>
 
+  <!-- ************************** JUNIT ************************* -->
   <target name="test" depends="compile" description="run the junit tests">
 
    <junit haltonerror="no" haltonfailure="no">
@@ -73,7 +68,7 @@
    </junit>
   </target>
   
-  
+  <!-- ************************** JAVADOC ************************* -->
  <target name="javadoc" depends="compile" description="create javadocs at your CSIL public_html"> 
  
    <delete dir="javadoc" quiet="true" /> 
