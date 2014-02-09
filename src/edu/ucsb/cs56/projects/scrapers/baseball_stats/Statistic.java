@@ -2,7 +2,13 @@ package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
 import java.util.ArrayList;
 
-/** Statisic represents one stat for a player. It has a name (String) and an integer or float value. Statistic also contains an ArrayList of "splits" which represent the circumstances underwhich the stat was earned. Examples of names for Statistics are: "Single", "Double", "Home Run", "Strikeout", "Walk", etc. All of the event names can be discovered by looking through the .xmls and reading the "event" attributes under the at-bat elements. 
+/** Statisic represents one stat for a player. It has a name (String) and an integer or float value. 
+	Statistic also contains an ArrayList of "splits" which represent the circumstances 
+	underwhich the stat was earned. 
+	Examples of names for Statistics are: "Single", "Double", "Home Run", "Strikeout", "Walk", etc. 
+	All of the event names can be discovered by looking through the .xmls and reading the "event" 
+	attributes under the at-bat elements. 
+	
    @author Sam Baldwin
 */
 public class Statistic

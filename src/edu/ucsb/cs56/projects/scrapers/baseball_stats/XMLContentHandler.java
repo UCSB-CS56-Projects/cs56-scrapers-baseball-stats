@@ -3,7 +3,9 @@ package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 import org.xml.sax.*;
 import java.util.StringTokenizer;
 
-/** XMLContentHandler holds all of the call-back functions for the XML parser. When it receives elements, it searches for attributes such as events balls, strikes, rbis, etc. It then sends this data to the StatKeeper class.
+/** XMLContentHandler holds all of the call-back functions for the XML parser. When it receives elements, 
+	it searches for attributes such as events balls, strikes, rbis, etc. It then sends this data to the 
+	StatKeeper class.
  @author Sam Baldwin
 */
 public class XMLContentHandler implements ContentHandler
@@ -45,7 +47,10 @@ public class XMLContentHandler implements ContentHandler
 		this.day = day;
 	}
 	
-	/** Helper method for parsing the player name from the description of a play. In the description of an event, the player's name is always listed first. Because of this, parseName searches for all of the words at the beginning of the String that begin with a capital letter and concatenates them together into the full name. This is Used by startElement() to discover the name of the player.
+	/** Helper method for parsing the player name from the description of a play. In the description 
+		of an event, the player's name is always listed first. Because of this, parseName searches for 
+		all of the words at the beginning of the String that begin with a capital letter and concatenates 
+		them together into the full name. This is used by startElement() to discover the name of the player.
 	*/
 	private String parseName(String s)
 	{

@@ -2,7 +2,8 @@ package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
 import java.util.ArrayList;
 
-/** StatManager manages all of the statistics. It receives stats from XMLContentHandler and changes player stats accordingly.
+/** StatManager manages all of the statistics. It receives stats from XMLContentHandler and changes 
+	player stats accordingly.
  @author Sam Baldwin
 */
 public class StatManager
@@ -19,7 +20,9 @@ public class StatManager
 		year = -1;
 	}
 	
-	/** Takes in an input Statistic and player ID and increments that players Statistic by the input Statistic's value. If the Statistic does not already exist in the player then a new instance is created.
+	/** Takes in an input Statistic and player ID and increments that players Statistic by the 
+		input Statistic's value. If the Statistic does not already exist in the player then a new 
+		instance is created.
 	
 	     @param id The ID of the player to add the Statistic to
 	     @param stat The statistic to increment
@@ -78,7 +81,8 @@ public class StatManager
 		this.day = day;
 	}
 	
-	/** Tells the StatManager that the current game is over. The StatManager then sends the Player list to StatKeeper and then creates a new ArrayList of players to get ready for the next game.
+	/** Tells the StatManager that the current game is over. The StatManager then sends the Player 
+		list to StatKeeper and then creates a new ArrayList of players to get ready for the next game.
 	 
 	*/
 	public void endGame()

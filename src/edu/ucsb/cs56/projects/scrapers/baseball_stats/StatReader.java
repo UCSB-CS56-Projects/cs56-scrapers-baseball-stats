@@ -6,7 +6,8 @@ import javax.xml.parsers.*;
 import java.io.File;
 import java.io.IOException;
 
-/** StatReader sets up the SAXParserFactory and proper XMLParser. It then parses through all of the XML data which is sent to the StatKeeper class.
+/** StatReader sets up the SAXParserFactory and proper XMLParser. It then parses through all of 
+	the XML data which is sent to the StatKeeper class.
  @author Sam Baldwin
 */
 public class StatReader
@@ -54,7 +55,8 @@ public class StatReader
 		statManager = new StatManager();
 	}
 	
-	/** reads in a block of statistics starting in the start parameters and going until it reaches the end parameters.
+	/** reads in a block of statistics starting in the start parameters and going until it reaches
+		the end parameters.
 	
 	     @param startDay The day of the month to start XML parsing
 	     @param startMonth The month of the year to start XML parsing
