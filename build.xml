@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project default="compile">
 
-  <!-- build.xml for Mantis issue 0000785
-       name: Sam Baldwin for CS56, S12 -->
+  <!-- build.xml for github.com/UCSB-CS56-Projects/cs56-scrapers-baseball-stats
+       original author: Sam Baldwin for CS56, S12 
+  -->
 
   <property environment="env"/> <!-- load the environment variables --> 
   <property name="webRoot" value="${env.HOME}/public_html/" />
@@ -18,7 +19,7 @@
 
   <path id="project.class.path">
          <pathelement location="build"/>
-         <pathelement location="/cs/faculty/pconrad/public_html/cs56/lib/junit-4.8.2.jar"/>
+         <pathelement location="lib/junit-4.8.2.jar"/>
   </path>
 
   <!-- ************************** COMPILE ************************* -->
