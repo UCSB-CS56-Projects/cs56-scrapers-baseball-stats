@@ -59,7 +59,10 @@ public class StatManager
 		
 		return -1;
 	}
-	
+        /**
+	   @param id player's id to be set
+	   @param fullName player's full name to be set
+	*/
 	public void setPlayerName(int id, String fullName)
 	{
 		int index = this.getPlayerIndex(id);
@@ -94,6 +97,9 @@ public class StatManager
 		players = new ArrayList<Player>(30);		
 	}
 	
+        /**
+	   @return a string representation of all the players currently in the StatManager
+	*/
 	public String toString()
 	{
 		String returnString = "Game Stats:\n";

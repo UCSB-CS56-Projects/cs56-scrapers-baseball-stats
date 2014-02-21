@@ -15,12 +15,21 @@ public class Player
 	String fullName;
 	
 	ArrayList<Statistic> stats;
-	
+
+        /** Creates a new Player with ID  
+	   @param id the id number of the player
+        */
 	public Player(int id)
 	{
 		this(id, "Unknown");
 	}
 	
+        /** Creates a new Player with id and first/last name  
+	   @param id the ID number of the player
+	   @param firstname the first name of the player
+	   @param lastname the last name of the player
+        */
+
 	public Player(int id, String firstname, String lastname)
 	{
 		this.id = id;
@@ -30,7 +39,11 @@ public class Player
 		
 		stats = new ArrayList<Statistic>();
 	}
-	
+
+	/** Creates a new Player with id and full name  
+	   @param id the ID number of the player
+	   @param fullName the first name of the player
+        */
 	public Player(int id, String fullName)
 	{
 		this.id = id;
@@ -39,6 +52,9 @@ public class Player
 		stats = new ArrayList<Statistic>();
 	}
 	
+        /** Adds a Statistic to a player's Statistic ArrayList  
+	   @param s the Statistic to add
+        */
 	public void addStatistic(Statistic s)
 	{
 		int index = getStatisticIndex(s);
@@ -53,6 +69,10 @@ public class Player
 	
 	}
 	
+        /** Returns the index of a certain Statistic  
+	   @param s the Statistic to find the index of
+	   @return the Statistic's index
+        */
 	public int getStatisticIndex(Statistic s)
 	{
 		for(int counter = 0; counter < stats.size(); counter ++)
@@ -66,6 +86,10 @@ public class Player
 		return -1;
 	}
 	
+        /** Returns the value of a certain Statistic  
+	   @param stat the certain statistic
+	   @return the Statistic's value
+        */
 	public int getStatValue(String stat)
 	{
 		Statistic s = new Statistic(stat, 0);
@@ -78,52 +102,83 @@ public class Player
 		
 		return this.getStat(index).getValue();	
 	}
-	
+        /**
+	 @return player's ID number
+	*/
 	public int getID()
 	{
 		return id;
 	}
 	
+        /**
+	 @return player's first name
+	*/
 	public String getFirstName()
 	{
 		return firstName;
 	}
 	
+        /**
+	 @return player's last name
+	*/
 	public String getLastName()
 	{
 		return lastName;
 	}
 	
+        /**
+	 @return player's full name
+	*/
 	public String getFullName()
 	{
 		return fullName;
 	}
 	
+        /**
+	  @param s first name to set
+	*/ 
 	public void setFirstName(String s)
 	{
 		firstName = s;
 	}
 	
+        /**
+	  @param s last name to set
+	*/ 
 	public void setLastName(String s)
 	{
 		lastName = s;
 	}
 	
+        /**
+	  @param s full name to set
+	*/ 
 	public void setFullName(String s)
 	{
 		fullName = s;
 	}
 	
+        /**
+	 @return player's amount of different statistics stored
+	*/
 	public int getStatsAmount()
 	{
 		return stats.size();
 	}
 	
+        /**
+	 @param index used to search the Statistic ArrayList
+	 @return player's statistic at a certain index
+	*/
 	public Statistic getStat(int index)
 	{
 		return stats.get(index);
 	}
 	
+        /** Compares one player with another based on ID number
+	 @param o player to compare
+	 @return true if player has same ID, false otherwise
+	*/
 	public boolean equals(Object o) 
 	{
 		if (o == null)
@@ -143,7 +198,10 @@ public class Player
 		}
 	
 	}
-	
+
+        /**
+	   @return a string representation of the player's name, ID and stats
+	*/
 	public String toString()
 	{
 		String returnString= fullName + "| ID = " + id + ": ";

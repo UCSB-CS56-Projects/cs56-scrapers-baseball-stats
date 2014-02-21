@@ -46,6 +46,7 @@ public class StatKeeper
 	}
 	
 	/** Returns the index in the ArrayList of the Player with the input ID. If the Player is not found then -1 is returned
+	    @return the index in the ArrayList of the Player with the input ID
 	    @param id ID of player to search for.
 	*/
 	public int getPlayerIndex(int id)
@@ -77,18 +78,27 @@ public class StatKeeper
 		return -1;
 	}
 	
-	/** Returns the number of players in the ArrayList.
+	/** 
+	    @return the number of players in the ArrayList.
 	*/
 	public int getPlayerCount()
 	{
 		return players.size();
 	}
-	
+
+        /** 
+	    @param index used to search the Player ArrayList 
+	    @return the player at a specific index
+	*/
 	public Player getPlayer(int index)
 	{
 		return players.get(index);
 	}
-	
+
+	/** 
+	    @param index used to search the Player ArrayList 
+	    @return the full name of the player at a specific index
+	*/
 	public String getPlayerName(int index)
 	{
 		return players.get(index).getFullName();
