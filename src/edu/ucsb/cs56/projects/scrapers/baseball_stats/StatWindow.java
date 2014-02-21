@@ -58,7 +58,7 @@ public class StatWindow extends JFrame
 		}
 					
 		JTable table = new JTable(data, columnNames);
-		
+		table.setAutoCreateRowSorter(true);
 		TableColumn col = table.getColumnModel().getColumn(0);
 		col.setPreferredWidth(180);
 		
