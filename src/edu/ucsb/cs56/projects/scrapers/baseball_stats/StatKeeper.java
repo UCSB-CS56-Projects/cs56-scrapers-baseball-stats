@@ -63,7 +63,7 @@ public class StatKeeper
 	}
 	
 	/** Returns the index in the ArrayList of the input Player. If the player is not found, then returns -1.
-	    @param id ID of player to search for.
+	    @param p Player to search for
 	*/
 	public int getPlayerIndex(Player p)
 	{
