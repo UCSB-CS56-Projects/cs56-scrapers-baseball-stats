@@ -4,13 +4,9 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /** Test class for Player
-
- * @author Max Sorenson
- * @author Eric Palyan
  * @author Max Sorenson
  * @version 2014/02/26 for baseball scraper, cs56, W14
  * @see Player
-
 */
 
 public class PlayerTest {

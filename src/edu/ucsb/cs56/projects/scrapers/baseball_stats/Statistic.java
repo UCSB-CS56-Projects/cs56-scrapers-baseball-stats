@@ -195,6 +195,7 @@ public class Statistic
 
         /**
 	   @return a string representation of Statistic's name and value
+	   such as "Home Run = 4"
 	*/
 	public String toString()
 	{
