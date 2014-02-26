@@ -201,6 +201,7 @@ public class Player
 
         /**
 	   @return a string representation of the player's name, ID and stats
+	   such as "Jim Jones| ID = 1234567: "
 	*/
 	public String toString()
 	{
