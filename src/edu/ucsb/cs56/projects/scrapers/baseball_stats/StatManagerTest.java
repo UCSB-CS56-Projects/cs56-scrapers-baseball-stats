@@ -12,8 +12,6 @@ import java.util.ArrayList;
 
 public class StatManagerTest {
 
-    float delta = 0.0001f;
-    ArrayList<Player> players = new ArrayList<Player>();
 
     /** Test case for StatManager()
         @see StatManager

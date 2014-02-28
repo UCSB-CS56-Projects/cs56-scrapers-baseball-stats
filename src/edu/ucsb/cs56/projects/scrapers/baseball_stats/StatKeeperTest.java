@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class StatKeeperTest {
 
-    float delta = 0.0001f;
+    float delta = 0.00001f;
 
     /** Test case for StatKeeper()
         @see StatKeeper
@@ -21,6 +21,7 @@ public class StatKeeperTest {
     @Test public void testNoArgConstructor() {
 	StatKeeper x = new StatKeeper();
         assertEquals(true, x instanceof StatKeeper);
+	
     }
 
     /** Test case for StatKeeper.addPlayer(ArrayList<Player>)
