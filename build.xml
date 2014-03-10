@@ -2,7 +2,8 @@
 <project default="compile">
 
   <!-- build.xml for github.com/UCSB-CS56-Projects/cs56-scrapers-baseball-stats
-       original author: Sam Baldwin for CS56, S12 
+       original author: Sam Baldwin for CS56, S12
+       updated M. Sorenson for github W14
   -->
 
   <property environment="env"/> <!-- load the environment variables --> 

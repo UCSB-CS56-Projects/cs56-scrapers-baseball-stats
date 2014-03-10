@@ -1,5 +1,6 @@
 package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
+import java.util.ArrayList;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -58,7 +59,8 @@ public class StatWindow extends JFrame
 		}
 					
 		JTable table = new JTable(data, columnNames);
-		
+		table.setAutoCreateRowSorter(true);
+
 		TableColumn col = table.getColumnModel().getColumn(0);
 		col.setPreferredWidth(180);
 		
