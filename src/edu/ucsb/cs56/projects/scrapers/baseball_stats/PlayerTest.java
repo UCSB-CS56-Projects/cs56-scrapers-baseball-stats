@@ -138,9 +138,20 @@ public class PlayerTest {
         @see Player
     */
 
-    @Test public void testGetStatisticIndex() {
+    @Test public void testGetStatisticIndex_oneStat() {
         x.addStatistic(y);
         assertEquals(0, x.getStatisticIndex(y));
+    }
+
+    /** Test case 2 for Player.getStatisticIndex(Statistic)
+        @see Player
+    */
+
+    @Test public void testGetStatisticIndex_twoStats() {
+	Statistic z = new Statistic("Single", 5);
+        x.addStatistic(y);
+	x.addStatistic(z);
+        assertEquals(1, x.getStatisticIndex(z));
     }
 
     
