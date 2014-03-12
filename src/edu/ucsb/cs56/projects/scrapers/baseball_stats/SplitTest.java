@@ -1,7 +1,7 @@
 package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.*;
+import static org.junit.Assert.*;
 
 /** Test class for Split
  * @author Max Sorenson
@@ -10,15 +10,22 @@ import static org.junit.Assert.assertEquals;
 */
 
 public class SplitTest {
+    Split x;
+    String splitType = "vs. L";
+    int splitValue = 4;
+
+    @Before public void setup() {
+	x = new Split(splitType,splitValue);
+    }
+
 
     /** Test case for Split(String)
         @see Split
     */
 
     @Test public void testOneArgConstructor() {
-        Split x = new Split("vs. L");
-        assertEquals("vs. L", x.getName());
-        assertEquals(0, x.getValue());
+	Split y = new Split(splitType);
+        assertEquals(splitType, x.getName());
     }
 
 
@@ -27,9 +34,7 @@ public class SplitTest {
     */
 
     @Test public void testTwoArgConstructor() {
-	Split x = new Split("vs. L", 4);
-        assertEquals("vs. L", x.getName());
-	assertEquals(4, x.getValue());
+	assertEquals(splitValue, x.getValue());
     }
 
     /** Test case for Split.equals(Object)
@@ -37,10 +42,25 @@ public class SplitTest {
     */
 
     @Test public void testEquals() {
-        Split x = new Split("vs. L", 4);
-	Split y = new Split("vs. L", 4);
-        assertEquals(true, x.equals(y));
-        assertEquals(true, y.equals(x));
+        assertTrue(x.equals(x));
+    }
+
+    /** Test case for false value Split.equals(Object)
+        @see Split
+    */
+
+    @Test public void testEquals_trueValue() {
+	Split y = new Split(splitType, 3);
+        assertTrue(y.equals(x));
+    }
+
+    /** Test case for false name Split.equals(Object)
+        @see Split
+    */
+
+    @Test public void testEquals_falseName() {
+	Split y = new Split("vs. R", splitValue);
+        assertFalse(y.equals(x));
     }
 
     /** Test case for Split.increment(int)
@@ -48,9 +68,8 @@ public class SplitTest {
     */
 
     @Test public void testIncrement() {
-        Split x = new Split("vs. L", 4);
 	x.increment(2);
-        assertEquals(6, x.getValue());
+        assertEquals(splitValue + 2, x.getValue());
     }
     
     /** Test case for Split.setValue(int)
@@ -58,7 +77,6 @@ public class SplitTest {
     */
 
     @Test public void testSetValue() {
-        Split x = new Split("vs. L", 4);
         x.setValue(6);
         assertEquals(6, x.getValue());
     }
@@ -68,10 +86,7 @@ public class SplitTest {
     */
 
     @Test public void testGetValue() {
-        Split x = new Split("vs. L", 4);
-        Split y = new Split("vs. R");
-        assertEquals(4, x.getValue());
-        assertEquals(0, y.getValue());
+        assertEquals(splitValue, x.getValue());
 
     }
 
@@ -80,14 +95,8 @@ public class SplitTest {
     */
 
     @Test public void testGetName() {
-        Split x = new Split("vs. L", 4);
-	Split y = new Split("vs. R");
-        assertEquals("vs. L", x.getName());
-        assertEquals("vs. R", y.getName());
+        assertEquals(splitType, x.getName());
     }
-
-
-
 
 
 }
