@@ -54,8 +54,6 @@ public class PlayerTest {
     @Test public void testThreeArgConstructor() {
         Player x3 = new Player(1234567, "Jim", "Jones");
         assertEquals(id, x3.getID());
-        assertEquals(firstName, x3.getFirstName());
-	assertEquals(lastName, x3.getLastName());
     }
 
     
@@ -69,15 +67,25 @@ public class PlayerTest {
 	assertEquals(statNum, x.getStatValue(statType));
     }
 
-
-
+    
     /** Test case for Player.equals(Object)
         @see Player
     */
 
     @Test public void testEquals() {
-        Player y = new Player(1234567, "Jon", "Jennings");
-        assertTrue(x.equals(y));
+        assertTrue(x.equals(x));
+    }
+
+    
+
+
+    /** Test case for false Player.equals(Object)
+        @see Player
+    */
+
+    @Test public void testEquals_false() {
+        Player y = new Player(7654321, "Jon", "Jennings");
+        assertFalse(x.equals(y));
     }
 
     
