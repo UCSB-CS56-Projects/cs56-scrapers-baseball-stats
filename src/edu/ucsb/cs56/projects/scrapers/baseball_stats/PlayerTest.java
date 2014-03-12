@@ -1,7 +1,8 @@
 package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.*;
+import static org.junit.Assert.*;
 
 /** Test class for Player
  * @author Max Sorenson
@@ -11,13 +12,29 @@ import static org.junit.Assert.assertEquals;
 
 public class PlayerTest {
 
+    Player x;
+    int id = 1234567;
+    String firstName = "Jim";
+    String lastName = "Jones";
+    String fullName = "Jim Jones";
+
+    Statistic y;
+    String statType = "Home Run";
+    int statNum = 4;
+    
+
+    @Before public void setup() {
+	x = new Player(id,firstName,lastName);
+        y = new Statistic(statType,statNum);
+    }
+
     /** Test case for Player(int)
         @see Player
     */
 
     @Test public void testOneArgConstructor() {
-	Player x = new Player(1234567);
-        assertEquals(1234567, x.getID());
+	Player x2 = new Player(1234567);
+        assertEquals(id, x2.getID());
     }
 
 
@@ -26,9 +43,8 @@ public class PlayerTest {
     */
 
     @Test public void testTwoArgConstructor() {
-        Player x = new Player(1234567, "Jim Jones");
-        assertEquals(1234567, x.getID());
-	assertEquals("Jim Jones", x.getFullName());
+        assertEquals(id, x.getID());
+	assertEquals(fullName, x.getFullName());
     }
 
     /** Test case for Player(int,String,String)
@@ -36,10 +52,10 @@ public class PlayerTest {
     */
 
     @Test public void testThreeArgConstructor() {
-        Player x = new Player(1234567, "Jim", "Jones");
-        assertEquals(1234567, x.getID());
-        assertEquals("Jim", x.getFirstName());
-	assertEquals("Jones", x.getLastName());
+        Player x3 = new Player(1234567, "Jim", "Jones");
+        assertEquals(id, x3.getID());
+        assertEquals(firstName, x3.getFirstName());
+	assertEquals(lastName, x3.getLastName());
     }
 
     
@@ -49,10 +65,8 @@ public class PlayerTest {
     */
 
     @Test public void testAddStatistic() {
-        Player x = new Player(1234567, "Jim", "Jones");
-	Statistic y = new Statistic("Home Run", 4);
         x.addStatistic(y);
-	assertEquals(4, x.getStatValue("Home Run"));
+	assertEquals(statNum, x.getStatValue(statType));
     }
 
 
@@ -62,9 +76,8 @@ public class PlayerTest {
     */
 
     @Test public void testEquals() {
-        Player x = new Player(1234567, "Jim", "Jones");
-        Player y = new Player(1234567, "Jim", "Jones");
-        assertEquals(true, x.equals(y));
+        Player y = new Player(1234567, "Jon", "Jennings");
+        assertTrue(x.equals(y));
     }
 
     
@@ -74,8 +87,7 @@ public class PlayerTest {
     */
     
     @Test public void testGetFirstName() {
-	Player x = new Player(1234567, "Jim", "Jones");
-	assertEquals("Jim", x.getFirstName());
+	assertEquals(firstName, x.getFirstName());
     }
 
     
@@ -84,8 +96,7 @@ public class PlayerTest {
     */
 
     @Test public void testGetLastName() {
-        Player x = new Player(1234567, "Jim", "Jones");
-        assertEquals("Jones", x.getLastName());
+        assertEquals(lastName, x.getLastName());
     }
 
 
@@ -94,18 +105,16 @@ public class PlayerTest {
     */
 
     @Test public void testGetFullName() {
-        Player x = new Player(1234567, "Jim", "Jones");
-        assertEquals("Jim Jones", x.getFullName());
+	assertEquals(fullName, x.getFullName());
     }
  
 
-    /** Test case for Player.getLastName()
+    /** Test case for Player.getID()
         @see Player
     */
 
     @Test public void testGetID() {
-        Player x = new Player(1234567, "Jim", "Jones");
-        assertEquals(1234567, x.getID());
+	assertEquals(id, x.getID());
     }
    
     /** Test case for Player.getStat()
@@ -113,8 +122,6 @@ public class PlayerTest {
     */
 
     @Test public void testGetStat() {
-        Player x = new Player(1234567, "Jim", "Jones");
-        Statistic y = new Statistic("Home Run", 4);
 	x.addStatistic(y);
 	assertEquals(y, x.getStat(0));
     }
@@ -124,8 +131,6 @@ public class PlayerTest {
     */
 
     @Test public void testGetStatisticIndex() {
-        Player x = new Player(1234567, "Jim", "Jones");
-        Statistic y = new Statistic("Home Run", 4);
         x.addStatistic(y);
         assertEquals(0, x.getStatisticIndex(y));
     }
@@ -136,10 +141,8 @@ public class PlayerTest {
     */
 
     @Test public void testGetStatValue() {
-        Player x = new Player(1234567, "Jim", "Jones");
-        Statistic y = new Statistic("Home Run", 4);
         x.addStatistic(y);
-        assertEquals(4, x.getStatValue("Home Run"));
+        assertEquals(statNum, x.getStatValue(statType));
     }
 
     
@@ -148,7 +151,6 @@ public class PlayerTest {
     */
 
     @Test public void testSetFirstName() {
-        Player x = new Player(1234567, "Jim", "Jones");
         x.setFirstName("Jon");
         assertEquals("Jon", x.getFirstName());
     }
@@ -158,7 +160,6 @@ public class PlayerTest {
     */
 
     @Test public void testSetLastName() {
-        Player x = new Player(1234567, "Jim", "Jones");
         x.setLastName("Jennings");
         assertEquals("Jennings", x.getLastName());
     }
@@ -168,7 +169,6 @@ public class PlayerTest {
     */
 
     @Test public void testSetFullName() {
-        Player x = new Player(1234567, "Jim", "Jones");
         x.setFullName("Jon Jennings");
         assertEquals("Jon Jennings", x.getFullName());
     }
@@ -178,8 +178,7 @@ public class PlayerTest {
     */
 
     @Test public void testToString() {
-        Player x = new Player(1234567, "Jim", "Jones");
-        assertEquals("Jim Jones| ID = 1234567: ", x.toString());
+        assertEquals(fullName + "| ID = " + id + ": ", x.toString());
     }
 
 
