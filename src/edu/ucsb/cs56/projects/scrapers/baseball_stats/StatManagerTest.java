@@ -37,8 +37,6 @@ public class StatManagerTest {
     */
 
     @Test public void testEndGame() {
-        StatManager x = new StatManager();
-	Statistic y = new Statistic("Home Run", 4);
 	x.incrementPlayerStat(id1, y);
 	//x.endGame();
         assertTrue(x instanceof StatManager);
@@ -58,10 +56,19 @@ public class StatManagerTest {
         @see StatManager
     */
 
-    @Test public void testGetPlayerIndex() {
+    @Test public void testGetPlayerIndex_one() {
         x.incrementPlayerStat(id1, y);
 	x.incrementPlayerStat(id2, y);
         assertEquals(0, x.getPlayerIndex(id1));
+    }
+
+    /** Test case for StatManager.getPlayerIndex(int)
+        @see StatManager
+    */
+
+    @Test public void testGetPlayerIndex_two() {
+        x.incrementPlayerStat(id1, y);
+	x.incrementPlayerStat(id2, y);
 	assertEquals(1, x.getPlayerIndex(id2));
     }
 

@@ -42,8 +42,15 @@ public class PlayerTest {
         @see Player
     */
 
-    @Test public void testTwoArgConstructor() {
+    @Test public void testTwoArgConstructor_id() {
         assertEquals(id, x.getID());
+    }
+
+     /** Test case for Player(int,String)
+        @see Player
+    */
+
+    @Test public void testTwoArgConstructor_name() {
 	assertEquals(fullName, x.getFullName());
     }
 
