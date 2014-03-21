@@ -1,7 +1,8 @@
 package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.*;
+import static org.junit.Assert.*;
 import java.util.ArrayList;
 
 /** Test class for XMLContentHandler
@@ -13,15 +14,18 @@ import java.util.ArrayList;
 public class XMLContentHandlerTest {
 
     float delta = 0.0001f;
-    
+    XMLContentHandler x;
+
+    @Before public void setup() {
+	x = new XMLContentHandler();
+    }
 
     /** Test case for XMLContentHandler()
         @see XMLContentHandler
     */
 
     @Test public void testNoArgConstructor() {
-	XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 	
     }
 
@@ -30,8 +34,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testCharacters() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -40,8 +43,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testEndDocument() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -50,8 +52,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testEndElement() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -60,8 +61,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testEndPrefixMapping() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -70,8 +70,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testIgnorableWhitespace() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -80,8 +79,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testProcessingInstruction() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -90,8 +88,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testSetDate() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -100,8 +97,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testSetDay() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -110,8 +106,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testSetMonth() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -120,8 +115,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testSetYear() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -131,8 +125,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testSetDocumentLocator() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -142,8 +135,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testSkippedEntity() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -152,8 +144,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testStartDocument() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -163,8 +154,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testStartElement() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 
@@ -173,8 +163,7 @@ public class XMLContentHandlerTest {
     */
 
     @Test public void testStartPrefixMapping() {
-        XMLContentHandler x = new XMLContentHandler();
-        assertEquals(true, x instanceof XMLContentHandler);
+        assertTrue(x instanceof XMLContentHandler);
 
     }
 

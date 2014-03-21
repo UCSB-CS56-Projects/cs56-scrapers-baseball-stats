@@ -1,7 +1,8 @@
 package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.*;
+import static org.junit.Assert.*;
 import java.util.ArrayList;
 
 /** Test class for StatManager
@@ -12,14 +13,22 @@ import java.util.ArrayList;
 
 public class StatManagerTest {
 
+    StatManager x;
+    Statistic y;
+    int id1 = 1234567, id2 = 7654321;
+    String name1 = "Jim Jones", name2 = "Jon Jennings";
+
+    @Before public void setup() {
+	x = new StatManager();
+	y = new Statistic("Home Run", 4);
+    }
 
     /** Test case for StatManager()
         @see StatManager
     */
 
     @Test public void testNoArgConstructor() {
-	StatManager x = new StatManager();
-        assertEquals(true, x instanceof StatManager);
+        assertTrue(x instanceof StatManager);
     }
 
 
@@ -28,11 +37,9 @@ public class StatManagerTest {
     */
 
     @Test public void testEndGame() {
-        StatManager x = new StatManager();
-	Statistic y = new Statistic("Home Run", 4);
-	x.incrementPlayerStat(1234567, y);
+	x.incrementPlayerStat(id1, y);
 	//x.endGame();
-        assertEquals(true, x instanceof StatManager);
+        assertTrue(x instanceof StatManager);
     }
 
 
@@ -41,23 +48,28 @@ public class StatManagerTest {
     */
 
     @Test public void testIncrementPlayerStat() {
-        StatManager x = new StatManager();
-	Statistic y = new Statistic("Home Run", 4);
-        x.incrementPlayerStat(1234567, y);
-        assertEquals(0, x.getPlayerIndex(1234567));
+        x.incrementPlayerStat(id1, y);
+        assertEquals(0, x.getPlayerIndex(id1));
     }
 
     /** Test case for StatManager.getPlayerIndex(int)
         @see StatManager
     */
 
-    @Test public void testGetPlayerIndex() {
-        StatManager x = new StatManager();
-        Statistic y = new Statistic("Home Run", 4);
-        x.incrementPlayerStat(1234567, y);
-	x.incrementPlayerStat(7654321, y);
-        assertEquals(0, x.getPlayerIndex(1234567));
-	assertEquals(1, x.getPlayerIndex(7654321));
+    @Test public void testGetPlayerIndex_one() {
+        x.incrementPlayerStat(id1, y);
+	x.incrementPlayerStat(id2, y);
+        assertEquals(0, x.getPlayerIndex(id1));
+    }
+
+    /** Test case for StatManager.getPlayerIndex(int)
+        @see StatManager
+    */
+
+    @Test public void testGetPlayerIndex_two() {
+        x.incrementPlayerStat(id1, y);
+	x.incrementPlayerStat(id2, y);
+	assertEquals(1, x.getPlayerIndex(id2));
     }
 
     /** Test case for StatManager.setPlayerName(int,String)
@@ -65,13 +77,11 @@ public class StatManagerTest {
     */
 
     @Test public void testSetPlayerName() {
-        StatManager x = new StatManager();
-        Statistic y = new Statistic("Home Run", 4);
-	x.incrementPlayerStat(1234567, y);
-	x.incrementPlayerStat(7654321, y);
-	x.setPlayerName(1234567, "Jim Jones");
-	x.setPlayerName(7654321, "Jon Jennings");
-	assertEquals(0, x.getPlayerIndex(1234567));
+	x.incrementPlayerStat(id1, y);
+	x.incrementPlayerStat(id2, y);
+	x.setPlayerName(id1, name1);
+	x.setPlayerName(id2, name2);
+	assertEquals(0, x.getPlayerIndex(id1));
     }
 
     /** Test case for StatManager.startNewGame(int,int,int)
@@ -90,11 +100,8 @@ public class StatManagerTest {
     */
 
     @Test public void testToString() {
-        StatManager x = new StatManager();
-        assertEquals("Game Stats:\n" , x.toString());
-	Statistic y = new Statistic("Home Run", 4);
-        x.incrementPlayerStat(1234567, y);
-        x.setPlayerName(1234567, "Jim Jones");
+        x.incrementPlayerStat(id1, y);
+        x.setPlayerName(id1, name1);
 	assertEquals("Game Stats:\nJim Jones| ID = 1234567: Home Run = 4\n",
 		     x.toString());
     }

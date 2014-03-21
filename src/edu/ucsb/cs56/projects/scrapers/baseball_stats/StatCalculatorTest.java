@@ -1,7 +1,8 @@
 package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.*;
+import static org.junit.Assert.*;
 
 /** Test class for StatCalculator
  * @author Max Sorenson
@@ -12,14 +13,25 @@ import static org.junit.Assert.assertEquals;
 public class StatCalculatorTest {
 
     float delta = 0.0001f;
+    StatCalculator x;
+    Player y;
+    Statistic s1,s5,p10,d2;
+
+    @Before public void setup() {
+	x = new StatCalculator();
+	y = new Player(1234567,"Jim Jones");
+	s5 = new Statistic("Single", 5);
+	s1 = new Statistic("Single", 1);
+	d2 = new Statistic("Double", 2);
+	p10 = new Statistic("PA", 10);
+    }
 
     /** Test case for StatCalculator()
         @see StatCalculator
     */
 
     @Test public void testNoArgConstructor() {
-	StatCalculator x = new StatCalculator();
-        assertEquals(true, x instanceof StatCalculator);
+        assertTrue(x instanceof StatCalculator);
     }
 
     /** Test case for StatCalculator.calculate1B(Player)
@@ -27,11 +39,8 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculate1B() {
-        StatCalculator x = new StatCalculator();
-	Player y = new Player(1234567,"Jim Jones");
-	Statistic z = new Statistic("Single", 5);
-	y.addStatistic(z);
-        assertEquals(5, x.calculate1B(y));
+	y.addStatistic(s1);
+        assertEquals(1, x.calculate1B(y));
     }
 
     /** Test case for StatCalculator.calculate2B(Player)
@@ -39,11 +48,8 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculate2B() {
-        StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567);
-        Statistic z = new Statistic("Double", 5);
-        y.addStatistic(z);
-        assertEquals(5, x.calculate2B(y));
+        y.addStatistic(d2);
+        assertEquals(2, x.calculate2B(y));
     }
 
 
@@ -52,10 +58,8 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculate3B() {
-        StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567);
-        Statistic z = new Statistic("Triple", 5);
-        y.addStatistic(z);
+        Statistic t = new Statistic("Triple", 5);
+        y.addStatistic(t);
         assertEquals(5, x.calculate3B(y));
     }
 
@@ -64,10 +68,8 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculateHR() {
-        StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567);
-        Statistic z = new Statistic("Home Run", 5);
-        y.addStatistic(z);
+        Statistic h = new Statistic("Home Run", 5);
+        y.addStatistic(h);
         assertEquals(5, x.calculateHR(y));
     }
 
@@ -76,10 +78,8 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculateBB() {
-        StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567);
-        Statistic z = new Statistic("Walk", 5);
-        y.addStatistic(z);
+        Statistic b = new Statistic("Walk", 5);
+        y.addStatistic(b);
         assertEquals(5, x.calculateBB(y));
     }
 
@@ -88,11 +88,8 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculatePA() {
-        StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567);
-        Statistic z = new Statistic("PA", 5);
-        y.addStatistic(z);
-        assertEquals(5, x.calculatePA(y));
+        y.addStatistic(p10);
+        assertEquals(10, x.calculatePA(y));
     }
 
 
@@ -102,11 +99,9 @@ public class StatCalculatorTest {
 
     @Test public void testCalculateAB() {
         StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567, "Jim Jones");
-        Statistic z = new Statistic("PA", 10);
-	Statistic a = new Statistic("Walk", 5);
-        y.addStatistic(z);
-	y.addStatistic(a);
+	Statistic w = new Statistic("Walk", 5);
+        y.addStatistic(p10);
+	y.addStatistic(w);
         assertEquals(5, x.calculateAB(y));
     }
 
@@ -115,13 +110,9 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculateAVG() {
-        StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567,"Jim Jones");
-        Statistic z = new Statistic("PA", 10);
-	Statistic a = new Statistic("Single", 4);
-        y.addStatistic(z);
-	y.addStatistic(a);
-        assertEquals(.400f, x.calculateAVG(y), delta);
+        y.addStatistic(p10);
+	y.addStatistic(s5);
+        assertEquals(.500f, x.calculateAVG(y), delta);
     }
 
 
@@ -130,14 +121,9 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculateOBP() {
-        StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567);
-        Statistic z = new Statistic("PA", 10);
-	Statistic a = new Statistic("Double", 2);
-	Statistic b = new Statistic("Single", 1);
-        y.addStatistic(z);
-	y.addStatistic(a); 
-	y.addStatistic(b);
+        y.addStatistic(p10);
+	y.addStatistic(s1); 
+	y.addStatistic(d2);
         assertEquals(.300f, x.calculateOBP(y), delta);
     }
 
@@ -146,14 +132,9 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculateOPS() {
-        StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567);
-        Statistic z = new Statistic("PA", 10);
-        Statistic a = new Statistic("Double", 2);
-        Statistic b = new Statistic("Single", 1);
-        y.addStatistic(z);
-        y.addStatistic(a);
-        y.addStatistic(b);
+	y.addStatistic(p10);
+	y.addStatistic(s1); 
+	y.addStatistic(d2);
 	float result = ( (1*1 + 2*2) / 10.0f ) + (.3f); 
         assertEquals(result, x.calculateOPS(y), delta);
     }
@@ -164,14 +145,9 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculateSLG() {
-        StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567);
-        Statistic z = new Statistic("PA", 10);
-        Statistic a = new Statistic("Double", 2);
-        Statistic b = new Statistic("Single", 1);
-        y.addStatistic(z);
-        y.addStatistic(a);
-        y.addStatistic(b);
+	y.addStatistic(p10);
+	y.addStatistic(s1); 
+	y.addStatistic(d2);
 	float result = (1*1 + 2*2) / 10.0f;
         assertEquals(result, x.calculateSLG(y), delta);
     }
@@ -181,10 +157,8 @@ public class StatCalculatorTest {
     */
 
     @Test public void testCalculateSO() {
-        StatCalculator x = new StatCalculator();
-        Player y = new Player(1234567);
-        Statistic z = new Statistic("Strikeout", 5);
-        y.addStatistic(z);
+        Statistic so = new Statistic("Strikeout", 5);
+        y.addStatistic(so);
         assertEquals(5, x.calculateSO(y));
     }
 

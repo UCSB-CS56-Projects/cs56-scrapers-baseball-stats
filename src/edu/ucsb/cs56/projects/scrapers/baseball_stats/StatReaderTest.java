@@ -1,7 +1,8 @@
 package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.*;
+import static org.junit.Assert.*;
 import java.util.ArrayList;
 
 /** Test class for StatReader
@@ -12,14 +13,18 @@ import java.util.ArrayList;
 
 public class StatReaderTest {
 
+    StatReader x;
+
+    @Before public void setup() {
+	x = new StatReader();
+    }
     
     /** Test case for StatReader()
         @see StatReader
     */
 
     @Test public void testNoArgConstructor() {
-	StatReader x = new StatReader();
-        assertEquals(true, x instanceof StatReader);
+        assertTrue(x instanceof StatReader);
 	
     }
 
@@ -28,8 +33,7 @@ public class StatReaderTest {
     */
 
     @Test public void testParseDay() {
-        StatReader x = new StatReader();
-	//assertEquals();
+        assertTrue(x instanceof StatReader);
 
     }
 
@@ -39,8 +43,7 @@ public class StatReaderTest {
     */
 
     @Test public void testReadDemoStats() {
-        StatReader x = new StatReader();
-        assertEquals(true, x instanceof StatReader);
+        assertTrue(x instanceof StatReader);
 
     }
 
@@ -49,8 +52,7 @@ public class StatReaderTest {
     */
 
     @Test public void testGetStatManager() {
-        StatReader x = new StatReader();
-        assertEquals(true, x instanceof StatReader);
+        assertTrue(x instanceof StatReader);
 
     }
 
@@ -59,8 +61,7 @@ public class StatReaderTest {
     */
 
     @Test public void testReadStats() {
-        StatReader x = new StatReader();
-        assertEquals(true, x instanceof StatReader);
+        assertTrue(x instanceof StatReader);
 
     }
 

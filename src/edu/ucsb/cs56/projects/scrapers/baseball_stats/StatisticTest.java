@@ -1,7 +1,8 @@
 package edu.ucsb.cs56.projects.scrapers.baseball_stats;
 
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.*;
+import static org.junit.Assert.*;
 import java.util.ArrayList;
 
 /** Test class for Statistic
@@ -13,16 +14,24 @@ import java.util.ArrayList;
 public class StatisticTest {
 
     float delta = 0.00001f;
-    //float comparisons
-    
+    Split y,z;
+    Statistic x;
+    int statValue = 4;
+    String statName = "Home Run";
+
+    @Before public void setup() {
+	x = new Statistic(statName,statValue);
+	y = new Split("vs. L", 2);
+	z = new Split("vs. R", 2);
+    }
+
     /** Test case for Statistic(String,float)
         @see Statistic
     */
 
     @Test public void testTwoArgConstructorFloat() {
 	Statistic x = new Statistic("Home Run", 4.0f);
-        assertEquals(4.0, x.getFloatValue(), delta);
-	assertEquals("Home Run", x.getName());
+        assertEquals((float)statValue, x.getFloatValue(), delta);
     }
 
     /** Test case for Statistic(String,int)
@@ -30,9 +39,7 @@ public class StatisticTest {
     */
 
     @Test public void testTwoArgConstructorInt() {
-        Statistic x = new Statistic("Home Run", 4);
-        assertEquals(4, x.getIntValue());
-        assertEquals("Home Run", x.getName());
+        assertEquals(statValue, x.getIntValue());
     }
 
     /** Test case for Statistic.addSplit(Split)
@@ -40,11 +47,8 @@ public class StatisticTest {
     */
 
     @Test public void testAddSplit() {
-        Statistic x = new Statistic("Home Run", 4);
-	Split y = new Split("vs. L",4);
 	x.addSplit(y);
-        assertEquals(0, x.getSplitIndex(y));
-        assertEquals(true, x.hasSplit(y));
+        assertTrue(x.hasSplit(y));
     }
 
 
@@ -54,10 +58,8 @@ public class StatisticTest {
     */
 
     @Test public void testHasSplit() {
-        Statistic x = new Statistic("Home Run", 4);
-        Split y = new Split("vs. L",4);
         x.addSplit(y);
-        assertEquals(true, x.hasSplit(y));
+        assertTrue(x.hasSplit(y));
     }
 
 
@@ -66,8 +68,6 @@ public class StatisticTest {
     */
 
     @Test public void testGetSplitIndex() {
-        Statistic x = new Statistic("Home Run", 4);
-        Split y = new Split("vs. L",4);
         x.addSplit(y);
         assertEquals(0, x.getSplitIndex(y));
     }
@@ -80,7 +80,7 @@ public class StatisticTest {
 
     @Test public void testGetFloatValue() {
         Statistic x = new Statistic("Home Run", 4.0f);
-        assertEquals(4.0, x.getFloatValue(), delta);
+        assertEquals((float)statValue, x.getFloatValue(), delta);
     }
 
     /** Test case for Statistic.getIntValue()
@@ -88,8 +88,7 @@ public class StatisticTest {
     */
 
     @Test public void testGetIntValue() {
-        Statistic x = new Statistic("Home Run", 4);
-        assertEquals(4, x.getIntValue());
+        assertEquals(statValue, x.getIntValue());
     }
 
 
@@ -98,8 +97,7 @@ public class StatisticTest {
     */
 
     @Test public void testGetValue() {
-        Statistic x = new Statistic("Home Run", 4);
-        assertEquals(4, x.getValue());
+        assertEquals(statValue, x.getValue());
     }
 
 
@@ -108,8 +106,7 @@ public class StatisticTest {
     */
 
     @Test public void testGetName() {
-        Statistic x = new Statistic("Home Run", 4);
-        assertEquals("Home Run", x.getName());
+        assertEquals(statName, x.getName());
     }
 
 
@@ -117,13 +114,19 @@ public class StatisticTest {
         @see Statistic
     */
 
-    @Test public void testGetSplits() {
-        Statistic x = new Statistic("Home Run", 4);
-	Split y = new Split("vs. L", 2);
-	Split z = new Split("vs. R", 2);
+    @Test public void testGetSplits_one() {
 	x.addSplit(y);
 	x.addSplit(z);
         assertEquals(y, x.getSplits().get(0));
+    }
+
+    /** Test case 2 for Statistic.getSplits()
+        @see Statistic
+    */
+
+    @Test public void testGetSplits_two() {
+	x.addSplit(y);
+	x.addSplit(z);
 	assertEquals(z, x.getSplits().get(1));
     }
 
@@ -133,15 +136,10 @@ public class StatisticTest {
     */
 
     @Test public void testIncrement() {
-        Statistic x = new Statistic("Home Run", 4);
-        Split y = new Split("vs. L", 2);
-        Split z = new Split("vs. R", 2);
         ArrayList<Split> a = new ArrayList<Split>();
 	a.add(y);
 	a.add(z);
-	x.increment(4,a);
-        assertEquals(y, x.getSplits().get(0));
-        assertEquals(z, x.getSplits().get(1));
+	x.increment(statValue,a);
 	assertEquals(8, x.getValue());
     }
 
@@ -150,8 +148,6 @@ public class StatisticTest {
     */
 
     @Test public void testIncrementSplit() {
-        Statistic x = new Statistic("Home Run", 4);
-        Split y = new Split("vs. L", 2);
 	ArrayList<Split> z = new ArrayList<Split>();
 	z.add(y);
 	x.addSplit(y);
@@ -165,12 +161,17 @@ public class StatisticTest {
     */
 
     @Test public void testisFloat() {
-        Statistic x = new Statistic("Home Run", 4);
         Statistic y = new Statistic("Home Run", 5.0f);
-        assertEquals(true, y.isFloat());
-	assertEquals(false, x.isFloat());
+        assertTrue(y.isFloat());
     }
 
+    /** Test case 2 for Statistic.isFloat()
+        @see Statistic
+    */
+
+    @Test public void testisFloat_false() {
+        assertFalse(x.isFloat());
+    }
 
 
     /** Test case for Statistic.equals(Object)
@@ -178,19 +179,25 @@ public class StatisticTest {
     */
 
     @Test public void testEquals() {
-	Statistic x = new Statistic("Home Run", 4);
-	Statistic y = new Statistic("Home Run", 5);
-	assertEquals(true, x.equals(y));
+	assertTrue(x.equals(x));
     }
 
     
+    /** Test case for Statistic.equals(Object)
+        @see Statistic
+    */
+
+    @Test public void testEquals_false() {
+	Statistic y = new Statistic("Single", 7);
+	assertFalse(x.equals(y));
+    }
+
 
     /** Test case for Statistic.toString()
         @see Statistic
     */
 
     @Test public void testToString() {
-        Statistic x = new Statistic("Home Run", 4);
         assertEquals("Home Run = 4", x.toString());
     }
 
