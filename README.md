@@ -6,6 +6,12 @@ The program parses through raw .xml data retrieved from MLB servers and organize
 
 The files were downloaded from [gd2.mlb.com/components/game/mlb/](http://gd2.mlb.com/components/game/mlb/)
 
+project history
+===============
+```
+ W14 | jstaahl 5pm | maxsorenson | (kjorg50) a scraper that gathers statistics on Major League Baseball players
+```
+
 ## Usage
 
 To run the GUI, simply type `ant run` after cloning the code. You will see a window like this
