@@ -7,8 +7,10 @@ import java.awt.event.*;
 import javax.swing.table.TableColumn;
 
 
-/** StatWindow holds the table containing all of the player stats found in StatKeeper
+/** StatWindow holds the table containing all of the player stats found in StatKeeper.  Adding search functionality.
     @author Sam Baldwin
+    @author KennethToombs, Carson Holoien
+
 */
 public class StatWindow extends JFrame
 {
@@ -40,9 +42,11 @@ public class StatWindow extends JFrame
 					"BB"};
 					
 		Object[][] data = new Object[stats.getPlayerCount()][13];
-		
-		for(int c1 = 0; c1 < stats.getPlayerCount(); c1 ++)
-		{
+
+		//if(!searchBox.found()){
+	       
+		    for(int c1 = 0; c1 < stats.getPlayerCount(); c1 ++)
+		    {
 			data[c1][0] = stats.getPlayer(c1).getFullName();
 			data[c1][1] = stats.getPlayer(c1).getID();
 			data[c1][2] = StatCalculator.calculateAB(stats.getPlayer(c1));
@@ -56,7 +60,27 @@ public class StatWindow extends JFrame
 			data[c1][10] = StatCalculator.calculate1B(stats.getPlayer(c1));
 			data[c1][11] = StatCalculator.calculateSO(stats.getPlayer(c1));
 			data[c1][12] = StatCalculator.calculateBB(stats.getPlayer(c1));
-		}
+		    }
+		    /*	}
+		else{
+			data[0][0] = stats.getPlayer(c1).getFullName();
+			data[0][1] = stats.getPlayer(c1).getID();
+			data[0][2] = StatCalculator.calculateAB(stats.getPlayer(c1));
+			data[0][3] = String.format("%.3f", StatCalculator.calculateAVG(stats.getPlayer(c1)));
+			data[0][4] = String.format("%.3f", StatCalculator.calculateOBP(stats.getPlayer(c1)));
+			data[0][5] = String.format("%.3f", StatCalculator.calculateSLG(stats.getPlayer(c1)));
+			data[0][6] = String.format("%.3f", StatCalculator.calculateOPS(stats.getPlayer(c1)));
+			data[0][7] = StatCalculator.calculateHR(stats.getPlayer(c1));
+			data[0][8] = StatCalculator.calculate3B(stats.getPlayer(c1));
+			data[0][9] = StatCalculator.calculate2B(stats.getPlayer(c1));
+			data[0][10] = StatCalculator.calculate1B(stats.getPlayer(c1));
+			data[0][11] = StatCalculator.calculateSO(stats.getPlayer(c1));
+			data[0][12] = StatCalculator.calculateBB(stats.getPlayer(c1));
+			}*/
+		
+		    
+
+    
 					
 		JTable table = new JTable(data, columnNames);
 		table.setAutoCreateRowSorter(true);
@@ -72,7 +96,7 @@ public class StatWindow extends JFrame
 		
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		
-		this.setLocation(50, 50);
+		this.setLocation(560, 50);
 		this.setVisible(true);
 	}
 }
