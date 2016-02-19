@@ -46,20 +46,27 @@ public class SearchPlayer extends JFrame {
     }
 
     public int searchForPlayer(String playerName, StatKeeper statistics){
+	
+	Player playerToFind = new Player(0, playerName);
+	
 	System.out.println(playerName);
+	playerName = playerName;
 	for(int i = 0; i< statistics.getPlayerCount(); i++){
 
-	    curPlayer = statistics.getPlayer(i);
+	    curPlayer = statistics.getPlayer(i); 
 	    
 	    curPlayerFirst = curPlayer.getFirstName();
 	    curPlayerLast = curPlayer.getLastName();
 	    curPlayerFullName = statistics.getPlayerName(i);
-	   
-	    System.out.println(curPlayerFullName);
 	    
-	    if(playerName.equalsIgnoreCase(curPlayerFirst)||playerName.equalsIgnoreCase(curPlayerLast)){
-		return i;
-	    }
+	    System.out.println(curPlayerFullName + i);
+		    
+	    //if((playerToFind.getFirstName()).equalsIgnoreCase(curPlayerFirst)||playerToFind.getLastName().equalsIgnoreCase(curPlayerLast)){
+	    //return i;
+	    // }else{
+	   
+	    //	System.out.println("|"+playerName + "|" + curPlayerFullName + "|");
+	    //}
 	}
 	return -1;
     }
