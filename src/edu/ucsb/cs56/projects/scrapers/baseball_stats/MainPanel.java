@@ -65,7 +65,7 @@ public class MainPanel extends JPanel implements ActionListener
 		{
 			Main.getStatReader().readDemoStats();
 			statwindow = new StatWindow(Main.getStatKeeper());
-			searchWindow = new SearchPlayer(Main.getStatKeeper());
+			repaint();
 		}
 	}
 

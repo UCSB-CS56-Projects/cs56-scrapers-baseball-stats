@@ -49,7 +49,7 @@ public class Player
 		this.id = id;
 		this.firstName = "";
 		this.lastName = "";
-		this.fullName = fullName.substring(0,fullName.length()-1);
+		this.fullName = fullName.substring(0,fullName.length()-2);
 		setPlayerFirstLast(fullName);
 		
 		stats = new ArrayList<Statistic>();
@@ -59,7 +59,7 @@ public class Player
     public void setPlayerFirstLast(String fullName){
 	boolean first = true;
 	for(int i = 0; i <fullName.length(); i++){
-	    if(fullName.charAt(i) == ' '){
+	    if(fullName.charAt(i) == ' ' && first ){
 		first = false;
 	    }
 	    else if(first){

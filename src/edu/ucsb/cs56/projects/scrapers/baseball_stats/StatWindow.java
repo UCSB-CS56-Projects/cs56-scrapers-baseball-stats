@@ -19,6 +19,8 @@ public class StatWindow extends JFrame
 	
 	public StatWindow(StatKeeper stats)
 	{
+	    
+	   
 		super("Stat Viewer");
 		
 		this.setSize(800, 500);
@@ -81,7 +83,7 @@ public class StatWindow extends JFrame
 		    
 
     
-					
+		System.out.println("Table Printed.");	
 		JTable table = new JTable(data, columnNames);
 		table.setAutoCreateRowSorter(true);
 
@@ -93,6 +95,11 @@ public class StatWindow extends JFrame
 		
 		this.getContentPane().add(table.getTableHeader(), BorderLayout.PAGE_START);
 		this.getContentPane().add(scrollPane, BorderLayout.CENTER);
+		SearchPlayer searchBox = new SearchPlayer(stats);
+		searchBox.setPreferredSize(new Dimension(100,20));
+		
+		
+		this.add(searchBox.getPanel(),BorderLayout.PAGE_END);
 		
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		

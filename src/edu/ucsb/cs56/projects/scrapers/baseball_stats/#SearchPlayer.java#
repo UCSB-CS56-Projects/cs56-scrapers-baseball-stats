@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.lang.Math;
 
 /** SearchPlayer is a class that will implement JFrame and Jtextfield to search for a player in the players list.  It will save the players index value.*/
 
@@ -20,7 +21,8 @@ public class SearchPlayer extends JPanel
 
     public SearchPlayer(StatKeeper stats){
 	panel = new JPanel();
-	
+	searchResults = new ArrayList<Player>();
+		
 	JTextField textField = new JTextField(25);
 	textField.setEditable(true);
 	textField.requestFocus();
@@ -32,6 +34,7 @@ public class SearchPlayer extends JPanel
 		    setName(textField.getText() );
 		    repaint();
 		    searchForPlayer( getName(), stats);
+		    
 		    if(!playerFound){
 		       	fuzzySearch(getName(), stats);
 		    }
@@ -47,7 +50,6 @@ public class SearchPlayer extends JPanel
 
     public void searchForPlayer(String playerName, StatKeeper statistics){
 
-        searchResults = new ArrayList<Player>();
 	Player playerToFind = new Player(0, playerName + " ");
 	    
 	String  curPlayerFirst;
@@ -85,7 +87,30 @@ public class SearchPlayer extends JPanel
 	}
     }
 
-    public void fuzzySearch(String playerName, StatKeeper stats){}
+    public void fuzzySearch(String playerName, StatKeeper stats){
+	int numMatches = 0;
+	int nameLength = 0;
+	Player playerToFind = new Player(0, playerName + " ");
+	    
+	String  curPlayerFirst;
+	String  curPlayerLast;
+	String  curPlayerFullName;
+
+	String playerToFindFirst = playerToFind.getFirstName();
+	String playerToFindLast = playerToFind.getLastName();
+	String playerToFindFull = playerToFind.getFullName();
+    }
+
+    public double percentSimilar(String name1, String name2){
+	int min = Math.min(name1.length(), name2.length());
+	int matches = 0;
+	for(int i = 0; i < min; i++){
+	    if(Character.toLowerCase(name1.charAt(i))==Character .toLowerCase(name2.charAt(i))){
+		matches++;
+	    }
+	}
+	return matches/min;
+    }
 
     public ArrayList<Player> getSearchResults(){
 	return searchResults;
