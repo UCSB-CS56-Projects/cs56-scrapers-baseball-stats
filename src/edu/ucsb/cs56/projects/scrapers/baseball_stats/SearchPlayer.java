@@ -16,11 +16,11 @@ public class SearchPlayer extends JPanel
     private ArrayList<Player> searchResults;
     private boolean playerFound;
 
-    private JTextField textField;
+     JTextField textField;
     
 
     public SearchPlayer(StatKeeper stats){
-	panel = new JPanel();
+	super();
 	searchResults = new ArrayList<Player>();
 		
 	JTextField textField = new JTextField(25);
@@ -32,7 +32,6 @@ public class SearchPlayer extends JPanel
 		public void actionPerformed(ActionEvent e){
 		   
 		    setName(textField.getText() );
-		    repaint();
 		    searchForPlayer( getName(), stats);
 		    
 		    if(!playerFound){
@@ -42,9 +41,9 @@ public class SearchPlayer extends JPanel
 	    });
 	playerFound = false;
 	JLabel label1 = new JLabel("Search for a Player: ");
-	panel.add(label1);
-	textField.setVisible(true);
-	panel.add(textField);
+	this.add(label1);
+	//textField.setVisible(true);
+	this.add(textField);
     
     }
 
@@ -125,7 +124,7 @@ public class SearchPlayer extends JPanel
     }
 
      public JPanel getPanel(){
-	 return panel;
+	 return this;
      }
 
 }

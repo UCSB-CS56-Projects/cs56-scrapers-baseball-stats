@@ -16,6 +16,7 @@ public class StatWindow extends JFrame
 {
 	private int width;
 	private int height;
+    Object[][] data;
 	
 	public StatWindow(StatKeeper stats)
 	{
@@ -28,7 +29,6 @@ public class StatWindow extends JFrame
 		this.setLayout(new BorderLayout());		
 		
 		// Create Table
-		
 		String[] columnNames = {"Full Name",
 					"ID",
 					"AB",
@@ -43,9 +43,7 @@ public class StatWindow extends JFrame
 					"SO",
 					"BB"};
 					
-		Object[][] data = new Object[stats.getPlayerCount()][13];
-
-		//if(!searchBox.found()){
+	        data = new Object[stats.getPlayerCount()][13];
 	       
 		    for(int c1 = 0; c1 < stats.getPlayerCount(); c1 ++)
 		    {
@@ -63,47 +61,30 @@ public class StatWindow extends JFrame
 			data[c1][11] = StatCalculator.calculateSO(stats.getPlayer(c1));
 			data[c1][12] = StatCalculator.calculateBB(stats.getPlayer(c1));
 		    }
-		    /*	}
-		else{
-			data[0][0] = stats.getPlayer(c1).getFullName();
-			data[0][1] = stats.getPlayer(c1).getID();
-			data[0][2] = StatCalculator.calculateAB(stats.getPlayer(c1));
-			data[0][3] = String.format("%.3f", StatCalculator.calculateAVG(stats.getPlayer(c1)));
-			data[0][4] = String.format("%.3f", StatCalculator.calculateOBP(stats.getPlayer(c1)));
-			data[0][5] = String.format("%.3f", StatCalculator.calculateSLG(stats.getPlayer(c1)));
-			data[0][6] = String.format("%.3f", StatCalculator.calculateOPS(stats.getPlayer(c1)));
-			data[0][7] = StatCalculator.calculateHR(stats.getPlayer(c1));
-			data[0][8] = StatCalculator.calculate3B(stats.getPlayer(c1));
-			data[0][9] = StatCalculator.calculate2B(stats.getPlayer(c1));
-			data[0][10] = StatCalculator.calculate1B(stats.getPlayer(c1));
-			data[0][11] = StatCalculator.calculateSO(stats.getPlayer(c1));
-			data[0][12] = StatCalculator.calculateBB(stats.getPlayer(c1));
-			}*/
+		    	
+	
 		
 		    
 
-    
+   
 		System.out.println("Table Printed.");	
-		JTable table = new JTable(data, columnNames);
+		JTable table = new JTable(new StatTable(stats));
 		table.setAutoCreateRowSorter(true);
 
 		TableColumn col = table.getColumnModel().getColumn(0);
 		col.setPreferredWidth(180);
 		
 		JScrollPane scrollPane = new JScrollPane(table);
-		//table.setFillsViewportHeight(true);
 		
-		this.getContentPane().add(table.getTableHeader(), BorderLayout.PAGE_START);
-		this.getContentPane().add(scrollPane, BorderLayout.CENTER);
+		add(scrollPane, BorderLayout.CENTER);
 		SearchPlayer searchBox = new SearchPlayer(stats);
-		searchBox.setPreferredSize(new Dimension(100,20));
-		
-		
-		this.add(searchBox.getPanel(),BorderLayout.PAGE_END);
+
+		add(searchBox,BorderLayout.PAGE_END);
 		
 		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		
 		this.setLocation(560, 50);
 		this.setVisible(true);
+		searchBox.textField.requestFocus();
 	}
 }
