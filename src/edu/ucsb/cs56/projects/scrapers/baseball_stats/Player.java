@@ -49,7 +49,7 @@ public class Player
 		this.id = id;
 		this.firstName = "";
 		this.lastName = "";
-		this.fullName = fullName.substring(0,fullName.length()-2);
+		this.fullName = fullName.substring(0,fullName.length()-1);
 		setPlayerFirstLast(fullName);
 		
 		stats = new ArrayList<Statistic>();
@@ -232,7 +232,7 @@ public class Player
 			
 			if(counter != stats.size() - 1)
 			{
-				returnString += ", ";
+				returnString += "\n";
 			}
 		}
 		

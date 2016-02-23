@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.table.TableColumn;
+import javax.swing.table.AbstractTableModel;
 
 /** StatTable contains the values of the stats in a table format.
 
@@ -12,12 +13,11 @@ import javax.swing.table.TableColumn;
 */
 
 public class StatTable extends AbstractTableModel{
-    String[] columnNames;
+   
     Object[][] data;
+    String[] columnNames = {"Full Name","ID","AB","AVG","OBP","SLG","OPS","HR","3B","2B","1B","SO","BB"};
     
     StatTable(StatKeeper stats){
-	
-	columnNames = {"Full Name","ID","AB","AVG","OBP","SLG","OPS","HR","3B","2B","1B","SO","BB"};
 	
 	data = new Object[stats.getPlayerCount()][13];
 	
@@ -39,4 +39,21 @@ public class StatTable extends AbstractTableModel{
 	    }
 	
     }
+
+    public int getRowCount(){
+	return data.length;
+    }
+
+    public int getColumnCount(){
+	return 13;
+    }
+
+    public String getColumnName(int column){
+	return columnNames[column];
+    }
+
+    public Object getValueAt(int row, int column){
+	return data[row][column];
+    }
+				
 }

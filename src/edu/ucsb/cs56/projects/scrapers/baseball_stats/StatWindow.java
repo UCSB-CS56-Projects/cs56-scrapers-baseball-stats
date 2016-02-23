@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.table.TableColumn;
+import javax.swing.JTextArea;
 
 
 /** StatWindow holds the table containing all of the player stats found in StatKeeper.  Adding search functionality.
@@ -14,77 +15,110 @@ import javax.swing.table.TableColumn;
 */
 public class StatWindow extends JFrame
 {
-	private int width;
-	private int height;
-    Object[][] data;
+    private int width;
+    private int height;
+    StatTable statTable;
+    SearchPlayer search;
 	
-	public StatWindow(StatKeeper stats)
-	{
+    public StatWindow(StatKeeper stats)
+    {
 	    
 	   
-		super("Stat Viewer");
+	super("Stat Viewer");
 		
-		this.setSize(800, 500);
+	this.setSize(800, 500);
 		
-		this.setLayout(new BorderLayout());		
-		
-		// Create Table
-		String[] columnNames = {"Full Name",
-					"ID",
-					"AB",
-					"AVG",
-					"OBP",
-					"SLG",
-					"OPS",
-					"HR",
-					"3B",
-					"2B",
-					"1B",
-					"SO",
-					"BB"};
-					
-	        data = new Object[stats.getPlayerCount()][13];
-	       
-		    for(int c1 = 0; c1 < stats.getPlayerCount(); c1 ++)
-		    {
-			data[c1][0] = stats.getPlayer(c1).getFullName();
-			data[c1][1] = stats.getPlayer(c1).getID();
-			data[c1][2] = StatCalculator.calculateAB(stats.getPlayer(c1));
-			data[c1][3] = String.format("%.3f", StatCalculator.calculateAVG(stats.getPlayer(c1)));
-			data[c1][4] = String.format("%.3f", StatCalculator.calculateOBP(stats.getPlayer(c1)));
-			data[c1][5] = String.format("%.3f", StatCalculator.calculateSLG(stats.getPlayer(c1)));
-			data[c1][6] = String.format("%.3f", StatCalculator.calculateOPS(stats.getPlayer(c1)));
-			data[c1][7] = StatCalculator.calculateHR(stats.getPlayer(c1));
-			data[c1][8] = StatCalculator.calculate3B(stats.getPlayer(c1));
-			data[c1][9] = StatCalculator.calculate2B(stats.getPlayer(c1));
-			data[c1][10] = StatCalculator.calculate1B(stats.getPlayer(c1));
-			data[c1][11] = StatCalculator.calculateSO(stats.getPlayer(c1));
-			data[c1][12] = StatCalculator.calculateBB(stats.getPlayer(c1));
-		    }
-		    	
-	
-		
-		    
+	this.setLayout(new BorderLayout());		   
 
    
-		System.out.println("Table Printed.");	
-		JTable table = new JTable(new StatTable(stats));
-		table.setAutoCreateRowSorter(true);
+	statTable = new StatTable(stats);
 
-		TableColumn col = table.getColumnModel().getColumn(0);
-		col.setPreferredWidth(180);
-		
-		JScrollPane scrollPane = new JScrollPane(table);
-		
-		add(scrollPane, BorderLayout.CENTER);
-		SearchPlayer searchBox = new SearchPlayer(stats);
+	//Construct Table
+	JTable table = new JTable(statTable);
+	table.setAutoCreateRowSorter(true);
 
-		add(searchBox,BorderLayout.PAGE_END);
 		
-		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+	TableColumn col = table.getColumnModel().getColumn(0);
+	col.setPreferredWidth(180);
+
+	table.addMouseListener(new MouseAdapter() {
+		public void mouseClicked(MouseEvent e) {
+		    if (e.getClickCount() == 2) {
+			JTable target = (JTable)e.getSource();
+			int row = target.getSelectedRow();
+			int column = target.getSelectedColumn();
+			
+		        JFrame playerFrame = new JFrame("Player Frame");
+			JTextArea playerSpecs = new JTextArea((stats.getPlayer(row).toString()));
+			playerFrame.add(playerSpecs);
+			playerFrame.setSize(300, 200);
+			playerFrame.setLocation(560,560);
+			playerFrame.setVisible(true);
+		    }
+		}
+	    });
+       
+	JScrollPane scrollPane = new JScrollPane(table);
+	
+	add(scrollPane, BorderLayout.CENTER);
+	System.out.println("Before");
+
+
+	
+	//Atempt at Action listener in StatWindow.
+	JPanel searchBox = new JPanel();	
+	JTextField textField = new JTextField(25);
+	textField.setEditable(true);
+	textField.requestFocus();
+	search = new SearchPlayer(stats);
+	
+	String output = "";
+	
+	
+	textField.addActionListener(new ActionListener(){
+		@Override
+		public void actionPerformed(ActionEvent e){
+		    search.clearSearch();
+		    search.searchForPlayer(textField.getText(), stats);
+		    
+		    if(!search.playerFound){
+		       	search.fuzzySearch(textField.getText(), stats);
+		    }
+		   
+		    
+		    System.out.println(search.getSearchResults());
+		        JFrame searchResultFrame = new JFrame("Search Result Frame");
+			
+			JTextArea playerSpecs = new JTextArea();
+			playerSpecs.append(search.toString());
+			searchResultFrame.add(playerSpecs);
+			searchResultFrame.setSize(200, 600);
+			searchResultFrame.setVisible(true);
+		      
+		}
+	    });
+	
+	JLabel label1 = new JLabel("Search for a Player: ");
+	searchBox.add(label1);
+	//textField.setVisible(true);
+	searchBox.add(textField);
+	//End of Atempt.
+
+	
+	//searchBox = new SearchPlayer(stats);
+	System.out.println("After");
+
+	add(searchBox,BorderLayout.PAGE_END);
 		
-		this.setLocation(560, 50);
-		this.setVisible(true);
-		searchBox.textField.requestFocus();
-	}
+	this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		
+	this.setLocation(560, 50);
+	this.setVisible(true);
+    }
+
+    /* public void createTable(Search searchBox){
+       if(searchBox.getSearchResults().size()){
+       statTable = new StatTable(searchBox.toStatKeeper());
+       }
+       }*/
 }
