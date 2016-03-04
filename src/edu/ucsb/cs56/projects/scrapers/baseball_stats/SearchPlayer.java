@@ -51,6 +51,7 @@ public class SearchPlayer// extends JPanel
 
     public void searchForPlayer(String playerName, StatKeeper statistics){
 
+	this.playerFound = false;
 	Player playerToFind = new Player(0, playerName);
 	    
 	String  curPlayerFirst;
@@ -60,21 +61,34 @@ public class SearchPlayer// extends JPanel
 	String playerToFindFirst = playerToFind.getFirstName();
 	String playerToFindLast = playerToFind.getLastName();
 	String playerToFindFull = playerToFind.getFullName();
+
 	
 	System.out.println(playerName);
 	playerName = playerName;
 	for(int i = 0; i< statistics.getPlayerCount(); i++){
 
-	    Player curPlayer = new Player(statistics.getPlayer(i).getID(), statistics.getPlayer(i).getFullName()); 
+	    Player curPlayer = new Player(statistics.getPlayer(i).getID(), statistics.getPlayer(i).getFullName());
 	    
 	    curPlayerFirst = curPlayer.getFirstName();
 	    curPlayerLast = curPlayer.getLastName();
 	    curPlayerFullName = statistics.getPlayerName(i).trim();
-	  
+
+	    /* System.out.println(percentSimilar(curPlayerFirst, playerToFindFirst)); //NEW
+	    System.out.println("|" + curPlayerFirst + "|" +  " , " + "|" + playerToFindFirst + "|"); //NEW
+	    System.out.println("|" + curPlayerLast + "|" + " , " + "|" + playerToFindLast + "|"); //NEW
+	    System.out.println("|" + curPlayerFullName + "|" + " , " + "|" + playerToFindFull + "|"); //NEW
+	    System.out.println("|" + playerToFindFirst + "|" + " , " + "|" + curPlayerLast + "|"); //NEW
+	    */	    
+		    	  
 		    
-	    if((playerName.equalsIgnoreCase(curPlayerFirst)
+	    /* if((playerName.equalsIgnoreCase(curPlayerFirst)
 	       ||playerName.equalsIgnoreCase(curPlayerLast))
-	       ||(playerName.equalsIgnoreCase(curPlayerFullName)))
+	       ||(playerName.equalsIgnoreCase(curPlayerFullName)))*/
+
+	    if(playerToFindFirst.equalsIgnoreCase(curPlayerFirst) || //NEW
+	       playerToFindLast.equalsIgnoreCase(curPlayerLast) ||   //NEW
+	       playerToFindFirst.equalsIgnoreCase(curPlayerLast) ||  //NEW
+	       playerToFindFull.equalsIgnoreCase(curPlayerFullName)) //NEW
 		{
 		    System.out.println("DirectSearch");
 		    playerFound = true;
@@ -103,42 +117,67 @@ public class SearchPlayer// extends JPanel
 	    curPlayerFirst = curPlayer.getFirstName();
 	    curPlayerLast = curPlayer.getLastName();
 	    curPlayerFullName = statistics.getPlayerName(i).trim();
+
+	    System.out.println(percentSimilar(curPlayerFirst, playerToFindFirst)); //NEW
+	    System.out.println("|" + curPlayerFirst + "|" +  " , " + "|" + playerToFindFirst + "|"); //NEW
+	    System.out.println("|" + curPlayerLast + "|" + " , " + "|" + playerToFindLast + "|"); //NEW
+	    System.out.println("|" + curPlayerFullName + "|" + " , " + "|" + playerToFindFull + "|"); //NEW
+	    System.out.println("|" + playerToFindFirst + "|" + " , " + "|" + curPlayerLast + "|"); //NEW
 	    
 	    //System.out.println(percentSimilar(curPlayerFirst,playerToFindFirst)+"");
-	    if(percentSimilar(curPlayerFirst,playerToFindFirst) > 0.50){
-		
+	    if(percentSimilar(curPlayerFirst,playerToFindFirst) > 0.50){	
 		playerFound = true;
 		searchResults.add(statistics.getPlayer(i));
-		return;
+		//return;
+		continue;
 	    }
 	    //System.out.println(percentSimilar(curPlayerLast,playerToFindLast)+"");
 	    if(percentSimilar(curPlayerLast,playerToFindLast) > 0.50){
 		//	System.out.println("FuzzySearch: Last");
 		playerFound = true;
 		searchResults.add(statistics.getPlayer(i));
-		return;
+		//return;
+		continue;
 	    }
 	    //System.out.println(percentSimilar(curPlayerFullName,playerToFindFull)+"");
 	    if(percentSimilar(curPlayerFullName,playerToFindFull) > 0.50){
 		//	System.out.println("FuzzySearch: Fullname");
 		playerFound = true;
 		searchResults.add(statistics.getPlayer(i));
-		return;
+		//return;
+		continue;
 	    }
 	    if(percentSimilar(curPlayerFirst,playerName) > 0.50){
 		playerFound = true;
 		searchResults.add(statistics.getPlayer(i));
-		return;
+		//return;
+		continue;
 	    }
 	    if(percentSimilar(curPlayerLast,playerName) > 0.50){
 		playerFound = true;
 		searchResults.add(statistics.getPlayer(i));
-		return;
+		//return;
+		continue;
 	    }
 	    if(percentSimilar(curPlayerFullName,playerName) > 0.50){
 		playerFound = true;
 		searchResults.add(statistics.getPlayer(i));
-		return;
+		//return;
+		continue;
+	    }
+
+	    if(percentSimilar(curPlayerFirst,playerToFindLast) > 0.50){
+		playerFound = true;
+		searchResults.add(statistics.getPlayer(i));
+		//return;
+		continue;
+	    }
+
+	    if(percentSimilar(curPlayerFirst,playerToFindFull) > 0.50){
+		playerFound = true;
+		searchResults.add(statistics.getPlayer(i));
+		//return;
+		continue;
 	    }
 		
 	}

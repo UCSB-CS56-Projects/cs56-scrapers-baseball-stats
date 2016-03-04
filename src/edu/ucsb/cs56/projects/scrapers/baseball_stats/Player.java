@@ -49,7 +49,7 @@ public class Player
 		this.id = id;
 		this.firstName = "";
 		this.lastName = "";
-		this.fullName = fullName.substring(0,fullName.length()-1);
+		this.fullName = fullName.substring(0,fullName.length());
 		setPlayerFirstLast(fullName);
 		
 		stats = new ArrayList<Statistic>();
@@ -65,8 +65,9 @@ public class Player
 	    else if(first){
 		this.firstName = this.firstName + fullName.charAt(i);
 	    }
-	    else if (i < (fullName.length()-1)){
+	    else if (i < (fullName.length())){
 		this.lastName = this.lastName + fullName.charAt(i);
+		this.lastName = this.lastName.trim();//NEW
 	    }
 	}
     }
