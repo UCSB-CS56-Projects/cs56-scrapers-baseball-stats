@@ -16,37 +16,13 @@ public class SearchPlayer// extends JPanel
     private ArrayList<Player> searchResults;
     boolean playerFound;
     JTextField textField;
+
     
 
-    public SearchPlayer(StatKeeper stats){
+    public SearchPlayer(){
 	super();
 	searchResults = new ArrayList<Player>();
-	
-	/*	
-	JTextField textField = new JTextField(25);
-	textField.setEditable(true);
-	textField.requestFocus();
-	
-	textField.addActionListener(new ActionListener(){
-		@Override
-		public void actionPerformed(ActionEvent e){
-		    playerFound = false;
-		    searchResults.clear();
-		    
-		    searchForPlayer(textField.getText(), stats);
-		    
-		    if(!playerFound){
-		       	fuzzySearch(textField.getText(), stats);
-		    }
-	    
-		}
-	    });
-	
-	JLabel label1 = new JLabel("Search for a Player: ");
-	this.add(label1);
-	//textField.setVisible(true);
-	this.add(textField);
-	*/
+ 
     }
 
     public void searchForPlayer(String playerName, StatKeeper statistics){
@@ -118,12 +94,13 @@ public class SearchPlayer// extends JPanel
 	    curPlayerLast = curPlayer.getLastName();
 	    curPlayerFullName = statistics.getPlayerName(i).trim();
 
-	    System.out.println(percentSimilar(curPlayerFirst, playerToFindFirst)); //NEW
+	    /*System.out.println(percentSimilar(curPlayerFirst, playerToFindFirst)); //NEW
 	    System.out.println("|" + curPlayerFirst + "|" +  " , " + "|" + playerToFindFirst + "|"); //NEW
 	    System.out.println("|" + curPlayerLast + "|" + " , " + "|" + playerToFindLast + "|"); //NEW
 	    System.out.println("|" + curPlayerFullName + "|" + " , " + "|" + playerToFindFull + "|"); //NEW
 	    System.out.println("|" + playerToFindFirst + "|" + " , " + "|" + curPlayerLast + "|"); //NEW
-	    
+	    */	    
+
 	    //System.out.println(percentSimilar(curPlayerFirst,playerToFindFirst)+"");
 	    if(percentSimilar(curPlayerFirst,playerToFindFirst) > 0.50){	
 		playerFound = true;
@@ -197,6 +174,7 @@ public class SearchPlayer// extends JPanel
 	else
 	    return 0.0;
     }
+    
 
     public ArrayList<Player> getSearchResults(){
 	return searchResults;
@@ -241,6 +219,7 @@ public class SearchPlayer// extends JPanel
 
     public void clearSearch(){
 	searchResults.clear();
+	playerFound = false;
     }
 
    

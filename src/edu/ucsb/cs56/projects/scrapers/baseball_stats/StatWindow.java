@@ -19,6 +19,7 @@ public class StatWindow extends JFrame
     private int height;
     StatTable statTable;
     SearchPlayer search;
+    ArrayList<Player> allStars = new ArrayList<Player>();
 	
     public StatWindow(StatKeeper stats)
     {
@@ -26,7 +27,7 @@ public class StatWindow extends JFrame
 	   
 	super("Stat Viewer");
 		
-	this.setSize(800, 500);
+	this.setSize(1050, 500);
 		
 	this.setLayout(new BorderLayout());		   
 
@@ -66,11 +67,17 @@ public class StatWindow extends JFrame
 
 	
 	//Atempt at Action listener in StatWindow.
-	JPanel searchBox = new JPanel();	
+	JPanel left = new JPanel();
+	left.setLayout(new BoxLayout(left, BoxLayout.Y_AXIS));
+	JPanel bottom = new JPanel();	
 	JTextField textField = new JTextField(25);
+	JTextField buildTeam = new JTextField("Enter ID #: ");
+	JTextArea instructions = new JTextArea("How to create your\nown fantasy team:\nTo create a fantasy team,\nenter a player's ID number\nand hit enter. The ID number will\nbe cleared automatically after\nhitting enter, so do this 9 times\nto create a complete roster.");
+	
 	textField.setEditable(true);
 	textField.requestFocus();
-	search = new SearchPlayer(stats);
+	search = new SearchPlayer();
+	SearchPlayer buildTeamSearch = new SearchPlayer();
 	
 	String output = "";
 	
@@ -79,16 +86,15 @@ public class StatWindow extends JFrame
 		@Override
 		public void actionPerformed(ActionEvent e){
 		    search.clearSearch();
-		    search.searchForPlayer(textField.getText(), stats);
+		    search.searchForPlayer(textField.getText(),stats);
 		    
 		    if(!search.playerFound){
-		       	search.fuzzySearch(textField.getText(), stats);
+		       	search.fuzzySearch(textField.getText(),stats);
 		    }
 		   
 		    
 		    System.out.println(search.getSearchResults());
 		        JFrame searchResultFrame = new JFrame("Search Result Frame");
-			
 			JTextArea playerSpecs = new JTextArea();
 			playerSpecs.append(search.toString());
 			searchResultFrame.add(playerSpecs);
@@ -97,18 +103,58 @@ public class StatWindow extends JFrame
 		      
 		}
 	    });
+
+
+	buildTeam.addActionListener(new ActionListener(){
+		@Override
+		public void actionPerformed(ActionEvent e){
+		    int thisPlayer = Integer.parseInt(buildTeam.getText());
+		    
+		    for(int i = 0; i < stats.getPlayerCount(); i++){
+			if(thisPlayer == stats.getPlayer(i).getID())
+			    allStars.add(stats.getPlayer(i));
+		    }
+		    
+		   
+		    if(allStars.size() == 1){
+			String results = "";
+			JFrame fantasyTeam = new JFrame("Your Fantasy Team");
+			JTextArea team = new JTextArea();
+			JScrollPane scroll = new JScrollPane(team);
+			 for(int i = 0; i < allStars.size(); i++){
+			     results = results + allStars.get(i).getFullName()+  " AVG: " + String.format("%.3f", StatCalculator.calculateAVG(allStars.get(i))) + 
+				 " OBP: " + String.format("%.3f", StatCalculator.calculateOBP(allStars.get(i)))+ " SLG: " + String.format("%.3f", StatCalculator.calculateSLG(allStars.get(i)))+"\n";}
+			fantasyTeam.add(scroll);
+			team.append(results);
+			fantasyTeam.add(team);
+			fantasyTeam.setSize(350, 400);
+			fantasyTeam.setVisible(true);
+		    }
+						
+		    buildTeam.setText(""); 
+		}
+	    });
 	
+	bottom.setLayout(new BoxLayout(bottom, BoxLayout.LINE_AXIS));
 	JLabel label1 = new JLabel("Search for a Player: ");
-	searchBox.add(label1);
+	JLabel label2 = new JLabel("Build Fantasy Team: ");
+	bottom.add(label2);
+	bottom.add(buildTeam);
+		
+	bottom.add(label1);
 	//textField.setVisible(true);
-	searchBox.add(textField);
+	bottom.add(textField);
+
+	left.add(instructions);
 	//End of Atempt.
 
 	
 	//searchBox = new SearchPlayer(stats);
 	System.out.println("After");
 
-	add(searchBox,BorderLayout.PAGE_END);
+	add(bottom,BorderLayout.PAGE_END);
+	add(left,BorderLayout.WEST);
+		
 		
 	this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		
