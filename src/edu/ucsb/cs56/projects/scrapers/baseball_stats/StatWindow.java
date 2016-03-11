@@ -116,7 +116,7 @@ public class StatWindow extends JFrame
 		    }
 		    
 		   
-		    if(allStars.size() == 1){
+		    if(allStars.size() == 9){
 			String results = "";
 			JFrame fantasyTeam = new JFrame("Your Fantasy Team");
 			JTextArea team = new JTextArea();
