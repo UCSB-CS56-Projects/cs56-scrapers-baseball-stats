@@ -47,10 +47,30 @@ public class Player
 	public Player(int id, String fullName)
 	{
 		this.id = id;
-		this.fullName = fullName;
+		this.firstName = "";
+		this.lastName = "";
+		this.fullName = fullName.substring(0,fullName.length());
+		setPlayerFirstLast(fullName);
 		
 		stats = new ArrayList<Statistic>();
 	}
+
+    //First and Last names will be set.
+    public void setPlayerFirstLast(String fullName){
+	boolean first = true;
+	for(int i = 0; i <fullName.length(); i++){
+	    if(fullName.charAt(i) == ' ' && first ){
+		first = false;
+	    }
+	    else if(first){
+		this.firstName = this.firstName + fullName.charAt(i);
+	    }
+	    else if (i < (fullName.length())){
+		this.lastName = this.lastName + fullName.charAt(i);
+		this.lastName = this.lastName.trim();//NEW
+	    }
+	}
+    }
 	
         /** Adds a Statistic to a player's Statistic ArrayList  
 	   @param s the Statistic to add
@@ -213,7 +233,7 @@ public class Player
 			
 			if(counter != stats.size() - 1)
 			{
-				returnString += ", ";
+				returnString += "\n";
 			}
 		}
 		

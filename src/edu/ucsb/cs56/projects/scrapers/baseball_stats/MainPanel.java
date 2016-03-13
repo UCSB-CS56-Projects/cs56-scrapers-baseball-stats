@@ -22,6 +22,8 @@ public class MainPanel extends JPanel implements ActionListener
 
 	private StatWindow statwindow;
 
+    private SearchPlayer searchWindow;
+
 	public MainPanel(int width, int height)
 	{
 		super();
@@ -63,6 +65,7 @@ public class MainPanel extends JPanel implements ActionListener
 		{
 			Main.getStatReader().readDemoStats();
 			statwindow = new StatWindow(Main.getStatKeeper());
+	        
 		}
 	}
 

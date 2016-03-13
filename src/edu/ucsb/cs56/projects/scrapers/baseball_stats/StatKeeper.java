@@ -13,6 +13,10 @@ public class StatKeeper
 	{
 		players = new ArrayList<Player>(50);
 	}
+
+    public StatKeeper(ArrayList<Player> players){
+	this.players = players;
+    }
 	
 	/** Adds the input Player to the Player ArrayList. If the Player already exists in the ArrayList then all of the Statistics for that player are incremented by the value in the input Player's Statistic.
 	    @param p Player to add to the ArrayList.	 

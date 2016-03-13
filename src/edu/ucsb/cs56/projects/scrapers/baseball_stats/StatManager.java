@@ -19,6 +19,7 @@ public class StatManager
 		players = new ArrayList<Player>(30);
 		year = -1;
 	}
+
 	
 	/** Takes in an input Statistic and player ID and increments that players Statistic by the 
 		input Statistic's value. If the Statistic does not already exist in the player then a new 
@@ -28,6 +29,8 @@ public class StatManager
 	     @param stat The statistic to increment
 	 
 	*/
+
+    
 	public void incrementPlayerStat(int id, Statistic stat)
 	{
 		int index = this.getPlayerIndex(id);
@@ -88,8 +91,14 @@ public class StatManager
 		list to StatKeeper and then creates a new ArrayList of players to get ready for the next game.
 	 
 	*/
+    
+    public ArrayList<Player> getPlayers(){
+	return players;
+    }
+
+   
 	public void endGame()
-	{		
+    {		
 		Main.getStatKeeper().addPlayer(players);
 		
 		//System.out.println("\n" + this);
